@@ -1,3 +1,46 @@
 {
-  "modules": []
+  "modules": [
+    {
+      "id": "module-f56p1sc",
+      "name": "Employee Management",
+      "description": "Employee Management capabilities for HRMS.",
+      "priority": "HIGH"
+    },
+    {
+      "id": "module-vx90v5f",
+      "name": "Attendance Management",
+      "description": "Attendance Management capabilities for HRMS.",
+      "priority": "HIGH"
+    },
+    {
+      "id": "module-qkqe85k",
+      "name": "Leave Management",
+      "description": "Leave Management capabilities for HRMS.",
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "module-axsqptb",
+      "name": "Payroll Management",
+      "description": "Payroll Management capabilities for HRMS.",
+      "priority": "CRITICAL"
+    },
+    {
+      "id": "module-rnik7lm",
+      "name": "Recruitment",
+      "description": "Recruitment capabilities for HRMS.",
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "module-h5j2297",
+      "name": "Performance Management",
+      "description": "Performance Management capabilities for HRMS.",
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "module-s1yk99k",
+      "name": "Reports",
+      "description": "Reports capabilities for HRMS.",
+      "priority": "MEDIUM"
+    }
+  ]
 }
