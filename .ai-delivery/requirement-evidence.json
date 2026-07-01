@@ -1,0 +1,235 @@
+{
+  "buildId": "BUILD-001",
+  "project": "hrms",
+  "scope": "Employee Management",
+  "requirements": {
+    "REQ-EMPLOYEE-01": {
+      "files": [
+        "src/modules/employee-management/services/employee-management.service.ts",
+        "src/modules/employee-management/validators/employee-management.validators.ts",
+        "src/modules/employee-management/pages/EmployeeWorkspace.ts",
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ],
+      "components": [
+        "EmployeeManagementForm",
+        "EmployeeActionBar",
+        "EmployeeWorkspace"
+      ],
+      "apis": [
+        "POST /employees"
+      ],
+      "databaseEntities": [
+        "Employee",
+        "EmployeeHistory"
+      ],
+      "tests": [
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ]
+    },
+    "REQ-EMPLOYEE-02": {
+      "files": [
+        "src/modules/employee-management/services/employee-management.service.ts",
+        "src/modules/employee-management/validators/employee-management.validators.ts",
+        "src/modules/employee-management/pages/EmployeeWorkspace.ts",
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ],
+      "components": [
+        "EmployeeManagementList",
+        "EmployeeManagementForm",
+        "EmployeeWorkspace"
+      ],
+      "apis": [
+        "GET /employees"
+      ],
+      "databaseEntities": [
+        "Employee",
+        "EmployeeHistory"
+      ],
+      "tests": [
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ]
+    },
+    "REQ-EMPLOYEE-03": {
+      "files": [
+        "src/modules/employee-management/services/employee-management.service.ts",
+        "src/modules/employee-management/validators/employee-management.validators.ts",
+        "src/modules/employee-management/pages/EmployeeWorkspace.ts",
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ],
+      "components": [
+        "EmployeeActionBar",
+        "EmployeeManagementDetail",
+        "EmployeeWorkspace"
+      ],
+      "apis": [
+        "GET /employees/{id}"
+      ],
+      "databaseEntities": [
+        "Employee",
+        "EmployeeHistory"
+      ],
+      "tests": [
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ]
+    },
+    "REQ-EMPLOYEE-04": {
+      "files": [
+        "src/modules/employee-management/services/employee-management.service.ts",
+        "src/modules/employee-management/components/EmployeeManagementDetail.ts",
+        "src/modules/employee-management/pages/EmployeeWorkspace.ts",
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ],
+      "components": [
+        "EmployeeManagementDetail",
+        "StatusTimeline",
+        "EmployeeWorkspace"
+      ],
+      "apis": [
+        "PUT /employees/{id}"
+      ],
+      "databaseEntities": [
+        "Employee",
+        "EmployeeHistory"
+      ],
+      "tests": [
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ]
+    },
+    "REQ-EMPLOYEE-05": {
+      "files": [
+        "src/modules/employee-management/services/employee-management.service.ts",
+        "src/modules/employee-management/components/EmployeeActionBar.ts",
+        "src/modules/employee-management/pages/EmployeeWorkspace.ts",
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ],
+      "components": [
+        "EmployeeActionBar",
+        "EmployeeManagementDetail",
+        "EmployeeWorkspace"
+      ],
+      "apis": [
+        "POST /employees/{id}/submit"
+      ],
+      "databaseEntities": [
+        "Employee",
+        "EmployeeHistory"
+      ],
+      "tests": [
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ]
+    },
+    "REQ-EMPLOYEE-06": {
+      "files": [
+        "src/modules/employee-management/services/employee-management.service.ts",
+        "src/modules/employee-management/components/EmployeeActionBar.ts",
+        "src/modules/employee-management/pages/EmployeeWorkspace.ts",
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ],
+      "components": [
+        "EmployeeActionBar",
+        "EmployeeManagementDetail",
+        "EmployeeWorkspace"
+      ],
+      "apis": [
+        "POST /employees/{id}/approve"
+      ],
+      "databaseEntities": [
+        "Employee",
+        "EmployeeHistory"
+      ],
+      "tests": [
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ]
+    },
+    "REQ-EMPLOYEE-07": {
+      "files": [
+        "src/modules/employee-management/services/employee-management.service.ts",
+        "src/modules/employee-management/validators/employee-management.validators.ts",
+        "src/modules/employee-management/components/EmployeeManagementForm.ts",
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ],
+      "components": [
+        "EmployeeManagementForm",
+        "EmployeeManagementDetail"
+      ],
+      "apis": [
+        "POST /employees/{id}/activate"
+      ],
+      "databaseEntities": [
+        "Employee",
+        "EmployeeHistory"
+      ],
+      "tests": [
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ]
+    },
+    "REQ-EMPLOYEE-08": {
+      "files": [
+        "src/modules/employee-management/services/employee-management.service.ts",
+        "src/modules/employee-management/components/EmployeeActionBar.ts",
+        "src/modules/employee-management/pages/EmployeeWorkspace.ts",
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ],
+      "components": [
+        "EmployeeActionBar",
+        "EmployeeManagementDetail",
+        "EmployeeWorkspace"
+      ],
+      "apis": [
+        "POST /employees/{id}/deactivate"
+      ],
+      "databaseEntities": [
+        "Employee",
+        "EmployeeHistory"
+      ],
+      "tests": [
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ]
+    },
+    "REQ-EMPLOYEE-09": {
+      "files": [
+        "src/modules/employee-management/services/employee-management.service.ts",
+        "src/modules/employee-management/components/StatusTimeline.ts",
+        "src/modules/employee-management/pages/EmployeeWorkspace.ts",
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ],
+      "components": [
+        "StatusTimeline",
+        "EmployeeManagementDetail",
+        "EmployeeWorkspace"
+      ],
+      "apis": [
+        "GET /employee-reports"
+      ],
+      "databaseEntities": [
+        "Employee",
+        "EmployeeHistory"
+      ],
+      "tests": [
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ]
+    },
+    "REQ-EMPLOYEE-10": {
+      "files": [
+        "src/modules/employee-management/services/employee-management.service.ts",
+        "src/modules/employee-management/components/EmployeeManagementDetail.ts",
+        "src/modules/employee-management/pages/EmployeeWorkspace.ts",
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ],
+      "components": [
+        "EmployeeWorkspace",
+        "EmployeeManagementDetail"
+      ],
+      "apis": [
+        "GET /employee-reports"
+      ],
+      "databaseEntities": [
+        "Employee",
+        "EmployeeHistory"
+      ],
+      "tests": [
+        "src/modules/employee-management/tests/employee-management.test.ts"
+      ]
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "buildId": "BUILD-001",
+  "project": "hrms",
+  "scope": "Employee Management",
+  "status": "Partial",
+  "requirementsCovered": [
+    "REQ-EMPLOYEE-01",
+    "REQ-EMPLOYEE-02",
+    "REQ-EMPLOYEE-03",
+    "REQ-EMPLOYEE-04",
+    "REQ-EMPLOYEE-05",
+    "REQ-EMPLOYEE-06",
+    "REQ-EMPLOYEE-07",
+    "REQ-EMPLOYEE-08",
+    "REQ-EMPLOYEE-09",
+    "REQ-EMPLOYEE-10"
+  ],
+  "requirementsRemaining": [],
+  "filesChanged": [
+    "src/modules/employee-management/types/employee-management.ts",
+    "src/modules/employee-management/validators/employee-management.validators.ts",
+    "src/modules/employee-management/services/employee-management.service.ts",
+    "src/modules/employee-management/components/EmployeeManagementList.ts",
+    "src/modules/employee-management/components/EmployeeManagementForm.ts",
+    "src/modules/employee-management/components/EmployeeManagementDetail.ts",
+    "src/modules/employee-management/components/EmployeeActionBar.ts",
+    "src/modules/employee-management/components/StatusTimeline.ts",
+    "src/modules/employee-management/hooks/useEmployeeWorkspace.ts",
+    "src/modules/employee-management/pages/EmployeeWorkspace.ts",
+    "src/modules/employee-management/index.ts",
+    "src/modules/employee-management/tests/employee-management.test.ts"
+  ],
+  "testsExecuted": [
+    "npm.cmd run build",
+    "npm.cmd run lint",
+    "npm.cmd test"
+  ],
+  "validationResult": {
+    "build": {
+      "passed": false,
+      "error": "'tsc' is not recognized as an internal or external command, operable program or batch file."
+    },
+    "lint": {
+      "passed": false,
+      "error": "'eslint' is not recognized as an internal or external command, operable program or batch file."
+    },
+    "test": {
+      "passed": false,
+      "error": "'vitest' is not recognized as an internal or external command, operable program or batch file."
+    }
+  },
+  "knownGaps": [
+    "Repository toolchain is not installed in the current environment, so validation could not execute.",
+    "The workspace has no top-level Vite app entry points, which would require a bootstrap slice outside this build's allowed module path."
+  ],
+  "warnings": [
+    "Build Package implementation is confined to src/modules/employee-management/ per contract.",
+    "Validation commands were attempted exactly as required, but the environment is missing the expected executables."
+  ],
+  "manualActions": [
+    "Install the repository toolchain and rerun the build commands in an environment where npm dependencies are available.",
+    "Integrate the Employee Workspace into the application shell in a follow-up bootstrap slice."
+  ],
+  "nextBuildSlice": "BUILD-002: Application shell/bootstrap integration for Employee Workspace",
+  "pullRequest": "",
+  "branch": "ai/build-001-employee-management",
+  "commitSha": ""
+}
