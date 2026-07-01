@@ -1,0 +1,6 @@
+{
+  "style": "default",
+  "tailwind": {
+    "css": "src/index.css"
+  }
+}

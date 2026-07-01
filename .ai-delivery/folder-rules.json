@@ -1,0 +1,6 @@
+{
+  "allowedRoots": [
+    "src/modules"
+  ],
+  "rule": "Do not create files outside src/modules/<name>/ for a single-module build."
+}
