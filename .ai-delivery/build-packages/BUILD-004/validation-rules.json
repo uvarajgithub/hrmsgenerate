@@ -1,0 +1,8 @@
+{
+  "commands": [
+    "npm run build",
+    "npm run lint",
+    "npm test"
+  ],
+  "rule": "All three commands must pass before this build is marked complete. Do not mark IMPLEMENTED without evidence."
+}

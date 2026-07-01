@@ -1,0 +1,22 @@
+[
+  {
+    "method": "POST",
+    "endpoint": "/leave-management",
+    "description": "Create Leave Management"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/leave-management",
+    "description": "List Leave Management"
+  },
+  {
+    "method": "PUT",
+    "endpoint": "/leave-management/{id}",
+    "description": "Update Leave Management"
+  },
+  {
+    "method": "DELETE",
+    "endpoint": "/leave-management/{id}",
+    "description": "Delete Leave Management"
+  }
+]

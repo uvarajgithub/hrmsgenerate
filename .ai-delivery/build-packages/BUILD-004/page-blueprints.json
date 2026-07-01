@@ -1,0 +1,88 @@
+{
+  "module": "Leave Management",
+  "pages": [
+    {
+      "pageName": "Leave Management Overview",
+      "requirementIds": [
+        "REQ-0673",
+        "REQ-0674",
+        "REQ-0675",
+        "REQ-0676",
+        "REQ-0677",
+        "REQ-0678",
+        "REQ-0679",
+        "REQ-0680",
+        "REQ-0681",
+        "REQ-0682",
+        "REQ-0683",
+        "REQ-0684",
+        "REQ-0685",
+        "REQ-0686",
+        "REQ-0687",
+        "REQ-0688",
+        "REQ-0689",
+        "REQ-0690",
+        "REQ-0691",
+        "REQ-0692",
+        "REQ-0693",
+        "REQ-0694",
+        "REQ-0695",
+        "REQ-0696",
+        "REQ-0697",
+        "REQ-0698",
+        "REQ-0699",
+        "REQ-0700",
+        "REQ-0701",
+        "REQ-0702",
+        "REQ-0703",
+        "REQ-0704",
+        "REQ-0705",
+        "REQ-0706",
+        "REQ-0707",
+        "REQ-0708",
+        "REQ-0709",
+        "REQ-0710",
+        "REQ-0711",
+        "REQ-0712",
+        "REQ-0713",
+        "REQ-0714"
+      ]
+    },
+    {
+      "pageName": "Leave Management List",
+      "requirementIds": [
+        "REQ-0715"
+      ]
+    },
+    {
+      "pageName": "Leave Management Details",
+      "requirementIds": [
+        "REQ-0757"
+      ]
+    },
+    {
+      "pageName": "Leave Management Create/Edit",
+      "requirementIds": [
+        "REQ-0799"
+      ]
+    },
+    {
+      "pageName": "Leave Management Workflow",
+      "requirementIds": [
+        "REQ-0841"
+      ]
+    },
+    {
+      "pageName": "Leave Management Reports",
+      "requirementIds": [
+        "REQ-0883"
+      ]
+    },
+    {
+      "pageName": "Leave Management Settings",
+      "requirementIds": [
+        "REQ-0925"
+      ]
+    }
+  ]
+}
