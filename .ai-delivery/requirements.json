@@ -2,491 +2,491 @@
   "requirements": [
     {
       "id": "REQ-EMPLOYEE-01",
-      "title": "Create Employee Record (Employee Management)",
-      "moduleId": "module-mr1qljx8451",
+      "title": "Create Employee Profile (Employee Management)",
+      "moduleId": "module-mr1r73cf2",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-EMPLOYEE-02",
-      "title": "Edit Employee Record (Employee Management)",
-      "moduleId": "module-mr1qljx8451",
+      "title": "Verify & Validate Employee Details (Employee Management)",
+      "moduleId": "module-mr1r73cf2",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-EMPLOYEE-03",
-      "title": "Submit Employee for Review (Employee Management)",
-      "moduleId": "module-mr1qljx8451",
+      "title": "Submit for Manager Approval (Employee Management)",
+      "moduleId": "module-mr1r73cf2",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-EMPLOYEE-04",
-      "title": "Review Employee Record (Employee Management)",
-      "moduleId": "module-mr1qljx8451",
+      "title": "Manager Reviews Employee Record (Employee Management)",
+      "moduleId": "module-mr1r73cf2",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-EMPLOYEE-05",
       "title": "Approve Employee Record (Employee Management)",
-      "moduleId": "module-mr1qljx8451",
+      "moduleId": "module-mr1r73cf2",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-EMPLOYEE-06",
-      "title": "Reject Employee Record (Employee Management)",
-      "moduleId": "module-mr1qljx8451",
+      "title": "Activate Employee (Employee Management)",
+      "moduleId": "module-mr1r73cf2",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-EMPLOYEE-07",
-      "title": "Archive Employee Record (Employee Management)",
-      "moduleId": "module-mr1qljx8451",
+      "title": "Update Employee Information (Employee Management)",
+      "moduleId": "module-mr1r73cf2",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-EMPLOYEE-08",
-      "title": "Audit Trail Capture (Employee Management)",
-      "moduleId": "module-mr1qljx8451",
-      "category": "Automation",
+      "title": "Deactivate / Offboard Employee (Employee Management)",
+      "moduleId": "module-mr1r73cf2",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-EMPLOYEE-09",
-      "title": "Notify Stakeholders (Employee Management)",
-      "moduleId": "module-mr1qljx8451",
+      "title": "Audit Log Capture (Employee Management)",
+      "moduleId": "module-mr1r73cf2",
       "category": "Automation",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-EMPLOYEE-10",
-      "title": "Generate Employee Report (Employee Management)",
-      "moduleId": "module-mr1qljx8451",
+      "title": "Generate Employee Reports (Employee Management)",
+      "moduleId": "module-mr1r73cf2",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-ATTENDANCE-01",
       "title": "Apply (Attendance Management)",
-      "moduleId": "module-mr1qljx8452",
+      "moduleId": "module-mr1r73cf3",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-ATTENDANCE-02",
       "title": "Validate Balance/Eligibility (Attendance Management)",
-      "moduleId": "module-mr1qljx8452",
+      "moduleId": "module-mr1r73cf3",
       "category": "Automation",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-ATTENDANCE-03",
       "title": "Submit (Attendance Management)",
-      "moduleId": "module-mr1qljx8452",
+      "moduleId": "module-mr1r73cf3",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-ATTENDANCE-04",
       "title": "Manager Review (Attendance Management)",
-      "moduleId": "module-mr1qljx8452",
+      "moduleId": "module-mr1r73cf3",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-ATTENDANCE-05",
       "title": "Approve (Attendance Management)",
-      "moduleId": "module-mr1qljx8452",
+      "moduleId": "module-mr1r73cf3",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-ATTENDANCE-06",
       "title": "Reject (Attendance Management)",
-      "moduleId": "module-mr1qljx8452",
+      "moduleId": "module-mr1r73cf3",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-ATTENDANCE-07",
       "title": "Cancel (Attendance Management)",
-      "moduleId": "module-mr1qljx8452",
+      "moduleId": "module-mr1r73cf3",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-ATTENDANCE-08",
       "title": "Notify Requester (Attendance Management)",
-      "moduleId": "module-mr1qljx8452",
+      "moduleId": "module-mr1r73cf3",
       "category": "Automation",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-ATTENDANCE-09",
       "title": "Sync Downstream Impact (Attendance Management)",
-      "moduleId": "module-mr1qljx8452",
+      "moduleId": "module-mr1r73cf3",
       "category": "Automation",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-ATTENDANCE-10",
       "title": "Generate Report (Attendance Management)",
-      "moduleId": "module-mr1qljx8452",
+      "moduleId": "module-mr1r73cf3",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-LEAVE-01",
       "title": "Apply (Leave Management)",
-      "moduleId": "module-mr1qljx8453",
+      "moduleId": "module-mr1r73cf4",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-LEAVE-02",
       "title": "Validate Balance/Eligibility (Leave Management)",
-      "moduleId": "module-mr1qljx8453",
+      "moduleId": "module-mr1r73cf4",
       "category": "Automation",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-LEAVE-03",
       "title": "Submit (Leave Management)",
-      "moduleId": "module-mr1qljx8453",
+      "moduleId": "module-mr1r73cf4",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-LEAVE-04",
       "title": "Manager Review (Leave Management)",
-      "moduleId": "module-mr1qljx8453",
+      "moduleId": "module-mr1r73cf4",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-LEAVE-05",
       "title": "Approve (Leave Management)",
-      "moduleId": "module-mr1qljx8453",
+      "moduleId": "module-mr1r73cf4",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-LEAVE-06",
       "title": "Reject (Leave Management)",
-      "moduleId": "module-mr1qljx8453",
+      "moduleId": "module-mr1r73cf4",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-LEAVE-07",
       "title": "Cancel (Leave Management)",
-      "moduleId": "module-mr1qljx8453",
+      "moduleId": "module-mr1r73cf4",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-LEAVE-08",
       "title": "Notify Requester (Leave Management)",
-      "moduleId": "module-mr1qljx8453",
+      "moduleId": "module-mr1r73cf4",
       "category": "Automation",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-LEAVE-09",
       "title": "Sync Downstream Impact (Leave Management)",
-      "moduleId": "module-mr1qljx8453",
+      "moduleId": "module-mr1r73cf4",
       "category": "Automation",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-LEAVE-10",
       "title": "Generate Report (Leave Management)",
-      "moduleId": "module-mr1qljx8453",
+      "moduleId": "module-mr1r73cf4",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PAYROLL-01",
       "title": "Create Order (Payroll Management)",
-      "moduleId": "module-mr1qljx8454",
+      "moduleId": "module-mr1r73cf5",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PAYROLL-02",
       "title": "Validate Stock/Pricing (Payroll Management)",
-      "moduleId": "module-mr1qljx8454",
+      "moduleId": "module-mr1r73cf5",
       "category": "Automation",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PAYROLL-03",
       "title": "Confirm Order (Payroll Management)",
-      "moduleId": "module-mr1qljx8454",
+      "moduleId": "module-mr1r73cf5",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PAYROLL-04",
       "title": "Process Payment (Payroll Management)",
-      "moduleId": "module-mr1qljx8454",
+      "moduleId": "module-mr1r73cf5",
       "category": "Automation",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PAYROLL-05",
       "title": "Fulfill/Prepare Order (Payroll Management)",
-      "moduleId": "module-mr1qljx8454",
+      "moduleId": "module-mr1r73cf5",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PAYROLL-06",
       "title": "Dispatch/Deliver (Payroll Management)",
-      "moduleId": "module-mr1qljx8454",
+      "moduleId": "module-mr1r73cf5",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PAYROLL-07",
       "title": "Mark Delivered (Payroll Management)",
-      "moduleId": "module-mr1qljx8454",
+      "moduleId": "module-mr1r73cf5",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PAYROLL-08",
       "title": "Handle Return/Refund (Payroll Management)",
-      "moduleId": "module-mr1qljx8454",
+      "moduleId": "module-mr1r73cf5",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PAYROLL-09",
       "title": "Generate Invoice (Payroll Management)",
-      "moduleId": "module-mr1qljx8454",
+      "moduleId": "module-mr1r73cf5",
       "category": "Automation",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PAYROLL-10",
       "title": "Notify Customer (Payroll Management)",
-      "moduleId": "module-mr1qljx8454",
+      "moduleId": "module-mr1r73cf5",
       "category": "Automation",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-RECRUITMENT-01",
       "title": "Create Recruitment Record (Recruitment)",
-      "moduleId": "module-mr1qljx8455",
+      "moduleId": "module-mr1r73cf6",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-RECRUITMENT-02",
       "title": "Edit Recruitment Record (Recruitment)",
-      "moduleId": "module-mr1qljx8455",
+      "moduleId": "module-mr1r73cf6",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-RECRUITMENT-03",
       "title": "Submit Recruitment for Review (Recruitment)",
-      "moduleId": "module-mr1qljx8455",
+      "moduleId": "module-mr1r73cf6",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-RECRUITMENT-04",
       "title": "Review Recruitment Record (Recruitment)",
-      "moduleId": "module-mr1qljx8455",
+      "moduleId": "module-mr1r73cf6",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-RECRUITMENT-05",
       "title": "Approve Recruitment Record (Recruitment)",
-      "moduleId": "module-mr1qljx8455",
+      "moduleId": "module-mr1r73cf6",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-RECRUITMENT-06",
       "title": "Reject Recruitment Record (Recruitment)",
-      "moduleId": "module-mr1qljx8455",
+      "moduleId": "module-mr1r73cf6",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-RECRUITMENT-07",
       "title": "Archive Recruitment Record (Recruitment)",
-      "moduleId": "module-mr1qljx8455",
+      "moduleId": "module-mr1r73cf6",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-RECRUITMENT-08",
       "title": "Audit Trail Capture (Recruitment)",
-      "moduleId": "module-mr1qljx8455",
+      "moduleId": "module-mr1r73cf6",
       "category": "Automation",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-RECRUITMENT-09",
       "title": "Notify Stakeholders (Recruitment)",
-      "moduleId": "module-mr1qljx8455",
+      "moduleId": "module-mr1r73cf6",
       "category": "Automation",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-RECRUITMENT-10",
       "title": "Generate Recruitment Report (Recruitment)",
-      "moduleId": "module-mr1qljx8455",
+      "moduleId": "module-mr1r73cf6",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PERFORMANCE-01",
       "title": "Create Performance Record (Performance Management)",
-      "moduleId": "module-mr1qljx8456",
+      "moduleId": "module-mr1r73cf7",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PERFORMANCE-02",
       "title": "Edit Performance Record (Performance Management)",
-      "moduleId": "module-mr1qljx8456",
+      "moduleId": "module-mr1r73cf7",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PERFORMANCE-03",
       "title": "Submit Performance for Review (Performance Management)",
-      "moduleId": "module-mr1qljx8456",
+      "moduleId": "module-mr1r73cf7",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PERFORMANCE-04",
       "title": "Review Performance Record (Performance Management)",
-      "moduleId": "module-mr1qljx8456",
+      "moduleId": "module-mr1r73cf7",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PERFORMANCE-05",
       "title": "Approve Performance Record (Performance Management)",
-      "moduleId": "module-mr1qljx8456",
+      "moduleId": "module-mr1r73cf7",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PERFORMANCE-06",
       "title": "Reject Performance Record (Performance Management)",
-      "moduleId": "module-mr1qljx8456",
+      "moduleId": "module-mr1r73cf7",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PERFORMANCE-07",
       "title": "Archive Performance Record (Performance Management)",
-      "moduleId": "module-mr1qljx8456",
+      "moduleId": "module-mr1r73cf7",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PERFORMANCE-08",
       "title": "Audit Trail Capture (Performance Management)",
-      "moduleId": "module-mr1qljx8456",
+      "moduleId": "module-mr1r73cf7",
       "category": "Automation",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PERFORMANCE-09",
       "title": "Notify Stakeholders (Performance Management)",
-      "moduleId": "module-mr1qljx8456",
+      "moduleId": "module-mr1r73cf7",
       "category": "Automation",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-PERFORMANCE-10",
       "title": "Generate Performance Report (Performance Management)",
-      "moduleId": "module-mr1qljx8456",
+      "moduleId": "module-mr1r73cf7",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-REPORTS-01",
       "title": "Create Reports Record (Reports)",
-      "moduleId": "module-mr1qljx8457",
+      "moduleId": "module-mr1r73cf8",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-REPORTS-02",
       "title": "Edit Reports Record (Reports)",
-      "moduleId": "module-mr1qljx8457",
+      "moduleId": "module-mr1r73cf8",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-REPORTS-03",
       "title": "Submit Reports for Review (Reports)",
-      "moduleId": "module-mr1qljx8457",
+      "moduleId": "module-mr1r73cf8",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-REPORTS-04",
       "title": "Review Reports Record (Reports)",
-      "moduleId": "module-mr1qljx8457",
+      "moduleId": "module-mr1r73cf8",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-REPORTS-05",
       "title": "Approve Reports Record (Reports)",
-      "moduleId": "module-mr1qljx8457",
+      "moduleId": "module-mr1r73cf8",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-REPORTS-06",
       "title": "Reject Reports Record (Reports)",
-      "moduleId": "module-mr1qljx8457",
+      "moduleId": "module-mr1r73cf8",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-REPORTS-07",
       "title": "Archive Reports Record (Reports)",
-      "moduleId": "module-mr1qljx8457",
+      "moduleId": "module-mr1r73cf8",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-REPORTS-08",
       "title": "Audit Trail Capture (Reports)",
-      "moduleId": "module-mr1qljx8457",
+      "moduleId": "module-mr1r73cf8",
       "category": "Automation",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-REPORTS-09",
       "title": "Notify Stakeholders (Reports)",
-      "moduleId": "module-mr1qljx8457",
+      "moduleId": "module-mr1r73cf8",
       "category": "Automation",
       "approvalStatus": "BASELINED"
     },
     {
       "id": "REQ-REPORTS-10",
       "title": "Generate Reports Report (Reports)",
-      "moduleId": "module-mr1qljx8457",
+      "moduleId": "module-mr1r73cf8",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     }
