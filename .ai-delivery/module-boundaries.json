@@ -1,45 +1,87 @@
 {
   "modules": [
     {
-      "id": "module-pr2e6lo",
+      "id": "module-xhyojdu",
       "name": "Employee Management",
       "description": "Employee Management capabilities for hrms.",
       "priority": "HIGH"
     },
     {
-      "id": "module-g139uaz",
+      "id": "module-0mzvyrc",
       "name": "Attendance Management",
       "description": "Attendance Management capabilities for hrms.",
       "priority": "HIGH"
     },
     {
-      "id": "module-krpuf3c",
+      "id": "module-vtd4o5a",
       "name": "Leave Management",
       "description": "Leave Management capabilities for hrms.",
       "priority": "MEDIUM"
     },
     {
-      "id": "module-o8xzayh",
+      "id": "module-mvo46ab",
       "name": "Payroll Management",
       "description": "Payroll Management capabilities for hrms.",
       "priority": "CRITICAL"
     },
     {
-      "id": "module-nuxntg5",
+      "id": "module-aigfxym",
       "name": "Recruitment",
       "description": "Recruitment capabilities for hrms.",
       "priority": "MEDIUM"
     },
     {
-      "id": "module-7idx917",
+      "id": "module-4kgfon8",
       "name": "Performance Management",
       "description": "Performance Management capabilities for hrms.",
       "priority": "MEDIUM"
     },
     {
-      "id": "module-75ttlti",
+      "id": "module-4gaghrc",
       "name": "Reports",
       "description": "Reports capabilities for hrms.",
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "module-mr3r20fu2",
+      "name": "Employee Management",
+      "description": "Employee Management capabilities within Human Resources.",
+      "priority": "HIGH"
+    },
+    {
+      "id": "module-mr3r20fu3",
+      "name": "Attendance Management",
+      "description": "Attendance Management capabilities within Human Resources.",
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "module-mr3r20fu4",
+      "name": "Leave Management",
+      "description": "Leave Management capabilities within Human Resources.",
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "module-mr3r20fu5",
+      "name": "Payroll Management",
+      "description": "Payroll Management capabilities within Human Resources.",
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "module-mr3r20fu6",
+      "name": "Recruitment",
+      "description": "Recruitment capabilities within Human Resources.",
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "module-mr3r20fu7",
+      "name": "Performance Management",
+      "description": "Performance Management capabilities within Human Resources.",
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "module-mr3r20fu8",
+      "name": "Reports",
+      "description": "Reports capabilities within Human Resources.",
       "priority": "MEDIUM"
     }
   ]
