@@ -1,0 +1,198 @@
+{
+  "id": "REQ-RECRUITMENT-01",
+  "title": "Create Recruitment Record (Recruitment)",
+  "module": "Recruitment",
+  "page": "Recruitment Workspace",
+  "category": "Workflow",
+  "workflowId": "workflow-mr3r20fv58",
+  "priority": "HIGH",
+  "acceptanceCriteria": [
+    "Owner can perform \"Create Recruitment Record\" only when business rules and validations for Recruitment are satisfied; result is reflected in status and audit trail.",
+    "Create Recruitment Record attempted with missing/invalid required fields",
+    "Create Recruitment Record attempted by a role without permission",
+    "Create Recruitment Record attempted on a record in an incompatible status"
+  ],
+  "businessRules": [
+    "required fields must be present before submission",
+    "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+    "only the owner or an admin may edit a record while in Draft",
+    "a rejected record requires a reason before the owner can resubmit"
+  ],
+  "source": "platform-requirement",
+  "workflow": {
+    "workflowId": "workflow-mr3r20fv58",
+    "step": "Create Recruitment Record (Recruitment)",
+    "role": "",
+    "stateTransition": "required fields must be present before submission | status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived | only the owner or an admin may edit a record while in Draft | a rejected record requires a reason before the owner can resubmit"
+  },
+  "business": {
+    "reason": "Supports the Record-Lifecycle Workflow business pattern for \"Recruitment\": Create Recruitment Record is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+    "workflowStep": "Create Recruitment Record (Recruitment)",
+    "role": "",
+    "businessRules": [
+      "required fields must be present before submission",
+      "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+      "only the owner or an admin may edit a record while in Draft",
+      "a rejected record requires a reason before the owner can resubmit"
+    ],
+    "validations": [
+      "required fields must be present before submission",
+      "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+      "only the owner or an admin may edit a record while in Draft",
+      "a rejected record requires a reason before the owner can resubmit"
+    ],
+    "stateTransition": "required fields must be present before submission | status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived | only the owner or an admin may edit a record while in Draft | a rejected record requires a reason before the owner can resubmit",
+    "acceptanceCriteria": [
+      "Owner can perform \"Create Recruitment Record\" only when business rules and validations for Recruitment are satisfied; result is reflected in status and audit trail.",
+      "Create Recruitment Record attempted with missing/invalid required fields",
+      "Create Recruitment Record attempted by a role without permission",
+      "Create Recruitment Record attempted on a record in an incompatible status"
+    ],
+    "edgeCases": [
+      "Invalid input",
+      "Unauthorized access",
+      "Incompatible status"
+    ],
+    "priority": "HIGH",
+    "complexity": "MEDIUM"
+  },
+  "ui": {
+    "page": "Recruitment Workspace",
+    "drawer": "Recruitment detail panel",
+    "form": "Recruitment form",
+    "fields": [],
+    "buttons": [],
+    "filters": [
+      "Employee Management Overview - UI Element: Employee Management status filter",
+      "Employee Management Overview - UI Element: Employee Management owner filter",
+      "Attendance Management Overview - UI Element: Attendance Management status filter",
+      "Attendance Management Overview - UI Element: Attendance Management owner filter",
+      "Leave Management Overview - UI Element: Leave Management status filter",
+      "Leave Management Overview - UI Element: Leave Management owner filter"
+    ],
+    "table": [
+      "Employee Management Overview - UI Element: Employee Management list table",
+      "Employee Management Overview - UI Element: Employee Management detail panel",
+      "Employee Management Overview - UI Element: Employee Management activity history",
+      "Employee Management Overview - UI Element: Employee Management evidence section",
+      "Attendance Management Overview - UI Element: Attendance Management list table",
+      "Attendance Management Overview - UI Element: Attendance Management detail panel",
+      "Attendance Management Overview - UI Element: Attendance Management activity history",
+      "Attendance Management Overview - UI Element: Attendance Management evidence section",
+      "Leave Management Overview - UI Element: Leave Management list table",
+      "Leave Management Overview - UI Element: Leave Management detail panel",
+      "Leave Management Overview - UI Element: Leave Management activity history",
+      "Leave Management Overview - UI Element: Leave Management evidence section"
+    ],
+    "states": [
+      "Employee Management Overview - State: Employee Management loading state",
+      "Employee Management Overview - State: Employee Management empty state",
+      "Employee Management Overview - State: Employee Management validation error state",
+      "Employee Management Overview - State: Employee Management permission denied state",
+      "Employee Management Overview - State: Employee Management approved state",
+      "Employee Management Overview - State: Employee Management blocked state",
+      "Attendance Management Overview - State: Attendance Management loading state",
+      "Attendance Management Overview - State: Attendance Management empty state",
+      "Attendance Management Overview - State: Attendance Management validation error state",
+      "Attendance Management Overview - State: Attendance Management permission denied state",
+      "Attendance Management Overview - State: Attendance Management approved state",
+      "Attendance Management Overview - State: Attendance Management blocked state",
+      "Leave Management Overview - State: Leave Management loading state",
+      "Leave Management Overview - State: Leave Management empty state",
+      "Leave Management Overview - State: Leave Management validation error state",
+      "Leave Management Overview - State: Leave Management permission denied state",
+      "Leave Management Overview - State: Leave Management approved state",
+      "Leave Management Overview - State: Leave Management blocked state"
+    ],
+    "navigation": [
+      "Recruitment Workspace"
+    ],
+    "components": [
+      "RecruitmentPage",
+      "RecruitmentPanel"
+    ],
+    "layout": [],
+    "template": "Not selected"
+  },
+  "automation": {
+    "positiveTests": [
+      "REQ-RECRUITMENT-01 happy path succeeds."
+    ],
+    "negativeTests": [
+      "REQ-RECRUITMENT-01 rejects invalid input."
+    ],
+    "validationTests": [
+      "Validate: required fields must be present before submission",
+      "Validate: status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+      "Validate: only the owner or an admin may edit a record while in Draft",
+      "Validate: a rejected record requires a reason before the owner can resubmit"
+    ],
+    "permissionTests": [
+      "Unauthorized users cannot execute REQ-RECRUITMENT-01."
+    ],
+    "workflowTests": [
+      "REQ-RECRUITMENT-01 participates in its workflow without breaking state."
+    ],
+    "apiTests": [],
+    "regressionTests": [
+      "Regression coverage for Create Recruitment Record (Recruitment)."
+    ],
+    "performanceTests": [],
+    "securityTests": [],
+    "evidenceRequired": [
+      "test result",
+      "screenshot or trace",
+      "requirement evidence entry"
+    ],
+    "coverageRules": [
+      "REQ-RECRUITMENT-01 must map to implementation evidence."
+    ]
+  },
+  "release": {
+    "impact": "Release impact must be assessed.",
+    "risk": "HIGH",
+    "rollbackStrategy": "Rollback files implementing REQ-RECRUITMENT-01; keep data migrations reversible where applicable.",
+    "dependencies": [
+      "Recruitment"
+    ],
+    "blockingRules": [
+      "Missing evidence requires exception"
+    ],
+    "qualityGateRules": [
+      "Validation passes",
+      "Requirement evidence exists"
+    ],
+    "releaseEvidence": [
+      "build-result.json",
+      "requirement-evidence.json"
+    ]
+  },
+  "traceability": {
+    "businessWorkflow": "workflow-mr3r20fv58",
+    "workflowStep": "Create Recruitment Record (Recruitment)",
+    "uiComponents": [
+      "RecruitmentPage"
+    ],
+    "files": [],
+    "apis": [],
+    "database": [],
+    "automationTests": [],
+    "qaResults": [],
+    "release": []
+  },
+  "evidence": {
+    "requiredFiles": [
+      ".ai-delivery/build-result.json",
+      ".ai-delivery/requirement-evidence.json"
+    ],
+    "requiredFields": [
+      "files",
+      "components",
+      "apis",
+      "databaseEntities",
+      "tests",
+      "status"
+    ],
+    "status": "Pending until coding agent writes evidence."
+  }
+}

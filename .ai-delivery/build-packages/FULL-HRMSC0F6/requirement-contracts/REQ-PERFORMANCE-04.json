@@ -1,0 +1,198 @@
+{
+  "id": "REQ-PERFORMANCE-04",
+  "title": "Review Performance Record (Performance Management)",
+  "module": "Performance Management",
+  "page": "Performance Workspace",
+  "category": "Workflow",
+  "workflowId": "workflow-mr3r20fv71",
+  "priority": "HIGH",
+  "acceptanceCriteria": [
+    "Reviewer can perform \"Review Performance Record\" only when business rules and validations for Performance are satisfied; result is reflected in status and audit trail.",
+    "Review Performance Record attempted with missing/invalid required fields",
+    "Review Performance Record attempted by a role without permission",
+    "Review Performance Record attempted on a record in an incompatible status"
+  ],
+  "businessRules": [
+    "required fields must be present before submission",
+    "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+    "only the owner or an admin may edit a record while in Draft",
+    "a rejected record requires a reason before the owner can resubmit"
+  ],
+  "source": "platform-requirement",
+  "workflow": {
+    "workflowId": "workflow-mr3r20fv71",
+    "step": "Review Performance Record (Performance Management)",
+    "role": "",
+    "stateTransition": "required fields must be present before submission | status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived | only the owner or an admin may edit a record while in Draft | a rejected record requires a reason before the owner can resubmit"
+  },
+  "business": {
+    "reason": "Supports the Record-Lifecycle Workflow business pattern for \"Performance Management\": Review Performance Record is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+    "workflowStep": "Review Performance Record (Performance Management)",
+    "role": "",
+    "businessRules": [
+      "required fields must be present before submission",
+      "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+      "only the owner or an admin may edit a record while in Draft",
+      "a rejected record requires a reason before the owner can resubmit"
+    ],
+    "validations": [
+      "required fields must be present before submission",
+      "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+      "only the owner or an admin may edit a record while in Draft",
+      "a rejected record requires a reason before the owner can resubmit"
+    ],
+    "stateTransition": "required fields must be present before submission | status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived | only the owner or an admin may edit a record while in Draft | a rejected record requires a reason before the owner can resubmit",
+    "acceptanceCriteria": [
+      "Reviewer can perform \"Review Performance Record\" only when business rules and validations for Performance are satisfied; result is reflected in status and audit trail.",
+      "Review Performance Record attempted with missing/invalid required fields",
+      "Review Performance Record attempted by a role without permission",
+      "Review Performance Record attempted on a record in an incompatible status"
+    ],
+    "edgeCases": [
+      "Invalid input",
+      "Unauthorized access",
+      "Incompatible status"
+    ],
+    "priority": "HIGH",
+    "complexity": "MEDIUM"
+  },
+  "ui": {
+    "page": "Performance Workspace",
+    "drawer": "Performance Management detail panel",
+    "form": "Performance Management form",
+    "fields": [],
+    "buttons": [],
+    "filters": [
+      "Employee Management Overview - UI Element: Employee Management status filter",
+      "Employee Management Overview - UI Element: Employee Management owner filter",
+      "Attendance Management Overview - UI Element: Attendance Management status filter",
+      "Attendance Management Overview - UI Element: Attendance Management owner filter",
+      "Leave Management Overview - UI Element: Leave Management status filter",
+      "Leave Management Overview - UI Element: Leave Management owner filter"
+    ],
+    "table": [
+      "Employee Management Overview - UI Element: Employee Management list table",
+      "Employee Management Overview - UI Element: Employee Management detail panel",
+      "Employee Management Overview - UI Element: Employee Management activity history",
+      "Employee Management Overview - UI Element: Employee Management evidence section",
+      "Attendance Management Overview - UI Element: Attendance Management list table",
+      "Attendance Management Overview - UI Element: Attendance Management detail panel",
+      "Attendance Management Overview - UI Element: Attendance Management activity history",
+      "Attendance Management Overview - UI Element: Attendance Management evidence section",
+      "Leave Management Overview - UI Element: Leave Management list table",
+      "Leave Management Overview - UI Element: Leave Management detail panel",
+      "Leave Management Overview - UI Element: Leave Management activity history",
+      "Leave Management Overview - UI Element: Leave Management evidence section"
+    ],
+    "states": [
+      "Employee Management Overview - State: Employee Management loading state",
+      "Employee Management Overview - State: Employee Management empty state",
+      "Employee Management Overview - State: Employee Management validation error state",
+      "Employee Management Overview - State: Employee Management permission denied state",
+      "Employee Management Overview - State: Employee Management approved state",
+      "Employee Management Overview - State: Employee Management blocked state",
+      "Attendance Management Overview - State: Attendance Management loading state",
+      "Attendance Management Overview - State: Attendance Management empty state",
+      "Attendance Management Overview - State: Attendance Management validation error state",
+      "Attendance Management Overview - State: Attendance Management permission denied state",
+      "Attendance Management Overview - State: Attendance Management approved state",
+      "Attendance Management Overview - State: Attendance Management blocked state",
+      "Leave Management Overview - State: Leave Management loading state",
+      "Leave Management Overview - State: Leave Management empty state",
+      "Leave Management Overview - State: Leave Management validation error state",
+      "Leave Management Overview - State: Leave Management permission denied state",
+      "Leave Management Overview - State: Leave Management approved state",
+      "Leave Management Overview - State: Leave Management blocked state"
+    ],
+    "navigation": [
+      "Performance Workspace"
+    ],
+    "components": [
+      "Performance ManagementPage",
+      "Performance ManagementPanel"
+    ],
+    "layout": [],
+    "template": "Not selected"
+  },
+  "automation": {
+    "positiveTests": [
+      "REQ-PERFORMANCE-04 happy path succeeds."
+    ],
+    "negativeTests": [
+      "REQ-PERFORMANCE-04 rejects invalid input."
+    ],
+    "validationTests": [
+      "Validate: required fields must be present before submission",
+      "Validate: status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+      "Validate: only the owner or an admin may edit a record while in Draft",
+      "Validate: a rejected record requires a reason before the owner can resubmit"
+    ],
+    "permissionTests": [
+      "Unauthorized users cannot execute REQ-PERFORMANCE-04."
+    ],
+    "workflowTests": [
+      "REQ-PERFORMANCE-04 participates in its workflow without breaking state."
+    ],
+    "apiTests": [],
+    "regressionTests": [
+      "Regression coverage for Review Performance Record (Performance Management)."
+    ],
+    "performanceTests": [],
+    "securityTests": [],
+    "evidenceRequired": [
+      "test result",
+      "screenshot or trace",
+      "requirement evidence entry"
+    ],
+    "coverageRules": [
+      "REQ-PERFORMANCE-04 must map to implementation evidence."
+    ]
+  },
+  "release": {
+    "impact": "Release impact must be assessed.",
+    "risk": "HIGH",
+    "rollbackStrategy": "Rollback files implementing REQ-PERFORMANCE-04; keep data migrations reversible where applicable.",
+    "dependencies": [
+      "Performance Management"
+    ],
+    "blockingRules": [
+      "Missing evidence requires exception"
+    ],
+    "qualityGateRules": [
+      "Validation passes",
+      "Requirement evidence exists"
+    ],
+    "releaseEvidence": [
+      "build-result.json",
+      "requirement-evidence.json"
+    ]
+  },
+  "traceability": {
+    "businessWorkflow": "workflow-mr3r20fv71",
+    "workflowStep": "Review Performance Record (Performance Management)",
+    "uiComponents": [
+      "Performance ManagementPage"
+    ],
+    "files": [],
+    "apis": [],
+    "database": [],
+    "automationTests": [],
+    "qaResults": [],
+    "release": []
+  },
+  "evidence": {
+    "requiredFiles": [
+      ".ai-delivery/build-result.json",
+      ".ai-delivery/requirement-evidence.json"
+    ],
+    "requiredFields": [
+      "files",
+      "components",
+      "apis",
+      "databaseEntities",
+      "tests",
+      "status"
+    ],
+    "status": "Pending until coding agent writes evidence."
+  }
+}

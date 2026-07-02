@@ -1,0 +1,16 @@
+{
+  "sharedComponents": [
+    "Table",
+    "Drawer",
+    "StatusBadge",
+    "FilterBar",
+    "Pagination",
+    "FormField"
+  ],
+  "moduleComponents": [
+    "Human ResourcesList",
+    "Human ResourcesForm",
+    "Human ResourcesDetail"
+  ],
+  "source": "No template selected - use shared/ui primitives only."
+}

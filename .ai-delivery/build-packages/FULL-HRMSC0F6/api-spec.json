@@ -1,0 +1,350 @@
+[
+  {
+    "method": "POST",
+    "endpoint": "/human-resourcess",
+    "description": "Create a new human-resources record",
+    "linkedRequirements": [
+      "REQ-HUMANRESOURCES-01"
+    ]
+  },
+  {
+    "method": "GET",
+    "endpoint": "/human-resourcess",
+    "description": "List human-resources records (filterable by owner, status)",
+    "linkedRequirements": []
+  },
+  {
+    "method": "GET",
+    "endpoint": "/human-resourcess/{id}",
+    "description": "Get full detail of a single human-resources record",
+    "linkedRequirements": [
+      "REQ-HUMANRESOURCES-03"
+    ]
+  },
+  {
+    "method": "PUT",
+    "endpoint": "/human-resourcess/{id}",
+    "description": "Update a human-resources record while still editable",
+    "linkedRequirements": []
+  },
+  {
+    "method": "POST",
+    "endpoint": "/human-resourcess/{id}/submit",
+    "description": "Submit a human-resources record for review",
+    "linkedRequirements": [
+      "REQ-HUMANRESOURCES-03"
+    ]
+  },
+  {
+    "method": "POST",
+    "endpoint": "/human-resourcess/{id}/approve",
+    "description": "Approve a human-resources record",
+    "linkedRequirements": [
+      "REQ-HUMANRESOURCES-05"
+    ]
+  },
+  {
+    "method": "POST",
+    "endpoint": "/human-resourcess/{id}/reject",
+    "description": "Reject a human-resources record with a reason",
+    "linkedRequirements": [
+      "REQ-HUMANRESOURCES-06"
+    ]
+  },
+  {
+    "method": "POST",
+    "endpoint": "/human-resourcess/{id}/archive",
+    "description": "Archive a human-resources record",
+    "linkedRequirements": [
+      "REQ-HUMANRESOURCES-07"
+    ]
+  },
+  {
+    "method": "GET",
+    "endpoint": "/human-resources-reports",
+    "description": "Generate human-resources summary reports",
+    "linkedRequirements": [
+      "REQ-HUMANRESOURCES-10"
+    ]
+  },
+  {
+    "method": "POST",
+    "endpoint": "/employees",
+    "description": "Create a new employee profile"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/employees/{id}",
+    "description": "Get full detail of a single employee record"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/employees/{id}/submit",
+    "description": "Submit employee record for approval"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/employees/{id}/approve",
+    "description": "Manager approves a employee record"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/employees/{id}/activate",
+    "description": "Admin activates an approved employee"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/employees/{id}/deactivate",
+    "description": "Deactivate / offboard a employee"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/employee-reports",
+    "description": "Generate employee directory and status reports"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/attendance-requests",
+    "description": "Submit a new attendance request"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/attendance-requests/{id}",
+    "description": "Get full detail of a single attendance request"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/attendance-requests/{id}/submit",
+    "description": "Submit a draft attendance request for approval"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/attendance-requests/{id}/approve",
+    "description": "Approver approves a pending attendance request"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/attendance-requests/{id}/reject",
+    "description": "Approver rejects a pending attendance request with a mandatory reason"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/attendance-requests/{id}/cancel",
+    "description": "Requester cancels their own pending attendance request"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/attendance-balances/{requesterId}",
+    "description": "Get remaining balance/eligibility for a requester"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/attendance-calendar",
+    "description": "Calendar view of approved attendance entries"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/attendance-reports",
+    "description": "Generate attendance utilization/summary reports"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/leave-requests",
+    "description": "Submit a new leave request"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/leave-requests/{id}",
+    "description": "Get full detail of a single leave request"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/leave-requests/{id}/submit",
+    "description": "Submit a draft leave request for approval"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/leave-requests/{id}/approve",
+    "description": "Approver approves a pending leave request"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/leave-requests/{id}/reject",
+    "description": "Approver rejects a pending leave request with a mandatory reason"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/leave-requests/{id}/cancel",
+    "description": "Requester cancels their own pending leave request"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/leave-balances/{requesterId}",
+    "description": "Get remaining balance/eligibility for a requester"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/leave-calendar",
+    "description": "Calendar view of approved leave entries"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/leave-reports",
+    "description": "Generate leave utilization/summary reports"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/payrolls",
+    "description": "Create a new payroll"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/payrolls/{id}",
+    "description": "Get full detail of a single payroll"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/payrolls/{id}/confirm",
+    "description": "Confirm a draft payroll"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/payrolls/{id}/pay",
+    "description": "Process payment for a payroll"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/payrolls/{id}/fulfill",
+    "description": "Mark a payroll as being prepared/fulfilled"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/payrolls/{id}/dispatch",
+    "description": "Dispatch a payroll for delivery"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/payrolls/{id}/deliver",
+    "description": "Mark a payroll as delivered"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/payrolls/{id}/refund",
+    "description": "Process a refund for a payroll"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/payroll-invoices/{id}",
+    "description": "Retrieve the generated invoice for a payroll"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/payroll-reports",
+    "description": "Generate sales/fulfillment reports"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/recruitments",
+    "description": "Create a new recruitment record"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/recruitments/{id}",
+    "description": "Get full detail of a single recruitment record"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/recruitments/{id}/submit",
+    "description": "Submit a recruitment record for review"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/recruitments/{id}/approve",
+    "description": "Approve a recruitment record"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/recruitments/{id}/reject",
+    "description": "Reject a recruitment record with a reason"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/recruitments/{id}/archive",
+    "description": "Archive a recruitment record"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/recruitment-reports",
+    "description": "Generate recruitment summary reports"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/performances",
+    "description": "Create a new performance record"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/performances/{id}",
+    "description": "Get full detail of a single performance record"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/performances/{id}/submit",
+    "description": "Submit a performance record for review"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/performances/{id}/approve",
+    "description": "Approve a performance record"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/performances/{id}/reject",
+    "description": "Reject a performance record with a reason"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/performances/{id}/archive",
+    "description": "Archive a performance record"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/performance-reports",
+    "description": "Generate performance summary reports"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/reportss",
+    "description": "Create a new reports record"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/reportss/{id}",
+    "description": "Get full detail of a single reports record"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/reportss/{id}/submit",
+    "description": "Submit a reports record for review"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/reportss/{id}/approve",
+    "description": "Approve a reports record"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/reportss/{id}/reject",
+    "description": "Reject a reports record with a reason"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/reportss/{id}/archive",
+    "description": "Archive a reports record"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/reports-reports",
+    "description": "Generate reports summary reports"
+  }
+]

@@ -1,0 +1,1029 @@
+{
+  "buildId": "FULL-HRMSC0F6",
+  "scope": "Full Application",
+  "compatibilityArtifact": true,
+  "supersededBy": [
+    "workflow-contract.json",
+    "requirement-contracts/*.json"
+  ],
+  "rule": "Primary implementation contract. Build these workflows before page-level UI details.",
+  "workflow": {
+    "rule": "Implement these first. They define the real business process and state transitions.",
+    "platformRequirements": [
+      {
+        "id": "REQ-0075",
+        "title": "Employee Management Overview - Function: Open Employee Management",
+        "module": "Employee Management",
+        "page": "Employee Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-yiqqe9b",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Open Employee Management\" is visible or functionally represented under Employee Management / Employee Management Overview.",
+          "The implementation uses Employee Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Employee Onboarding required fields are validated",
+          "Employee Onboarding business rules are enforced for Employee Management",
+          "Employee Onboarding status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0076",
+        "title": "Employee Management Overview - Function: Start Employee Onboarding",
+        "module": "Employee Management",
+        "page": "Employee Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-yiqqe9b",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Start Employee Onboarding\" is visible or functionally represented under Employee Management / Employee Management Overview.",
+          "The implementation uses Employee Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Employee Onboarding required fields are validated",
+          "Employee Onboarding business rules are enforced for Employee Management",
+          "Employee Onboarding status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0077",
+        "title": "Employee Management Overview - Function: Enter details",
+        "module": "Employee Management",
+        "page": "Employee Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-yiqqe9b",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Enter details\" is visible or functionally represented under Employee Management / Employee Management Overview.",
+          "The implementation uses Employee Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Employee Onboarding required fields are validated",
+          "Employee Onboarding business rules are enforced for Employee Management",
+          "Employee Onboarding status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0078",
+        "title": "Employee Management Overview - Function: Submit",
+        "module": "Employee Management",
+        "page": "Employee Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-yiqqe9b",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Submit\" is visible or functionally represented under Employee Management / Employee Management Overview.",
+          "The implementation uses Employee Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Employee Onboarding required fields are validated",
+          "Employee Onboarding business rules are enforced for Employee Management",
+          "Employee Onboarding status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0079",
+        "title": "Employee Management Overview - Function: Create Employee Management",
+        "module": "Employee Management",
+        "page": "Employee Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-yiqqe9b",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Create Employee Management\" is visible or functionally represented under Employee Management / Employee Management Overview.",
+          "The implementation uses Employee Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Employee Onboarding required fields are validated",
+          "Employee Onboarding business rules are enforced for Employee Management",
+          "Employee Onboarding status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0080",
+        "title": "Employee Management Overview - Function: Update Employee Management",
+        "module": "Employee Management",
+        "page": "Employee Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-yiqqe9b",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Update Employee Management\" is visible or functionally represented under Employee Management / Employee Management Overview.",
+          "The implementation uses Employee Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Employee Onboarding required fields are validated",
+          "Employee Onboarding business rules are enforced for Employee Management",
+          "Employee Onboarding status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0081",
+        "title": "Employee Management Overview - Function: Submit Employee Management for review",
+        "module": "Employee Management",
+        "page": "Employee Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-yiqqe9b",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Submit Employee Management for review\" is visible or functionally represented under Employee Management / Employee Management Overview.",
+          "The implementation uses Employee Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Employee Onboarding required fields are validated",
+          "Employee Onboarding business rules are enforced for Employee Management",
+          "Employee Onboarding status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0082",
+        "title": "Employee Management Overview - Function: Approve or reject Employee Management",
+        "module": "Employee Management",
+        "page": "Employee Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-yiqqe9b",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Approve or reject Employee Management\" is visible or functionally represented under Employee Management / Employee Management Overview.",
+          "The implementation uses Employee Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Employee Onboarding required fields are validated",
+          "Employee Onboarding business rules are enforced for Employee Management",
+          "Employee Onboarding status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0083",
+        "title": "Employee Management Overview - Function: Export Employee Management evidence",
+        "module": "Employee Management",
+        "page": "Employee Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-yiqqe9b",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Export Employee Management evidence\" is visible or functionally represented under Employee Management / Employee Management Overview.",
+          "The implementation uses Employee Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Employee Onboarding required fields are validated",
+          "Employee Onboarding business rules are enforced for Employee Management",
+          "Employee Onboarding status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0084",
+        "title": "Employee Management Overview - Function: Search and filter Employee Management",
+        "module": "Employee Management",
+        "page": "Employee Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-yiqqe9b",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Search and filter Employee Management\" is visible or functionally represented under Employee Management / Employee Management Overview.",
+          "The implementation uses Employee Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Employee Onboarding required fields are validated",
+          "Employee Onboarding business rules are enforced for Employee Management",
+          "Employee Onboarding status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0411",
+        "title": "Attendance Management Overview - Function: Open Attendance Management",
+        "module": "Attendance Management",
+        "page": "Attendance Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-qsn1h5b",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Open Attendance Management\" is visible or functionally represented under Attendance Management / Attendance Management Overview.",
+          "The implementation uses Attendance Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Mark Attendance required fields are validated",
+          "Mark Attendance business rules are enforced for Attendance Management",
+          "Mark Attendance status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0412",
+        "title": "Attendance Management Overview - Function: Start Mark Attendance",
+        "module": "Attendance Management",
+        "page": "Attendance Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-qsn1h5b",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Start Mark Attendance\" is visible or functionally represented under Attendance Management / Attendance Management Overview.",
+          "The implementation uses Attendance Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Mark Attendance required fields are validated",
+          "Mark Attendance business rules are enforced for Attendance Management",
+          "Mark Attendance status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0415",
+        "title": "Attendance Management Overview - Function: Create Attendance Management",
+        "module": "Attendance Management",
+        "page": "Attendance Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-qsn1h5b",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Create Attendance Management\" is visible or functionally represented under Attendance Management / Attendance Management Overview.",
+          "The implementation uses Attendance Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Mark Attendance required fields are validated",
+          "Mark Attendance business rules are enforced for Attendance Management",
+          "Mark Attendance status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0416",
+        "title": "Attendance Management Overview - Function: Update Attendance Management",
+        "module": "Attendance Management",
+        "page": "Attendance Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-qsn1h5b",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Update Attendance Management\" is visible or functionally represented under Attendance Management / Attendance Management Overview.",
+          "The implementation uses Attendance Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Mark Attendance required fields are validated",
+          "Mark Attendance business rules are enforced for Attendance Management",
+          "Mark Attendance status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0417",
+        "title": "Attendance Management Overview - Function: Submit Attendance Management for review",
+        "module": "Attendance Management",
+        "page": "Attendance Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-qsn1h5b",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Submit Attendance Management for review\" is visible or functionally represented under Attendance Management / Attendance Management Overview.",
+          "The implementation uses Attendance Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Mark Attendance required fields are validated",
+          "Mark Attendance business rules are enforced for Attendance Management",
+          "Mark Attendance status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0418",
+        "title": "Attendance Management Overview - Function: Approve or reject Attendance Management",
+        "module": "Attendance Management",
+        "page": "Attendance Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-qsn1h5b",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Approve or reject Attendance Management\" is visible or functionally represented under Attendance Management / Attendance Management Overview.",
+          "The implementation uses Attendance Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Mark Attendance required fields are validated",
+          "Mark Attendance business rules are enforced for Attendance Management",
+          "Mark Attendance status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0419",
+        "title": "Attendance Management Overview - Function: Export Attendance Management evidence",
+        "module": "Attendance Management",
+        "page": "Attendance Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-qsn1h5b",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Export Attendance Management evidence\" is visible or functionally represented under Attendance Management / Attendance Management Overview.",
+          "The implementation uses Attendance Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Mark Attendance required fields are validated",
+          "Mark Attendance business rules are enforced for Attendance Management",
+          "Mark Attendance status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0420",
+        "title": "Attendance Management Overview - Function: Search and filter Attendance Management",
+        "module": "Attendance Management",
+        "page": "Attendance Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-qsn1h5b",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Search and filter Attendance Management\" is visible or functionally represented under Attendance Management / Attendance Management Overview.",
+          "The implementation uses Attendance Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Mark Attendance required fields are validated",
+          "Mark Attendance business rules are enforced for Attendance Management",
+          "Mark Attendance status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0747",
+        "title": "Leave Management Overview - Function: Open Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Open Leave Management\" is visible or functionally represented under Leave Management / Leave Management Overview.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0748",
+        "title": "Leave Management Overview - Function: Start Apply Leave",
+        "module": "Leave Management",
+        "page": "Leave Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Start Apply Leave\" is visible or functionally represented under Leave Management / Leave Management Overview.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0751",
+        "title": "Leave Management Overview - Function: Create Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Create Leave Management\" is visible or functionally represented under Leave Management / Leave Management Overview.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0752",
+        "title": "Leave Management Overview - Function: Update Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Update Leave Management\" is visible or functionally represented under Leave Management / Leave Management Overview.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0753",
+        "title": "Leave Management Overview - Function: Submit Leave Management for review",
+        "module": "Leave Management",
+        "page": "Leave Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Submit Leave Management for review\" is visible or functionally represented under Leave Management / Leave Management Overview.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0754",
+        "title": "Leave Management Overview - Function: Approve or reject Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Approve or reject Leave Management\" is visible or functionally represented under Leave Management / Leave Management Overview.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0755",
+        "title": "Leave Management Overview - Function: Export Leave Management evidence",
+        "module": "Leave Management",
+        "page": "Leave Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Export Leave Management evidence\" is visible or functionally represented under Leave Management / Leave Management Overview.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0756",
+        "title": "Leave Management Overview - Function: Search and filter Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Search and filter Leave Management\" is visible or functionally represented under Leave Management / Leave Management Overview.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      }
+    ],
+    "domainAwareRequirements": [
+      {
+        "requirementId": "REQ-HUMANRESOURCES-01",
+        "module": "Human Resources",
+        "page": "HumanResources Workspace",
+        "feature": "Create HumanResources Record",
+        "requirementType": "Workflow",
+        "title": "Create HumanResources Record (Human Resources)",
+        "businessReason": "Supports the Record-Lifecycle Workflow business pattern for \"Human Resources\": Create HumanResources Record is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Owner",
+        "workflowStep": "Create HumanResources Record",
+        "fields": [
+          "HumanResourcesId",
+          "ownerId",
+          "title",
+          "description",
+          "category",
+          "status",
+          "reviewedBy",
+          "reviewComment",
+          "tags",
+          "attachments",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "required fields must be present before submission",
+          "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+          "only the owner or an admin may edit a record while in Draft",
+          "a rejected record requires a reason before the owner can resubmit"
+        ],
+        "apis": [
+          "POST /human-resourcess"
+        ],
+        "databaseEntities": [
+          "HumanResources",
+          "HumanResourcesAuditLog"
+        ],
+        "acceptanceCriteria": "Owner can perform \"Create HumanResources Record\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Create HumanResources Record attempted with missing/invalid required fields",
+          "Create HumanResources Record attempted by a role without permission",
+          "Create HumanResources Record attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Create HumanResources Record succeeds with valid data and authorized role",
+          "Negative: Create HumanResources Record rejected with invalid data",
+          "Access: Create HumanResources Record rejected for unauthorized role"
+        ],
+        "priority": "HIGH",
+        "complexity": "LOW",
+        "traceability": "Record-Lifecycle Workflow -> Human Resources -> Create HumanResources Record"
+      },
+      {
+        "requirementId": "REQ-HUMANRESOURCES-02",
+        "module": "Human Resources",
+        "page": "HumanResources Workspace",
+        "feature": "Edit HumanResources Record",
+        "requirementType": "Workflow",
+        "title": "Edit HumanResources Record (Human Resources)",
+        "businessReason": "Supports the Record-Lifecycle Workflow business pattern for \"Human Resources\": Edit HumanResources Record is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Owner",
+        "workflowStep": "Edit HumanResources Record",
+        "fields": [
+          "HumanResourcesId",
+          "ownerId",
+          "title",
+          "description",
+          "category",
+          "status",
+          "reviewedBy",
+          "reviewComment",
+          "tags",
+          "attachments",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "required fields must be present before submission",
+          "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+          "only the owner or an admin may edit a record while in Draft",
+          "a rejected record requires a reason before the owner can resubmit"
+        ],
+        "apis": [],
+        "databaseEntities": [
+          "HumanResources",
+          "HumanResourcesAuditLog"
+        ],
+        "acceptanceCriteria": "Owner can perform \"Edit HumanResources Record\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Edit HumanResources Record attempted with missing/invalid required fields",
+          "Edit HumanResources Record attempted by a role without permission",
+          "Edit HumanResources Record attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Edit HumanResources Record succeeds with valid data and authorized role",
+          "Negative: Edit HumanResources Record rejected with invalid data",
+          "Access: Edit HumanResources Record rejected for unauthorized role"
+        ],
+        "priority": "HIGH",
+        "complexity": "LOW",
+        "traceability": "Record-Lifecycle Workflow -> Human Resources -> Edit HumanResources Record"
+      },
+      {
+        "requirementId": "REQ-HUMANRESOURCES-03",
+        "module": "Human Resources",
+        "page": "HumanResources Workspace",
+        "feature": "Submit HumanResources for Review",
+        "requirementType": "Workflow",
+        "title": "Submit HumanResources for Review (Human Resources)",
+        "businessReason": "Supports the Record-Lifecycle Workflow business pattern for \"Human Resources\": Submit HumanResources for Review is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Owner",
+        "workflowStep": "Submit HumanResources for Review",
+        "fields": [
+          "HumanResourcesId",
+          "ownerId",
+          "title",
+          "description",
+          "category",
+          "status",
+          "reviewedBy",
+          "reviewComment",
+          "tags",
+          "attachments",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "required fields must be present before submission",
+          "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+          "only the owner or an admin may edit a record while in Draft",
+          "a rejected record requires a reason before the owner can resubmit"
+        ],
+        "apis": [
+          "GET /human-resourcess/{id}",
+          "POST /human-resourcess/{id}/submit"
+        ],
+        "databaseEntities": [
+          "HumanResources",
+          "HumanResourcesAuditLog"
+        ],
+        "acceptanceCriteria": "Owner can perform \"Submit HumanResources for Review\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Submit HumanResources for Review attempted with missing/invalid required fields",
+          "Submit HumanResources for Review attempted by a role without permission",
+          "Submit HumanResources for Review attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Submit HumanResources for Review succeeds with valid data and authorized role",
+          "Negative: Submit HumanResources for Review rejected with invalid data",
+          "Access: Submit HumanResources for Review rejected for unauthorized role"
+        ],
+        "priority": "HIGH",
+        "complexity": "LOW",
+        "traceability": "Record-Lifecycle Workflow -> Human Resources -> Submit HumanResources for Review"
+      },
+      {
+        "requirementId": "REQ-HUMANRESOURCES-04",
+        "module": "Human Resources",
+        "page": "HumanResources Workspace",
+        "feature": "Review HumanResources Record",
+        "requirementType": "Workflow",
+        "title": "Review HumanResources Record (Human Resources)",
+        "businessReason": "Supports the Record-Lifecycle Workflow business pattern for \"Human Resources\": Review HumanResources Record is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Reviewer",
+        "workflowStep": "Review HumanResources Record",
+        "fields": [
+          "HumanResourcesId",
+          "ownerId",
+          "title",
+          "description",
+          "category",
+          "status",
+          "reviewedBy",
+          "reviewComment",
+          "tags",
+          "attachments",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "required fields must be present before submission",
+          "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+          "only the owner or an admin may edit a record while in Draft",
+          "a rejected record requires a reason before the owner can resubmit"
+        ],
+        "apis": [],
+        "databaseEntities": [
+          "HumanResources",
+          "HumanResourcesAuditLog"
+        ],
+        "acceptanceCriteria": "Reviewer can perform \"Review HumanResources Record\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Review HumanResources Record attempted with missing/invalid required fields",
+          "Review HumanResources Record attempted by a role without permission",
+          "Review HumanResources Record attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Review HumanResources Record succeeds with valid data and authorized role",
+          "Negative: Review HumanResources Record rejected with invalid data",
+          "Access: Review HumanResources Record rejected for unauthorized role"
+        ],
+        "priority": "HIGH",
+        "complexity": "LOW",
+        "traceability": "Record-Lifecycle Workflow -> Human Resources -> Review HumanResources Record"
+      },
+      {
+        "requirementId": "REQ-HUMANRESOURCES-05",
+        "module": "Human Resources",
+        "page": "HumanResources Workspace",
+        "feature": "Approve HumanResources Record",
+        "requirementType": "Workflow",
+        "title": "Approve HumanResources Record (Human Resources)",
+        "businessReason": "Supports the Record-Lifecycle Workflow business pattern for \"Human Resources\": Approve HumanResources Record is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Reviewer",
+        "workflowStep": "Approve HumanResources Record",
+        "fields": [
+          "HumanResourcesId",
+          "ownerId",
+          "title",
+          "description",
+          "category",
+          "status",
+          "reviewedBy",
+          "reviewComment",
+          "tags",
+          "attachments",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "required fields must be present before submission",
+          "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+          "only the owner or an admin may edit a record while in Draft",
+          "a rejected record requires a reason before the owner can resubmit"
+        ],
+        "apis": [
+          "POST /human-resourcess/{id}/approve"
+        ],
+        "databaseEntities": [
+          "HumanResources",
+          "HumanResourcesAuditLog"
+        ],
+        "acceptanceCriteria": "Reviewer can perform \"Approve HumanResources Record\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Approve HumanResources Record attempted with missing/invalid required fields",
+          "Approve HumanResources Record attempted by a role without permission",
+          "Approve HumanResources Record attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Approve HumanResources Record succeeds with valid data and authorized role",
+          "Negative: Approve HumanResources Record rejected with invalid data",
+          "Access: Approve HumanResources Record rejected for unauthorized role"
+        ],
+        "priority": "MEDIUM",
+        "complexity": "LOW",
+        "traceability": "Record-Lifecycle Workflow -> Human Resources -> Approve HumanResources Record"
+      },
+      {
+        "requirementId": "REQ-HUMANRESOURCES-06",
+        "module": "Human Resources",
+        "page": "HumanResources Workspace",
+        "feature": "Reject HumanResources Record",
+        "requirementType": "Workflow",
+        "title": "Reject HumanResources Record (Human Resources)",
+        "businessReason": "Supports the Record-Lifecycle Workflow business pattern for \"Human Resources\": Reject HumanResources Record is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Reviewer",
+        "workflowStep": "Reject HumanResources Record",
+        "fields": [
+          "HumanResourcesId",
+          "ownerId",
+          "title",
+          "description",
+          "category",
+          "status",
+          "reviewedBy",
+          "reviewComment",
+          "tags",
+          "attachments",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "required fields must be present before submission",
+          "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+          "only the owner or an admin may edit a record while in Draft",
+          "a rejected record requires a reason before the owner can resubmit"
+        ],
+        "apis": [
+          "POST /human-resourcess/{id}/reject"
+        ],
+        "databaseEntities": [
+          "HumanResources",
+          "HumanResourcesAuditLog"
+        ],
+        "acceptanceCriteria": "Reviewer can perform \"Reject HumanResources Record\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Reject HumanResources Record attempted with missing/invalid required fields",
+          "Reject HumanResources Record attempted by a role without permission",
+          "Reject HumanResources Record attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Reject HumanResources Record succeeds with valid data and authorized role",
+          "Negative: Reject HumanResources Record rejected with invalid data",
+          "Access: Reject HumanResources Record rejected for unauthorized role"
+        ],
+        "priority": "MEDIUM",
+        "complexity": "LOW",
+        "traceability": "Record-Lifecycle Workflow -> Human Resources -> Reject HumanResources Record"
+      },
+      {
+        "requirementId": "REQ-HUMANRESOURCES-07",
+        "module": "Human Resources",
+        "page": "HumanResources Workspace",
+        "feature": "Archive HumanResources Record",
+        "requirementType": "Workflow",
+        "title": "Archive HumanResources Record (Human Resources)",
+        "businessReason": "Supports the Record-Lifecycle Workflow business pattern for \"Human Resources\": Archive HumanResources Record is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Admin",
+        "workflowStep": "Archive HumanResources Record",
+        "fields": [
+          "HumanResourcesId",
+          "ownerId",
+          "title",
+          "description",
+          "category",
+          "status",
+          "reviewedBy",
+          "reviewComment",
+          "tags",
+          "attachments",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "required fields must be present before submission",
+          "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+          "only the owner or an admin may edit a record while in Draft",
+          "a rejected record requires a reason before the owner can resubmit"
+        ],
+        "apis": [
+          "POST /human-resourcess/{id}/archive"
+        ],
+        "databaseEntities": [
+          "HumanResources",
+          "HumanResourcesAuditLog"
+        ],
+        "acceptanceCriteria": "Admin can perform \"Archive HumanResources Record\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Archive HumanResources Record attempted with missing/invalid required fields",
+          "Archive HumanResources Record attempted by a role without permission",
+          "Archive HumanResources Record attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Archive HumanResources Record succeeds with valid data and authorized role",
+          "Negative: Archive HumanResources Record rejected with invalid data",
+          "Access: Archive HumanResources Record rejected for unauthorized role"
+        ],
+        "priority": "MEDIUM",
+        "complexity": "LOW",
+        "traceability": "Record-Lifecycle Workflow -> Human Resources -> Archive HumanResources Record"
+      },
+      {
+        "requirementId": "REQ-HUMANRESOURCES-08",
+        "module": "Human Resources",
+        "page": "HumanResources Workspace",
+        "feature": "Audit Trail Capture",
+        "requirementType": "Automation",
+        "title": "Audit Trail Capture (Human Resources)",
+        "businessReason": "Supports the Record-Lifecycle Workflow business pattern for \"Human Resources\": Audit Trail Capture is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "System",
+        "workflowStep": "Audit Trail Capture",
+        "fields": [
+          "HumanResourcesId",
+          "ownerId",
+          "title",
+          "description",
+          "category",
+          "status",
+          "reviewedBy",
+          "reviewComment",
+          "tags",
+          "attachments",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "required fields must be present before submission",
+          "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+          "only the owner or an admin may edit a record while in Draft",
+          "a rejected record requires a reason before the owner can resubmit"
+        ],
+        "apis": [
+          "EVENT audit/downstream-impact-log"
+        ],
+        "databaseEntities": [
+          "HumanResources",
+          "HumanResourcesAuditLog"
+        ],
+        "acceptanceCriteria": "System can perform \"Audit Trail Capture\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Audit Trail Capture attempted with missing/invalid required fields",
+          "Audit Trail Capture attempted by a role without permission",
+          "Audit Trail Capture attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Audit Trail Capture succeeds with valid data and authorized role",
+          "Negative: Audit Trail Capture rejected with invalid data",
+          "Access: Audit Trail Capture rejected for unauthorized role"
+        ],
+        "priority": "LOW",
+        "complexity": "MEDIUM",
+        "traceability": "Record-Lifecycle Workflow -> Human Resources -> Audit Trail Capture"
+      },
+      {
+        "requirementId": "REQ-HUMANRESOURCES-09",
+        "module": "Human Resources",
+        "page": "HumanResources Workspace",
+        "feature": "Notify Stakeholders",
+        "requirementType": "Automation",
+        "title": "Notify Stakeholders (Human Resources)",
+        "businessReason": "Supports the Record-Lifecycle Workflow business pattern for \"Human Resources\": Notify Stakeholders is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "System",
+        "workflowStep": "Notify Stakeholders",
+        "fields": [
+          "HumanResourcesId",
+          "ownerId",
+          "title",
+          "description",
+          "category",
+          "status",
+          "reviewedBy",
+          "reviewComment",
+          "tags",
+          "attachments",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "required fields must be present before submission",
+          "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+          "only the owner or an admin may edit a record while in Draft",
+          "a rejected record requires a reason before the owner can resubmit"
+        ],
+        "apis": [
+          "EVENT notification/requester-log (no direct CRUD endpoint)"
+        ],
+        "databaseEntities": [
+          "HumanResources",
+          "HumanResourcesAuditLog"
+        ],
+        "acceptanceCriteria": "System can perform \"Notify Stakeholders\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Notify Stakeholders attempted with missing/invalid required fields",
+          "Notify Stakeholders attempted by a role without permission",
+          "Notify Stakeholders attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Notify Stakeholders succeeds with valid data and authorized role",
+          "Negative: Notify Stakeholders rejected with invalid data",
+          "Access: Notify Stakeholders rejected for unauthorized role"
+        ],
+        "priority": "LOW",
+        "complexity": "MEDIUM",
+        "traceability": "Record-Lifecycle Workflow -> Human Resources -> Notify Stakeholders"
+      },
+      {
+        "requirementId": "REQ-HUMANRESOURCES-10",
+        "module": "Human Resources",
+        "page": "HumanResources Workspace",
+        "feature": "Generate HumanResources Report",
+        "requirementType": "Workflow",
+        "title": "Generate HumanResources Report (Human Resources)",
+        "businessReason": "Supports the Record-Lifecycle Workflow business pattern for \"Human Resources\": Generate HumanResources Report is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Admin",
+        "workflowStep": "Generate HumanResources Report",
+        "fields": [
+          "HumanResourcesId",
+          "ownerId",
+          "title",
+          "description",
+          "category",
+          "status",
+          "reviewedBy",
+          "reviewComment",
+          "tags",
+          "attachments",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "required fields must be present before submission",
+          "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+          "only the owner or an admin may edit a record while in Draft",
+          "a rejected record requires a reason before the owner can resubmit"
+        ],
+        "apis": [
+          "GET /human-resources-reports"
+        ],
+        "databaseEntities": [
+          "HumanResources",
+          "HumanResourcesAuditLog"
+        ],
+        "acceptanceCriteria": "Admin can perform \"Generate HumanResources Report\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Generate HumanResources Report attempted with missing/invalid required fields",
+          "Generate HumanResources Report attempted by a role without permission",
+          "Generate HumanResources Report attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Generate HumanResources Report succeeds with valid data and authorized role",
+          "Negative: Generate HumanResources Report rejected with invalid data",
+          "Access: Generate HumanResources Report rejected for unauthorized role"
+        ],
+        "priority": "LOW",
+        "complexity": "LOW",
+        "traceability": "Record-Lifecycle Workflow -> Human Resources -> Generate HumanResources Report"
+      }
+    ],
+    "aiEnrichedRequirements": []
+  }
+}

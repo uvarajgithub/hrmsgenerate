@@ -1,0 +1,111 @@
+{
+  "module": "Human Resources",
+  "compatibilityArtifact": true,
+  "supersededBy": [
+    "workflow-contract.json",
+    "automation-assets.json",
+    "requirement-contracts/*.json"
+  ],
+  "patternMatched": "Record-Lifecycle Workflow",
+  "roles": [
+    "Owner",
+    "Reviewer",
+    "Admin"
+  ],
+  "scenarios": [
+    {
+      "requirementId": "REQ-HUMANRESOURCES-01",
+      "positiveTest": "Create HumanResources Record succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Create HumanResources Record is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Create HumanResources Record is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Human Resources is independently exercised against Create HumanResources Record.",
+      "workflowTest": "Full lifecycle test: create -> Create HumanResources Record -> downstream state is consistent with the Record-Lifecycle Workflow pattern.",
+      "regressionRisk": "High - core lifecycle step, breaking this blocks the whole module"
+    },
+    {
+      "requirementId": "REQ-HUMANRESOURCES-02",
+      "positiveTest": "Edit HumanResources Record succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Edit HumanResources Record is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Edit HumanResources Record is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Human Resources is independently exercised against Edit HumanResources Record.",
+      "workflowTest": "Full lifecycle test: create -> Edit HumanResources Record -> downstream state is consistent with the Record-Lifecycle Workflow pattern.",
+      "regressionRisk": "High - core lifecycle step, breaking this blocks the whole module"
+    },
+    {
+      "requirementId": "REQ-HUMANRESOURCES-03",
+      "positiveTest": "Submit HumanResources for Review succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Submit HumanResources for Review is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Submit HumanResources for Review is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Human Resources is independently exercised against Submit HumanResources for Review.",
+      "workflowTest": "Full lifecycle test: create -> Submit HumanResources for Review -> downstream state is consistent with the Record-Lifecycle Workflow pattern.",
+      "regressionRisk": "High - core lifecycle step, breaking this blocks the whole module"
+    },
+    {
+      "requirementId": "REQ-HUMANRESOURCES-04",
+      "positiveTest": "Review HumanResources Record succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Review HumanResources Record is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Review HumanResources Record is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Human Resources is independently exercised against Review HumanResources Record.",
+      "workflowTest": "Full lifecycle test: create -> Review HumanResources Record -> downstream state is consistent with the Record-Lifecycle Workflow pattern.",
+      "regressionRisk": "High - core lifecycle step, breaking this blocks the whole module"
+    },
+    {
+      "requirementId": "REQ-HUMANRESOURCES-05",
+      "positiveTest": "Approve HumanResources Record succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Approve HumanResources Record is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Approve HumanResources Record is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Human Resources is independently exercised against Approve HumanResources Record.",
+      "workflowTest": "Full lifecycle test: create -> Approve HumanResources Record -> downstream state is consistent with the Record-Lifecycle Workflow pattern.",
+      "regressionRisk": "Medium - secondary step, breaking this degrades but does not block the module"
+    },
+    {
+      "requirementId": "REQ-HUMANRESOURCES-06",
+      "positiveTest": "Reject HumanResources Record succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Reject HumanResources Record is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Reject HumanResources Record is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Human Resources is independently exercised against Reject HumanResources Record.",
+      "workflowTest": "Full lifecycle test: create -> Reject HumanResources Record -> downstream state is consistent with the Record-Lifecycle Workflow pattern.",
+      "regressionRisk": "Medium - secondary step, breaking this degrades but does not block the module"
+    },
+    {
+      "requirementId": "REQ-HUMANRESOURCES-07",
+      "positiveTest": "Archive HumanResources Record succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Archive HumanResources Record is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Archive HumanResources Record is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Human Resources is independently exercised against Archive HumanResources Record.",
+      "workflowTest": "Full lifecycle test: create -> Archive HumanResources Record -> downstream state is consistent with the Record-Lifecycle Workflow pattern.",
+      "regressionRisk": "Medium - secondary step, breaking this degrades but does not block the module"
+    },
+    {
+      "requirementId": "REQ-HUMANRESOURCES-08",
+      "positiveTest": "Audit Trail Capture succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Audit Trail Capture is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Audit Trail Capture is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Human Resources is independently exercised against Audit Trail Capture.",
+      "workflowTest": "Full lifecycle test: create -> Audit Trail Capture -> downstream state is consistent with the Record-Lifecycle Workflow pattern.",
+      "regressionRisk": "Medium - secondary step, breaking this degrades but does not block the module"
+    },
+    {
+      "requirementId": "REQ-HUMANRESOURCES-09",
+      "positiveTest": "Notify Stakeholders succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Notify Stakeholders is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Notify Stakeholders is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Human Resources is independently exercised against Notify Stakeholders.",
+      "workflowTest": "Full lifecycle test: create -> Notify Stakeholders -> downstream state is consistent with the Record-Lifecycle Workflow pattern.",
+      "regressionRisk": "Medium - secondary step, breaking this degrades but does not block the module"
+    },
+    {
+      "requirementId": "REQ-HUMANRESOURCES-10",
+      "positiveTest": "Generate HumanResources Report succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Generate HumanResources Report is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Generate HumanResources Report is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Human Resources is independently exercised against Generate HumanResources Report.",
+      "workflowTest": "Full lifecycle test: create -> Generate HumanResources Report -> downstream state is consistent with the Record-Lifecycle Workflow pattern.",
+      "regressionRisk": "Medium - secondary step, breaking this degrades but does not block the module"
+    }
+  ],
+  "reports": [
+    "HumanResources Status Report",
+    "HumanResources Activity Report"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "commands": [
+    "npm run build",
+    "npm run lint",
+    "npm test"
+  ],
+  "rule": "All three commands must pass before this build is marked complete. Do not mark IMPLEMENTED without evidence.",
+  "businessValidations": [
+    "required fields must be present before submission",
+    "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+    "only the owner or an admin may edit a record while in Draft",
+    "a rejected record requires a reason before the owner can resubmit"
+  ],
+  "businessValidationSource": "local Domain Intelligence Engine only (pattern matched: Record-Lifecycle Workflow)"
+}

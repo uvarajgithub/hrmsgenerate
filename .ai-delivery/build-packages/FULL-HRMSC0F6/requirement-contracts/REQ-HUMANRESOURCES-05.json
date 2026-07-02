@@ -1,0 +1,210 @@
+{
+  "id": "REQ-HUMANRESOURCES-05",
+  "title": "Approve HumanResources Record (Human Resources)",
+  "module": "Human Resources",
+  "page": "HumanResources Workspace",
+  "category": "Workflow",
+  "workflowId": "Record-Lifecycle Workflow",
+  "priority": "MEDIUM",
+  "acceptanceCriteria": [
+    "Reviewer can perform \"Approve HumanResources Record\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail."
+  ],
+  "businessRules": [
+    "required fields must be present before submission",
+    "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+    "only the owner or an admin may edit a record while in Draft",
+    "a rejected record requires a reason before the owner can resubmit"
+  ],
+  "source": "domain-intelligence",
+  "workflow": {
+    "name": "Record-Lifecycle Workflow",
+    "step": "Approve HumanResources Record",
+    "role": "Reviewer",
+    "stateTransition": "Record-Lifecycle Workflow -> Human Resources -> Approve HumanResources Record"
+  },
+  "business": {
+    "reason": "Supports the Record-Lifecycle Workflow business pattern for \"Human Resources\": Approve HumanResources Record is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+    "workflowStep": "Approve HumanResources Record",
+    "role": "Reviewer",
+    "businessRules": [
+      "required fields must be present before submission",
+      "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+      "only the owner or an admin may edit a record while in Draft",
+      "a rejected record requires a reason before the owner can resubmit"
+    ],
+    "validations": [
+      "required fields must be present before submission",
+      "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+      "only the owner or an admin may edit a record while in Draft",
+      "a rejected record requires a reason before the owner can resubmit"
+    ],
+    "stateTransition": "Record-Lifecycle Workflow -> Human Resources -> Approve HumanResources Record",
+    "acceptanceCriteria": "Reviewer can perform \"Approve HumanResources Record\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.",
+    "edgeCases": [
+      "Approve HumanResources Record attempted with missing/invalid required fields",
+      "Approve HumanResources Record attempted by a role without permission",
+      "Approve HumanResources Record attempted on a record in an incompatible status"
+    ],
+    "priority": "MEDIUM",
+    "complexity": "LOW"
+  },
+  "ui": {
+    "page": "HumanResources Workspace",
+    "drawer": "Human Resources detail drawer",
+    "form": "Approve HumanResources Record form/actions",
+    "fields": [
+      "HumanResourcesId",
+      "ownerId",
+      "title",
+      "description",
+      "category",
+      "status",
+      "reviewedBy",
+      "reviewComment",
+      "tags",
+      "attachments",
+      "createdAt",
+      "updatedAt"
+    ],
+    "buttons": [
+      "Create HumanResources Record",
+      "Edit HumanResources Record",
+      "Submit HumanResources for Review",
+      "Review HumanResources Record",
+      "Approve HumanResources Record",
+      "Reject HumanResources Record",
+      "Archive HumanResources Record",
+      "Audit Trail Capture",
+      "Notify Stakeholders",
+      "Generate HumanResources Report"
+    ],
+    "filters": [
+      "Status",
+      "Date Range",
+      "Assigned Role",
+      "Search by ID/Name"
+    ],
+    "table": "HumanResources List (sortable, filterable by status/role)",
+    "states": [
+      "Loading",
+      "Empty",
+      "Error",
+      "Populated",
+      "Submitting Action"
+    ],
+    "navigation": [
+      "Entry from module sidebar",
+      "Detail drawer opens from list row click",
+      "Back to list from detail view"
+    ],
+    "components": [
+      "Human ResourcesWorkspace",
+      "Human ResourcesDetailDrawer",
+      "Human ResourcesActionBar"
+    ],
+    "layout": [
+      "Header/Filters",
+      "HumanResources List/Table",
+      "HumanResources Detail Drawer",
+      "Action Bar",
+      "Status Timeline"
+    ],
+    "template": "Not selected"
+  },
+  "automation": {
+    "positiveTests": [
+      "Approve HumanResources Record succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly."
+    ],
+    "negativeTests": [
+      "Approve HumanResources Record is rejected when required fields are missing or invalid, with a clear error message."
+    ],
+    "validationTests": [
+      "Each business validation listed for Human Resources is independently exercised against Approve HumanResources Record."
+    ],
+    "permissionTests": [
+      "Approve HumanResources Record is rejected for any role not listed in this step's authorized roles."
+    ],
+    "workflowTests": [
+      "Full lifecycle test: create -> Approve HumanResources Record -> downstream state is consistent with the Record-Lifecycle Workflow pattern."
+    ],
+    "apiTests": [
+      "POST /human-resourcess/{id}/approve"
+    ],
+    "regressionTests": [
+      "Medium - secondary step, breaking this degrades but does not block the module"
+    ],
+    "performanceTests": [],
+    "securityTests": [
+      "Verify role-based access for Reviewer."
+    ],
+    "evidenceRequired": [
+      "test result",
+      "screenshot or trace",
+      "requirement evidence entry"
+    ],
+    "coverageRules": [
+      "REQ-HUMANRESOURCES-05 must map to at least one test and one implementation file."
+    ]
+  },
+  "release": {
+    "impact": "Release impact must be reviewed.",
+    "risk": "LOW",
+    "rollbackStrategy": "Disable or roll back Human Resources Approve HumanResources Record changes while preserving audit data.",
+    "dependencies": [
+      "HumanResources",
+      "HumanResourcesAuditLog"
+    ],
+    "blockingRules": [
+      "Missing evidence requires signoff exception"
+    ],
+    "qualityGateRules": [
+      "All validation commands pass",
+      "Requirement evidence exists",
+      "No critical defects open"
+    ],
+    "releaseEvidence": [
+      "build-result.json",
+      "requirement-evidence.json",
+      "qa-result.json"
+    ]
+  },
+  "traceability": {
+    "businessWorkflow": "Record-Lifecycle Workflow",
+    "workflowStep": "Approve HumanResources Record",
+    "uiComponents": [
+      "Human ResourcesWorkspace",
+      "Human ResourcesDetailDrawer",
+      "Human ResourcesActionBar"
+    ],
+    "files": [],
+    "apis": [
+      "POST /human-resourcess/{id}/approve"
+    ],
+    "database": [
+      "HumanResources",
+      "HumanResourcesAuditLog"
+    ],
+    "automationTests": [
+      "Positive: Approve HumanResources Record succeeds with valid data and authorized role",
+      "Negative: Approve HumanResources Record rejected with invalid data",
+      "Access: Approve HumanResources Record rejected for unauthorized role"
+    ],
+    "qaResults": [],
+    "release": []
+  },
+  "evidence": {
+    "requiredFiles": [
+      ".ai-delivery/build-result.json",
+      ".ai-delivery/requirement-evidence.json"
+    ],
+    "requiredFields": [
+      "files",
+      "components",
+      "apis",
+      "databaseEntities",
+      "tests",
+      "status"
+    ],
+    "status": "Pending until coding agent writes evidence."
+  }
+}

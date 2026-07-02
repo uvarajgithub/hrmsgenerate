@@ -1,0 +1,525 @@
+{
+  "module": "Human Resources",
+  "source": "local Domain Intelligence Engine only (pattern matched: Record-Lifecycle Workflow)",
+  "pages": [
+    {
+      "pageName": "Employee Workspace",
+      "requirementIds": [
+        "REQ-EMPLOYEE-01",
+        "REQ-EMPLOYEE-02",
+        "REQ-EMPLOYEE-03",
+        "REQ-EMPLOYEE-04",
+        "REQ-EMPLOYEE-05",
+        "REQ-EMPLOYEE-06",
+        "REQ-EMPLOYEE-07",
+        "REQ-EMPLOYEE-08",
+        "REQ-EMPLOYEE-09",
+        "REQ-EMPLOYEE-10"
+      ]
+    },
+    {
+      "pageName": "Attendance Workspace",
+      "requirementIds": [
+        "REQ-ATTENDANCE-01",
+        "REQ-ATTENDANCE-02",
+        "REQ-ATTENDANCE-03",
+        "REQ-ATTENDANCE-04",
+        "REQ-ATTENDANCE-05",
+        "REQ-ATTENDANCE-06",
+        "REQ-ATTENDANCE-07",
+        "REQ-ATTENDANCE-08",
+        "REQ-ATTENDANCE-09",
+        "REQ-ATTENDANCE-10"
+      ]
+    },
+    {
+      "pageName": "Leave Workspace",
+      "requirementIds": [
+        "REQ-LEAVE-01",
+        "REQ-LEAVE-02",
+        "REQ-LEAVE-03",
+        "REQ-LEAVE-04",
+        "REQ-LEAVE-05",
+        "REQ-LEAVE-06",
+        "REQ-LEAVE-07",
+        "REQ-LEAVE-08",
+        "REQ-LEAVE-09",
+        "REQ-LEAVE-10"
+      ]
+    },
+    {
+      "pageName": "Payroll Workspace",
+      "requirementIds": [
+        "REQ-PAYROLL-01",
+        "REQ-PAYROLL-02",
+        "REQ-PAYROLL-03",
+        "REQ-PAYROLL-04",
+        "REQ-PAYROLL-05",
+        "REQ-PAYROLL-06",
+        "REQ-PAYROLL-07",
+        "REQ-PAYROLL-08",
+        "REQ-PAYROLL-09",
+        "REQ-PAYROLL-10"
+      ]
+    },
+    {
+      "pageName": "Recruitment Workspace",
+      "requirementIds": [
+        "REQ-RECRUITMENT-01",
+        "REQ-RECRUITMENT-02",
+        "REQ-RECRUITMENT-03",
+        "REQ-RECRUITMENT-04",
+        "REQ-RECRUITMENT-05",
+        "REQ-RECRUITMENT-06",
+        "REQ-RECRUITMENT-07",
+        "REQ-RECRUITMENT-08",
+        "REQ-RECRUITMENT-09",
+        "REQ-RECRUITMENT-10"
+      ]
+    },
+    {
+      "pageName": "Performance Workspace",
+      "requirementIds": [
+        "REQ-PERFORMANCE-01",
+        "REQ-PERFORMANCE-02",
+        "REQ-PERFORMANCE-03",
+        "REQ-PERFORMANCE-04",
+        "REQ-PERFORMANCE-05",
+        "REQ-PERFORMANCE-06",
+        "REQ-PERFORMANCE-07",
+        "REQ-PERFORMANCE-08",
+        "REQ-PERFORMANCE-09",
+        "REQ-PERFORMANCE-10"
+      ]
+    },
+    {
+      "pageName": "Reports Workspace",
+      "requirementIds": [
+        "REQ-REPORTS-01",
+        "REQ-REPORTS-02",
+        "REQ-REPORTS-03",
+        "REQ-REPORTS-04",
+        "REQ-REPORTS-05",
+        "REQ-REPORTS-06",
+        "REQ-REPORTS-07",
+        "REQ-REPORTS-08",
+        "REQ-REPORTS-09",
+        "REQ-REPORTS-10"
+      ]
+    },
+    {
+      "pageName": "Employee Management Overview",
+      "requirementIds": [
+        "REQ-0071",
+        "REQ-0072",
+        "REQ-0073",
+        "REQ-0074",
+        "REQ-0075",
+        "REQ-0076",
+        "REQ-0077",
+        "REQ-0078",
+        "REQ-0079",
+        "REQ-0080",
+        "REQ-0081",
+        "REQ-0082",
+        "REQ-0083",
+        "REQ-0084",
+        "REQ-0085",
+        "REQ-0086",
+        "REQ-0087",
+        "REQ-0088",
+        "REQ-0089",
+        "REQ-0090",
+        "REQ-0091",
+        "REQ-0092",
+        "REQ-0093",
+        "REQ-0094",
+        "REQ-0095",
+        "REQ-0096",
+        "REQ-0097",
+        "REQ-0098",
+        "REQ-0099",
+        "REQ-0100",
+        "REQ-0101",
+        "REQ-0102",
+        "REQ-0103",
+        "REQ-0104",
+        "REQ-0105",
+        "REQ-0106",
+        "REQ-0107",
+        "REQ-0108",
+        "REQ-0109",
+        "REQ-0110",
+        "REQ-0111",
+        "REQ-0112"
+      ]
+    },
+    {
+      "pageName": "Employee Management List",
+      "requirementIds": [
+        "REQ-0113"
+      ]
+    },
+    {
+      "pageName": "Employee Management Details",
+      "requirementIds": [
+        "REQ-0155"
+      ]
+    },
+    {
+      "pageName": "Employee Management Create/Edit",
+      "requirementIds": [
+        "REQ-0197"
+      ]
+    },
+    {
+      "pageName": "Employee Management Workflow",
+      "requirementIds": [
+        "REQ-0239"
+      ]
+    },
+    {
+      "pageName": "Employee Management Reports",
+      "requirementIds": [
+        "REQ-0281"
+      ]
+    },
+    {
+      "pageName": "Employee Management Settings",
+      "requirementIds": [
+        "REQ-0323"
+      ]
+    },
+    {
+      "pageName": "Employee Onboarding",
+      "requirementIds": [
+        "REQ-0365"
+      ]
+    },
+    {
+      "pageName": "Attendance Management Overview",
+      "requirementIds": [
+        "REQ-0407",
+        "REQ-0408",
+        "REQ-0409",
+        "REQ-0410",
+        "REQ-0411",
+        "REQ-0412",
+        "REQ-0415",
+        "REQ-0416",
+        "REQ-0417",
+        "REQ-0418",
+        "REQ-0419",
+        "REQ-0420",
+        "REQ-0421",
+        "REQ-0422",
+        "REQ-0423",
+        "REQ-0424",
+        "REQ-0425",
+        "REQ-0426",
+        "REQ-0427",
+        "REQ-0428",
+        "REQ-0429",
+        "REQ-0430",
+        "REQ-0431",
+        "REQ-0432",
+        "REQ-0433",
+        "REQ-0434",
+        "REQ-0435",
+        "REQ-0436",
+        "REQ-0437",
+        "REQ-0438",
+        "REQ-0439",
+        "REQ-0440",
+        "REQ-0441",
+        "REQ-0442",
+        "REQ-0443",
+        "REQ-0444",
+        "REQ-0445",
+        "REQ-0446",
+        "REQ-0447",
+        "REQ-0448"
+      ]
+    },
+    {
+      "pageName": "Attendance Management List",
+      "requirementIds": [
+        "REQ-0449"
+      ]
+    },
+    {
+      "pageName": "Attendance Management Details",
+      "requirementIds": [
+        "REQ-0491"
+      ]
+    },
+    {
+      "pageName": "Attendance Management Create/Edit",
+      "requirementIds": [
+        "REQ-0533"
+      ]
+    },
+    {
+      "pageName": "Attendance Management Workflow",
+      "requirementIds": [
+        "REQ-0575"
+      ]
+    },
+    {
+      "pageName": "Attendance Management Reports",
+      "requirementIds": [
+        "REQ-0617"
+      ]
+    },
+    {
+      "pageName": "Attendance Management Settings",
+      "requirementIds": [
+        "REQ-0659"
+      ]
+    },
+    {
+      "pageName": "Mark Attendance",
+      "requirementIds": [
+        "REQ-0701"
+      ]
+    },
+    {
+      "pageName": "Leave Management Overview",
+      "requirementIds": [
+        "REQ-0743",
+        "REQ-0744",
+        "REQ-0745",
+        "REQ-0746",
+        "REQ-0747",
+        "REQ-0748",
+        "REQ-0751",
+        "REQ-0752",
+        "REQ-0753",
+        "REQ-0754",
+        "REQ-0755",
+        "REQ-0756",
+        "REQ-0757",
+        "REQ-0758",
+        "REQ-0759",
+        "REQ-0760",
+        "REQ-0761",
+        "REQ-0762",
+        "REQ-0763",
+        "REQ-0764",
+        "REQ-0765",
+        "REQ-0766",
+        "REQ-0767",
+        "REQ-0768",
+        "REQ-0769",
+        "REQ-0770",
+        "REQ-0771",
+        "REQ-0772",
+        "REQ-0773",
+        "REQ-0774",
+        "REQ-0775",
+        "REQ-0776",
+        "REQ-0777",
+        "REQ-0778",
+        "REQ-0779",
+        "REQ-0780",
+        "REQ-0781",
+        "REQ-0782",
+        "REQ-0783",
+        "REQ-0784"
+      ]
+    },
+    {
+      "pageName": "Leave Management List",
+      "requirementIds": [
+        "REQ-0785"
+      ]
+    },
+    {
+      "pageName": "Leave Management Details",
+      "requirementIds": [
+        "REQ-0827"
+      ]
+    },
+    {
+      "pageName": "Leave Management Create/Edit",
+      "requirementIds": [
+        "REQ-0869"
+      ]
+    },
+    {
+      "pageName": "Leave Management Workflow",
+      "requirementIds": [
+        "REQ-0911"
+      ]
+    },
+    {
+      "pageName": "Leave Management Reports",
+      "requirementIds": [
+        "REQ-0953"
+      ]
+    },
+    {
+      "pageName": "Leave Management Settings",
+      "requirementIds": [
+        "REQ-0995"
+      ]
+    }
+  ],
+  "domainAwarePages": [
+    {
+      "pageName": "HumanResources Workspace",
+      "pagePurpose": "Primary workspace for managing Human Resources end to end - covers the full Record-Lifecycle Workflow lifecycle.",
+      "primaryUsers": [
+        "Owner",
+        "Reviewer",
+        "Admin"
+      ],
+      "layoutSections": [
+        "Header/Filters",
+        "HumanResources List/Table",
+        "HumanResources Detail Drawer",
+        "Action Bar",
+        "Status Timeline"
+      ],
+      "fields": [
+        "HumanResourcesId",
+        "ownerId",
+        "title",
+        "description",
+        "category",
+        "status",
+        "reviewedBy",
+        "reviewComment",
+        "tags",
+        "attachments",
+        "createdAt",
+        "updatedAt"
+      ],
+      "buttons": [
+        "Create HumanResources Record",
+        "Edit HumanResources Record",
+        "Submit HumanResources for Review",
+        "Review HumanResources Record",
+        "Approve HumanResources Record",
+        "Reject HumanResources Record",
+        "Archive HumanResources Record",
+        "Audit Trail Capture",
+        "Notify Stakeholders",
+        "Generate HumanResources Report"
+      ],
+      "tables": [
+        "HumanResources List (sortable, filterable by status/role)"
+      ],
+      "filters": [
+        "Status",
+        "Date Range",
+        "Assigned Role",
+        "Search by ID/Name"
+      ],
+      "states": [
+        "Loading",
+        "Empty",
+        "Error",
+        "Populated",
+        "Submitting Action"
+      ],
+      "validations": [
+        "required fields must be present before submission",
+        "status transitions must follow Draft -> Submitted -> Approved/Rejected -> Archived",
+        "only the owner or an admin may edit a record while in Draft",
+        "a rejected record requires a reason before the owner can resubmit"
+      ],
+      "apis": [
+        "POST /human-resourcess",
+        "GET /human-resourcess",
+        "GET /human-resourcess/{id}",
+        "PUT /human-resourcess/{id}",
+        "POST /human-resourcess/{id}/submit",
+        "POST /human-resourcess/{id}/approve",
+        "POST /human-resourcess/{id}/reject",
+        "POST /human-resourcess/{id}/archive",
+        "GET /human-resources-reports"
+      ],
+      "databaseEntities": [
+        "HumanResources",
+        "HumanResourcesAuditLog"
+      ],
+      "navigation": [
+        "Entry from module sidebar",
+        "Detail drawer opens from list row click",
+        "Back to list from detail view"
+      ],
+      "emptyState": "No HumanResources records yet - show a \"Create HumanResources\" call to action.",
+      "loadingState": "Skeleton rows while HumanResources list is fetched.",
+      "errorState": "Inline error banner with retry if HumanResources list/detail fails to load.",
+      "permissionRules": [
+        "Owner can view/act according to the Record-Lifecycle Workflow role matrix - see requirement-scope.json for per-step authorization.",
+        "Reviewer can view/act according to the Record-Lifecycle Workflow role matrix - see requirement-scope.json for per-step authorization.",
+        "Admin can view/act according to the Record-Lifecycle Workflow role matrix - see requirement-scope.json for per-step authorization."
+      ]
+    }
+  ],
+  "domainAwareRequirements": [
+    {
+      "id": "REQ-HUMANRESOURCES-01",
+      "title": "Create HumanResources Record (Human Resources)",
+      "category": "Workflow",
+      "acceptanceCriteria": "Owner can perform \"Create HumanResources Record\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail."
+    },
+    {
+      "id": "REQ-HUMANRESOURCES-02",
+      "title": "Edit HumanResources Record (Human Resources)",
+      "category": "Workflow",
+      "acceptanceCriteria": "Owner can perform \"Edit HumanResources Record\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail."
+    },
+    {
+      "id": "REQ-HUMANRESOURCES-03",
+      "title": "Submit HumanResources for Review (Human Resources)",
+      "category": "Workflow",
+      "acceptanceCriteria": "Owner can perform \"Submit HumanResources for Review\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail."
+    },
+    {
+      "id": "REQ-HUMANRESOURCES-04",
+      "title": "Review HumanResources Record (Human Resources)",
+      "category": "Workflow",
+      "acceptanceCriteria": "Reviewer can perform \"Review HumanResources Record\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail."
+    },
+    {
+      "id": "REQ-HUMANRESOURCES-05",
+      "title": "Approve HumanResources Record (Human Resources)",
+      "category": "Workflow",
+      "acceptanceCriteria": "Reviewer can perform \"Approve HumanResources Record\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail."
+    },
+    {
+      "id": "REQ-HUMANRESOURCES-06",
+      "title": "Reject HumanResources Record (Human Resources)",
+      "category": "Workflow",
+      "acceptanceCriteria": "Reviewer can perform \"Reject HumanResources Record\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail."
+    },
+    {
+      "id": "REQ-HUMANRESOURCES-07",
+      "title": "Archive HumanResources Record (Human Resources)",
+      "category": "Workflow",
+      "acceptanceCriteria": "Admin can perform \"Archive HumanResources Record\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail."
+    },
+    {
+      "id": "REQ-HUMANRESOURCES-08",
+      "title": "Audit Trail Capture (Human Resources)",
+      "category": "Automation",
+      "acceptanceCriteria": "System can perform \"Audit Trail Capture\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail."
+    },
+    {
+      "id": "REQ-HUMANRESOURCES-09",
+      "title": "Notify Stakeholders (Human Resources)",
+      "category": "Automation",
+      "acceptanceCriteria": "System can perform \"Notify Stakeholders\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail."
+    },
+    {
+      "id": "REQ-HUMANRESOURCES-10",
+      "title": "Generate HumanResources Report (Human Resources)",
+      "category": "Workflow",
+      "acceptanceCriteria": "Admin can perform \"Generate HumanResources Report\" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail."
+    }
+  ],
+  "note": "10 domain-aware requirements/pages below define actual Human Resources business behavior (Record-Lifecycle Workflow pattern) - the generic page list above only covers page-level CRUD scaffolding from the platform's own requirements. Implement both sets."
+}
