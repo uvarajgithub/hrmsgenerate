@@ -32,7 +32,8 @@
     "npm.cmd run lint",
     "npm.cmd test",
     "npm.cmd run build",
-    "Invoke-WebRequest http://127.0.0.1:3000/"
+    "Invoke-WebRequest http://127.0.0.1:3000/",
+    "Invoke-WebRequest http://127.0.0.1:3177/"
   ],
   "validationResult": {
     "build": {
@@ -48,19 +49,23 @@
       "command": "npm.cmd test"
     },
     "preview": {
-      "passed": true,
-      "command": "npm.cmd run dev -- --host 127.0.0.1 --port 3000",
-      "url": "http://127.0.0.1:3000/"
+      "passed": false,
+      "command": "npm.cmd run dev -- --host 127.0.0.1 --port 3177 --strictPort",
+      "url": "",
+      "error": "Port 3000 served another local Vite app. HRMS returned the correct title on port 3177, but the dev server process exited before follow-up module requests, so no stable local preview is currently available."
     }
   },
-  "localPreviewUrl": "http://127.0.0.1:3000/",
-  "localPreviewCommand": "npm.cmd run dev -- --host 127.0.0.1 --port 3000",
-  "localPreviewStatus": "Running",
+  "localPreviewUrl": "",
+  "localPreviewCommand": "npm.cmd run dev -- --host 127.0.0.1 --port 3177 --strictPort",
+  "localPreviewStatus": "Not Available",
   "knownGaps": [],
-  "warnings": [],
+  "warnings": [
+    "http://127.0.0.1:3000/ belongs to another local application and must not be used as the HRMS preview URL.",
+    "Vite requires --configLoader native in this restricted workspace because the default config bundler cannot read the parent directory."
+  ],
   "manualActions": [],
   "nextBuildSlice": "BUILD-003: Employee Management persistence and backend API wiring",
   "pullRequest": "",
   "branch": "ai/build-002-employee-management",
-  "commitSha": ""
+  "commitSha": "d06de1919e4e24691099c61f92745405eac1120e"
 }

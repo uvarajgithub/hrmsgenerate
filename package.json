@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --configLoader native",
     "build": "tsc --noEmit",
     "lint": "eslint .",
     "test": "node scripts/run-employee-management-tests.mjs"
