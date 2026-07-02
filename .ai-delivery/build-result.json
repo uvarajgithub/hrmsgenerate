@@ -24,6 +24,9 @@
     "vitest.config.js",
     "scripts/run-employee-management-tests.mjs",
     "scripts/serve-dist.mjs",
+    "src/App.tsx",
+    "src/styles.css",
+    "src/modules/employee-management/services/employee-management.service.ts",
     "src/modules/employee-management/tests/employee-management.test.ts",
     ".gitignore",
     ".ai-delivery/build-result.json",
@@ -54,7 +57,7 @@
       "passed": true,
       "command": "node scripts/serve-dist.mjs",
       "url": "http://127.0.0.1:4177/",
-      "evidence": "Verified the HRMS page title and built asset strings for Employee Workspace and HRMS navigation."
+      "evidence": "Verified the HRMS page title and built asset strings for Employee operations workspace, New hire intake, Manager queue, and Activation queue."
     }
   },
   "localPreviewUrl": "http://127.0.0.1:4177/",

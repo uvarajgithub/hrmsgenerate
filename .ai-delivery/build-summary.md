@@ -26,6 +26,9 @@ Employee Management module delivered as a self-contained slice with validation, 
 ## Files Modified
 - `package.json`
 - `tsconfig.json`
+- `src/App.tsx`
+- `src/styles.css`
+- `src/modules/employee-management/services/employee-management.service.ts`
 - `src/modules/employee-management/tests/employee-management.test.ts`
 - `.ai-delivery/build-result.json`
 - `.ai-delivery/requirement-evidence.json`
@@ -49,7 +52,7 @@ Employee Management module delivered as a self-contained slice with validation, 
 ## Local Preview
 - URL: `http://127.0.0.1:4177/`
 - Command: `npm.cmd run build; node scripts/serve-dist.mjs`
-- Evidence: verified the HRMS page title and built asset strings for `Employee Workspace` and `HRMS navigation`.
+- Evidence: verified the HRMS page title and built asset strings for `Employee operations workspace`, `New hire intake`, `Manager queue`, and `Activation queue`.
 
 ## Risks
 - The current build uses a local mock/service implementation for Employee Management rather than a remote production API.

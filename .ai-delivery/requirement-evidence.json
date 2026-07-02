@@ -6,6 +6,8 @@
     "REQ-EMPLOYEE-01": {
       "status": "tested",
       "files": [
+        "src/App.tsx",
+        "src/styles.css",
         "src/modules/employee-management/types/employee-management.ts",
         "src/modules/employee-management/validators/employee-management.validators.ts",
         "src/modules/employee-management/services/employee-management.service.ts",
@@ -26,12 +28,14 @@
       "tests": [
         "src/modules/employee-management/tests/employee-management.test.ts"
       ],
-      "evidence": "Explicit assertions cover valid create flow, invalid email, future joining date, invalid manager reference, and unauthorized role rejection.",
+      "evidence": "New hire intake UI creates a draft employee profile with HR fields; automated assertions cover valid create flow, invalid email, future joining date, invalid manager reference, and unauthorized role rejection.",
       "gaps": []
     },
     "REQ-EMPLOYEE-02": {
       "status": "tested",
       "files": [
+        "src/App.tsx",
+        "src/styles.css",
         "src/modules/employee-management/services/employee-management.service.ts",
         "src/modules/employee-management/validators/employee-management.validators.ts",
         "src/modules/employee-management/tests/employee-management.test.ts"
@@ -52,12 +56,14 @@
       "tests": [
         "src/modules/employee-management/tests/employee-management.test.ts"
       ],
-      "evidence": "Verified employee details after create and asserted unauthorized access is rejected before the positive verify step proceeds.",
+      "evidence": "HR validation checklist exposes employee code, email, manager, joining date, and department readiness; tests verify the details step and unauthorized rejection.",
       "gaps": []
     },
     "REQ-EMPLOYEE-03": {
       "status": "tested",
       "files": [
+        "src/App.tsx",
+        "src/styles.css",
         "src/modules/employee-management/services/employee-management.service.ts",
         "src/modules/employee-management/tests/employee-management.test.ts"
       ],
@@ -76,12 +82,14 @@
       "tests": [
         "src/modules/employee-management/tests/employee-management.test.ts"
       ],
-      "evidence": "Submission transitions the employee from VERIFIED to PENDING_APPROVAL and the test suite checks the unauthorized path before success.",
+      "evidence": "Send to manager action is available from HR operations when the employee is verified; tests assert transition to PENDING_APPROVAL and unauthorized rejection.",
       "gaps": []
     },
     "REQ-EMPLOYEE-04": {
       "status": "tested",
       "files": [
+        "src/App.tsx",
+        "src/styles.css",
         "src/modules/employee-management/services/employee-management.service.ts",
         "src/modules/employee-management/components/EmployeeManagementDetail.ts",
         "src/modules/employee-management/components/StatusTimeline.ts",
@@ -101,12 +109,14 @@
       "tests": [
         "src/modules/employee-management/tests/employee-management.test.ts"
       ],
-      "evidence": "Manager review updates the lifecycle to UNDER_REVIEW, and the detail/timeline models expose the captured review history.",
+      "evidence": "Manager queue and manager action panel expose review context; tests assert manager review moves the employee to UNDER_REVIEW and records audit history.",
       "gaps": []
     },
     "REQ-EMPLOYEE-05": {
       "status": "tested",
       "files": [
+        "src/App.tsx",
+        "src/styles.css",
         "src/modules/employee-management/services/employee-management.service.ts",
         "src/modules/employee-management/components/EmployeeActionBar.ts",
         "src/modules/employee-management/tests/employee-management.test.ts"
@@ -126,12 +136,14 @@
       "tests": [
         "src/modules/employee-management/tests/employee-management.test.ts"
       ],
-      "evidence": "Approval is exercised after manager review, and the unauthorized-role assertion confirms permission enforcement.",
+      "evidence": "Manager approval action is shown in the role-based action panel after review; tests exercise approval and unauthorized-role rejection.",
       "gaps": []
     },
     "REQ-EMPLOYEE-06": {
       "status": "tested",
       "files": [
+        "src/App.tsx",
+        "src/styles.css",
         "src/modules/employee-management/services/employee-management.service.ts",
         "src/modules/employee-management/tests/employee-management.test.ts"
       ],
@@ -150,12 +162,14 @@
       "tests": [
         "src/modules/employee-management/tests/employee-management.test.ts"
       ],
-      "evidence": "Activation is only allowed from APPROVED status and the test covers both the unauthorized role path and the successful transition to ACTIVE.",
+      "evidence": "Activation queue and HR admin action show approved employees ready for activation; tests cover unauthorized rejection and successful ACTIVE transition.",
       "gaps": []
     },
     "REQ-EMPLOYEE-07": {
       "status": "tested",
       "files": [
+        "src/App.tsx",
+        "src/styles.css",
         "src/modules/employee-management/services/employee-management.service.ts",
         "src/modules/employee-management/validators/employee-management.validators.ts",
         "src/modules/employee-management/components/EmployeeManagementForm.ts",
@@ -176,12 +190,14 @@
       "tests": [
         "src/modules/employee-management/tests/employee-management.test.ts"
       ],
-      "evidence": "Update flow persists the phone change after an unauthorized-role rejection and continues to enforce uniqueness and validation rules.",
+      "evidence": "Employee detail panel exposes master-data fields and HR update action; tests persist an update after unauthorized-role rejection and keep validation rules active.",
       "gaps": []
     },
     "REQ-EMPLOYEE-08": {
       "status": "tested",
       "files": [
+        "src/App.tsx",
+        "src/styles.css",
         "src/modules/employee-management/services/employee-management.service.ts",
         "src/modules/employee-management/components/EmployeeActionBar.ts",
         "src/modules/employee-management/tests/employee-management.test.ts"
@@ -201,12 +217,14 @@
       "tests": [
         "src/modules/employee-management/tests/employee-management.test.ts"
       ],
-      "evidence": "Deactivation moves the employee to INACTIVE and the test checks that only ADMIN can perform the action.",
+      "evidence": "Offboarded status and HR admin offboarding action are represented in the roster and detail panel; tests assert INACTIVE transition and Admin-only access.",
       "gaps": []
     },
     "REQ-EMPLOYEE-09": {
       "status": "tested",
       "files": [
+        "src/App.tsx",
+        "src/styles.css",
         "src/modules/employee-management/services/employee-management.service.ts",
         "src/modules/employee-management/components/StatusTimeline.ts",
         "src/modules/employee-management/tests/employee-management.test.ts"
@@ -227,12 +245,14 @@
       "tests": [
         "src/modules/employee-management/tests/employee-management.test.ts"
       ],
-      "evidence": "Audit capture is validated by the explicit history length assertion after the lifecycle transitions and by the timeline model that exposes the recorded changes.",
+      "evidence": "Audit Evidence panel displays captured employee history; tests validate the audit trail after lifecycle transitions.",
       "gaps": []
     },
     "REQ-EMPLOYEE-10": {
       "status": "tested",
       "files": [
+        "src/App.tsx",
+        "src/styles.css",
         "src/modules/employee-management/services/employee-management.service.ts",
         "src/modules/employee-management/tests/employee-management.test.ts"
       ],
@@ -251,7 +271,7 @@
       "tests": [
         "src/modules/employee-management/tests/employee-management.test.ts"
       ],
-      "evidence": "Report generation is covered with the default admin path and the unauthorized-role rejection path, and the assertions verify summary rows are produced.",
+      "evidence": "Headcount report panel displays department totals and report generation action; tests cover admin report generation, unauthorized rejection, and summary rows.",
       "gaps": []
     }
   }

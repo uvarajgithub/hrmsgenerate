@@ -89,6 +89,54 @@ export class EmployeeManagementService {
       phone: '+91-9000000002',
       status: 'VERIFIED',
     });
+
+    this.createSeedEmployee({
+      employeeCode: 'EMP-1003',
+      firstName: 'Farah',
+      lastName: 'Khan',
+      department: 'Finance',
+      designation: 'Accounts Executive',
+      jobTitle: 'Accounts Executive',
+      managerId: manager.id,
+      managerName: manager.fullName,
+      joiningDate: '2025-01-06',
+      employmentType: 'Full-time',
+      email: 'farah.khan@hrms.local',
+      phone: '+91-9000000003',
+      status: 'PENDING_APPROVAL',
+    });
+
+    this.createSeedEmployee({
+      employeeCode: 'EMP-1004',
+      firstName: 'Karthik',
+      lastName: 'Menon',
+      department: 'Sales',
+      designation: 'Regional Sales Lead',
+      jobTitle: 'Sales Lead',
+      managerId: manager.id,
+      managerName: manager.fullName,
+      joiningDate: '2024-11-18',
+      employmentType: 'Full-time',
+      email: 'karthik.menon@hrms.local',
+      phone: '+91-9000000004',
+      status: 'APPROVED',
+    });
+
+    this.createSeedEmployee({
+      employeeCode: 'EMP-1005',
+      firstName: 'Leena',
+      lastName: 'D Souza',
+      department: 'Operations',
+      designation: 'Operations Coordinator',
+      jobTitle: 'Operations Coordinator',
+      managerId: manager.id,
+      managerName: manager.fullName,
+      joiningDate: '2023-09-12',
+      employmentType: 'Contract',
+      email: 'leena.dsouza@hrms.local',
+      phone: '+91-9000000005',
+      status: 'INACTIVE',
+    });
   }
 
   private createSeedEmployee(
