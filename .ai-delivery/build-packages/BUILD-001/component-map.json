@@ -1,0 +1,16 @@
+{
+  "sharedComponents": [
+    "Table",
+    "Drawer",
+    "StatusBadge",
+    "FilterBar",
+    "Pagination",
+    "FormField"
+  ],
+  "moduleComponents": [
+    "Leave ManagementList",
+    "Leave ManagementForm",
+    "Leave ManagementDetail"
+  ],
+  "source": "Use the component library from selected-template.json (Modern HRMS Enterprise)."
+}

@@ -1,0 +1,19 @@
+{
+  "commands": [
+    "npm run build",
+    "npm run lint",
+    "npm test"
+  ],
+  "rule": "All three commands must pass before this build is marked complete. Do not mark IMPLEMENTED without evidence.",
+  "businessValidations": [
+    "fromDate must be before or equal to toDate",
+    "requested amount must not exceed remaining balance/eligibility",
+    "overlapping leave requests for the same requester are not allowed",
+    "leave type must be active/configured",
+    "attachment required when leave type requires supporting evidence",
+    "weekend/holiday exclusion rule applies when calculating requested days/units",
+    "approver cannot approve their own request",
+    "requests cannot be submitted past the configured cutoff window"
+  ],
+  "businessValidationSource": "local Domain Intelligence Engine only (pattern matched: Request-Approval Workflow)"
+}

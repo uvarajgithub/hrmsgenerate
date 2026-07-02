@@ -1,0 +1,114 @@
+{
+  "module": "Leave Management",
+  "compatibilityArtifact": true,
+  "supersededBy": [
+    "workflow-contract.json",
+    "automation-assets.json",
+    "requirement-contracts/*.json"
+  ],
+  "patternMatched": "Request-Approval Workflow",
+  "roles": [
+    "Requester",
+    "Approver",
+    "Admin"
+  ],
+  "scenarios": [
+    {
+      "requirementId": "REQ-LEAVE-01",
+      "positiveTest": "Apply succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Apply is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Apply is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Leave Management is independently exercised against Apply.",
+      "workflowTest": "Full lifecycle test: create -> Apply -> downstream state is consistent with the Request-Approval Workflow pattern.",
+      "regressionRisk": "High - core lifecycle step, breaking this blocks the whole module"
+    },
+    {
+      "requirementId": "REQ-LEAVE-02",
+      "positiveTest": "Validate Balance/Eligibility succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Validate Balance/Eligibility is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Validate Balance/Eligibility is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Leave Management is independently exercised against Validate Balance/Eligibility.",
+      "workflowTest": "Full lifecycle test: create -> Validate Balance/Eligibility -> downstream state is consistent with the Request-Approval Workflow pattern.",
+      "regressionRisk": "High - core lifecycle step, breaking this blocks the whole module"
+    },
+    {
+      "requirementId": "REQ-LEAVE-03",
+      "positiveTest": "Submit succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Submit is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Submit is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Leave Management is independently exercised against Submit.",
+      "workflowTest": "Full lifecycle test: create -> Submit -> downstream state is consistent with the Request-Approval Workflow pattern.",
+      "regressionRisk": "High - core lifecycle step, breaking this blocks the whole module"
+    },
+    {
+      "requirementId": "REQ-LEAVE-04",
+      "positiveTest": "Manager Review succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Manager Review is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Manager Review is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Leave Management is independently exercised against Manager Review.",
+      "workflowTest": "Full lifecycle test: create -> Manager Review -> downstream state is consistent with the Request-Approval Workflow pattern.",
+      "regressionRisk": "High - core lifecycle step, breaking this blocks the whole module"
+    },
+    {
+      "requirementId": "REQ-LEAVE-05",
+      "positiveTest": "Approve succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Approve is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Approve is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Leave Management is independently exercised against Approve.",
+      "workflowTest": "Full lifecycle test: create -> Approve -> downstream state is consistent with the Request-Approval Workflow pattern.",
+      "regressionRisk": "Medium - secondary step, breaking this degrades but does not block the module"
+    },
+    {
+      "requirementId": "REQ-LEAVE-06",
+      "positiveTest": "Reject succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Reject is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Reject is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Leave Management is independently exercised against Reject.",
+      "workflowTest": "Full lifecycle test: create -> Reject -> downstream state is consistent with the Request-Approval Workflow pattern.",
+      "regressionRisk": "Medium - secondary step, breaking this degrades but does not block the module"
+    },
+    {
+      "requirementId": "REQ-LEAVE-07",
+      "positiveTest": "Cancel succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Cancel is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Cancel is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Leave Management is independently exercised against Cancel.",
+      "workflowTest": "Full lifecycle test: create -> Cancel -> downstream state is consistent with the Request-Approval Workflow pattern.",
+      "regressionRisk": "Medium - secondary step, breaking this degrades but does not block the module"
+    },
+    {
+      "requirementId": "REQ-LEAVE-08",
+      "positiveTest": "Notify Requester succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Notify Requester is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Notify Requester is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Leave Management is independently exercised against Notify Requester.",
+      "workflowTest": "Full lifecycle test: create -> Notify Requester -> downstream state is consistent with the Request-Approval Workflow pattern.",
+      "regressionRisk": "Medium - secondary step, breaking this degrades but does not block the module"
+    },
+    {
+      "requirementId": "REQ-LEAVE-09",
+      "positiveTest": "Sync Downstream Impact succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Sync Downstream Impact is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Sync Downstream Impact is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Leave Management is independently exercised against Sync Downstream Impact.",
+      "workflowTest": "Full lifecycle test: create -> Sync Downstream Impact -> downstream state is consistent with the Request-Approval Workflow pattern.",
+      "regressionRisk": "Medium - secondary step, breaking this degrades but does not block the module"
+    },
+    {
+      "requirementId": "REQ-LEAVE-10",
+      "positiveTest": "Generate Report succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Generate Report is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Generate Report is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Leave Management is independently exercised against Generate Report.",
+      "workflowTest": "Full lifecycle test: create -> Generate Report -> downstream state is consistent with the Request-Approval Workflow pattern.",
+      "regressionRisk": "Medium - secondary step, breaking this degrades but does not block the module"
+    }
+  ],
+  "reports": [
+    "Leave Balance Report",
+    "Leave Utilization Report",
+    "Pending Approval Report",
+    "Monthly Leave Summary",
+    "Downstream Impact Report"
+  ]
+}

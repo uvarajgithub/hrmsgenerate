@@ -1,0 +1,2040 @@
+{
+  "buildId": "BUILD-001",
+  "scope": "Leave Management",
+  "compatibilityArtifact": true,
+  "supersededBy": [
+    "workflow-contract.json",
+    "requirement-contracts/*.json"
+  ],
+  "rule": "Primary implementation contract. Build these workflows before page-level UI details.",
+  "workflow": {
+    "rule": "Implement these first. They define the real business process and state transitions.",
+    "platformRequirements": [
+      {
+        "id": "REQ-0677",
+        "title": "Leave Management Overview - Function: Open Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Open Leave Management\" is visible or functionally represented under Leave Management / Leave Management Overview.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0678",
+        "title": "Leave Management Overview - Function: Start Apply Leave",
+        "module": "Leave Management",
+        "page": "Leave Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Start Apply Leave\" is visible or functionally represented under Leave Management / Leave Management Overview.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0679",
+        "title": "Leave Management Overview - Function: Enter details",
+        "module": "Leave Management",
+        "page": "Leave Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Enter details\" is visible or functionally represented under Leave Management / Leave Management Overview.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0680",
+        "title": "Leave Management Overview - Function: Submit",
+        "module": "Leave Management",
+        "page": "Leave Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Submit\" is visible or functionally represented under Leave Management / Leave Management Overview.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0681",
+        "title": "Leave Management Overview - Function: Create Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Create Leave Management\" is visible or functionally represented under Leave Management / Leave Management Overview.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0682",
+        "title": "Leave Management Overview - Function: Update Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Update Leave Management\" is visible or functionally represented under Leave Management / Leave Management Overview.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0683",
+        "title": "Leave Management Overview - Function: Submit Leave Management for review",
+        "module": "Leave Management",
+        "page": "Leave Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Submit Leave Management for review\" is visible or functionally represented under Leave Management / Leave Management Overview.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0684",
+        "title": "Leave Management Overview - Function: Approve or reject Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Approve or reject Leave Management\" is visible or functionally represented under Leave Management / Leave Management Overview.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0685",
+        "title": "Leave Management Overview - Function: Export Leave Management evidence",
+        "module": "Leave Management",
+        "page": "Leave Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Export Leave Management evidence\" is visible or functionally represented under Leave Management / Leave Management Overview.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0686",
+        "title": "Leave Management Overview - Function: Search and filter Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Overview",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Search and filter Leave Management\" is visible or functionally represented under Leave Management / Leave Management Overview.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0719",
+        "title": "Leave Management List - Function: Open Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management List",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Open Leave Management\" is visible or functionally represented under Leave Management / Leave Management List.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0720",
+        "title": "Leave Management List - Function: Start Apply Leave",
+        "module": "Leave Management",
+        "page": "Leave Management List",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Start Apply Leave\" is visible or functionally represented under Leave Management / Leave Management List.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0721",
+        "title": "Leave Management List - Function: Enter details",
+        "module": "Leave Management",
+        "page": "Leave Management List",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Enter details\" is visible or functionally represented under Leave Management / Leave Management List.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0722",
+        "title": "Leave Management List - Function: Submit",
+        "module": "Leave Management",
+        "page": "Leave Management List",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Submit\" is visible or functionally represented under Leave Management / Leave Management List.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0723",
+        "title": "Leave Management List - Function: Create Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management List",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Create Leave Management\" is visible or functionally represented under Leave Management / Leave Management List.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0724",
+        "title": "Leave Management List - Function: Update Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management List",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Update Leave Management\" is visible or functionally represented under Leave Management / Leave Management List.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0725",
+        "title": "Leave Management List - Function: Submit Leave Management for review",
+        "module": "Leave Management",
+        "page": "Leave Management List",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Submit Leave Management for review\" is visible or functionally represented under Leave Management / Leave Management List.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0726",
+        "title": "Leave Management List - Function: Approve or reject Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management List",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Approve or reject Leave Management\" is visible or functionally represented under Leave Management / Leave Management List.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0727",
+        "title": "Leave Management List - Function: Export Leave Management evidence",
+        "module": "Leave Management",
+        "page": "Leave Management List",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Export Leave Management evidence\" is visible or functionally represented under Leave Management / Leave Management List.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0728",
+        "title": "Leave Management List - Function: Search and filter Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management List",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Search and filter Leave Management\" is visible or functionally represented under Leave Management / Leave Management List.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0761",
+        "title": "Leave Management Details - Function: Open Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Details",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Open Leave Management\" is visible or functionally represented under Leave Management / Leave Management Details.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0762",
+        "title": "Leave Management Details - Function: Start Apply Leave",
+        "module": "Leave Management",
+        "page": "Leave Management Details",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Start Apply Leave\" is visible or functionally represented under Leave Management / Leave Management Details.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0763",
+        "title": "Leave Management Details - Function: Enter details",
+        "module": "Leave Management",
+        "page": "Leave Management Details",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Enter details\" is visible or functionally represented under Leave Management / Leave Management Details.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0764",
+        "title": "Leave Management Details - Function: Submit",
+        "module": "Leave Management",
+        "page": "Leave Management Details",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Submit\" is visible or functionally represented under Leave Management / Leave Management Details.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0765",
+        "title": "Leave Management Details - Function: Create Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Details",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Create Leave Management\" is visible or functionally represented under Leave Management / Leave Management Details.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0766",
+        "title": "Leave Management Details - Function: Update Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Details",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Update Leave Management\" is visible or functionally represented under Leave Management / Leave Management Details.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0767",
+        "title": "Leave Management Details - Function: Submit Leave Management for review",
+        "module": "Leave Management",
+        "page": "Leave Management Details",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Submit Leave Management for review\" is visible or functionally represented under Leave Management / Leave Management Details.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0768",
+        "title": "Leave Management Details - Function: Approve or reject Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Details",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Approve or reject Leave Management\" is visible or functionally represented under Leave Management / Leave Management Details.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0769",
+        "title": "Leave Management Details - Function: Export Leave Management evidence",
+        "module": "Leave Management",
+        "page": "Leave Management Details",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Export Leave Management evidence\" is visible or functionally represented under Leave Management / Leave Management Details.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0770",
+        "title": "Leave Management Details - Function: Search and filter Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Details",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Search and filter Leave Management\" is visible or functionally represented under Leave Management / Leave Management Details.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0803",
+        "title": "Leave Management Create/Edit - Function: Open Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Create/Edit",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Open Leave Management\" is visible or functionally represented under Leave Management / Leave Management Create/Edit.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0804",
+        "title": "Leave Management Create/Edit - Function: Start Apply Leave",
+        "module": "Leave Management",
+        "page": "Leave Management Create/Edit",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Start Apply Leave\" is visible or functionally represented under Leave Management / Leave Management Create/Edit.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0805",
+        "title": "Leave Management Create/Edit - Function: Enter details",
+        "module": "Leave Management",
+        "page": "Leave Management Create/Edit",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Enter details\" is visible or functionally represented under Leave Management / Leave Management Create/Edit.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0806",
+        "title": "Leave Management Create/Edit - Function: Submit",
+        "module": "Leave Management",
+        "page": "Leave Management Create/Edit",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Submit\" is visible or functionally represented under Leave Management / Leave Management Create/Edit.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0807",
+        "title": "Leave Management Create/Edit - Function: Create Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Create/Edit",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Create Leave Management\" is visible or functionally represented under Leave Management / Leave Management Create/Edit.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0808",
+        "title": "Leave Management Create/Edit - Function: Update Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Create/Edit",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Update Leave Management\" is visible or functionally represented under Leave Management / Leave Management Create/Edit.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0809",
+        "title": "Leave Management Create/Edit - Function: Submit Leave Management for review",
+        "module": "Leave Management",
+        "page": "Leave Management Create/Edit",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Submit Leave Management for review\" is visible or functionally represented under Leave Management / Leave Management Create/Edit.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0810",
+        "title": "Leave Management Create/Edit - Function: Approve or reject Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Create/Edit",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Approve or reject Leave Management\" is visible or functionally represented under Leave Management / Leave Management Create/Edit.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0811",
+        "title": "Leave Management Create/Edit - Function: Export Leave Management evidence",
+        "module": "Leave Management",
+        "page": "Leave Management Create/Edit",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Export Leave Management evidence\" is visible or functionally represented under Leave Management / Leave Management Create/Edit.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0812",
+        "title": "Leave Management Create/Edit - Function: Search and filter Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Create/Edit",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Search and filter Leave Management\" is visible or functionally represented under Leave Management / Leave Management Create/Edit.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0845",
+        "title": "Leave Management Workflow - Function: Open Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Workflow",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Open Leave Management\" is visible or functionally represented under Leave Management / Leave Management Workflow.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0846",
+        "title": "Leave Management Workflow - Function: Start Apply Leave",
+        "module": "Leave Management",
+        "page": "Leave Management Workflow",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Start Apply Leave\" is visible or functionally represented under Leave Management / Leave Management Workflow.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0847",
+        "title": "Leave Management Workflow - Function: Enter details",
+        "module": "Leave Management",
+        "page": "Leave Management Workflow",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Enter details\" is visible or functionally represented under Leave Management / Leave Management Workflow.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0848",
+        "title": "Leave Management Workflow - Function: Submit",
+        "module": "Leave Management",
+        "page": "Leave Management Workflow",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Submit\" is visible or functionally represented under Leave Management / Leave Management Workflow.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0849",
+        "title": "Leave Management Workflow - Function: Create Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Workflow",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Create Leave Management\" is visible or functionally represented under Leave Management / Leave Management Workflow.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0850",
+        "title": "Leave Management Workflow - Function: Update Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Workflow",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Update Leave Management\" is visible or functionally represented under Leave Management / Leave Management Workflow.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0851",
+        "title": "Leave Management Workflow - Function: Submit Leave Management for review",
+        "module": "Leave Management",
+        "page": "Leave Management Workflow",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Submit Leave Management for review\" is visible or functionally represented under Leave Management / Leave Management Workflow.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0852",
+        "title": "Leave Management Workflow - Function: Approve or reject Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Workflow",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Approve or reject Leave Management\" is visible or functionally represented under Leave Management / Leave Management Workflow.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0853",
+        "title": "Leave Management Workflow - Function: Export Leave Management evidence",
+        "module": "Leave Management",
+        "page": "Leave Management Workflow",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Export Leave Management evidence\" is visible or functionally represented under Leave Management / Leave Management Workflow.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0854",
+        "title": "Leave Management Workflow - Function: Search and filter Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Workflow",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Search and filter Leave Management\" is visible or functionally represented under Leave Management / Leave Management Workflow.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0887",
+        "title": "Leave Management Reports - Function: Open Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Reports",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Open Leave Management\" is visible or functionally represented under Leave Management / Leave Management Reports.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0888",
+        "title": "Leave Management Reports - Function: Start Apply Leave",
+        "module": "Leave Management",
+        "page": "Leave Management Reports",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Start Apply Leave\" is visible or functionally represented under Leave Management / Leave Management Reports.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0889",
+        "title": "Leave Management Reports - Function: Enter details",
+        "module": "Leave Management",
+        "page": "Leave Management Reports",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Enter details\" is visible or functionally represented under Leave Management / Leave Management Reports.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0890",
+        "title": "Leave Management Reports - Function: Submit",
+        "module": "Leave Management",
+        "page": "Leave Management Reports",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Submit\" is visible or functionally represented under Leave Management / Leave Management Reports.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0891",
+        "title": "Leave Management Reports - Function: Create Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Reports",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Create Leave Management\" is visible or functionally represented under Leave Management / Leave Management Reports.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0892",
+        "title": "Leave Management Reports - Function: Update Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Reports",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Update Leave Management\" is visible or functionally represented under Leave Management / Leave Management Reports.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0893",
+        "title": "Leave Management Reports - Function: Submit Leave Management for review",
+        "module": "Leave Management",
+        "page": "Leave Management Reports",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Submit Leave Management for review\" is visible or functionally represented under Leave Management / Leave Management Reports.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0894",
+        "title": "Leave Management Reports - Function: Approve or reject Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Reports",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Approve or reject Leave Management\" is visible or functionally represented under Leave Management / Leave Management Reports.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0895",
+        "title": "Leave Management Reports - Function: Export Leave Management evidence",
+        "module": "Leave Management",
+        "page": "Leave Management Reports",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Export Leave Management evidence\" is visible or functionally represented under Leave Management / Leave Management Reports.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0896",
+        "title": "Leave Management Reports - Function: Search and filter Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Reports",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Search and filter Leave Management\" is visible or functionally represented under Leave Management / Leave Management Reports.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0929",
+        "title": "Leave Management Settings - Function: Open Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Settings",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Open Leave Management\" is visible or functionally represented under Leave Management / Leave Management Settings.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0930",
+        "title": "Leave Management Settings - Function: Start Apply Leave",
+        "module": "Leave Management",
+        "page": "Leave Management Settings",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Start Apply Leave\" is visible or functionally represented under Leave Management / Leave Management Settings.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0931",
+        "title": "Leave Management Settings - Function: Enter details",
+        "module": "Leave Management",
+        "page": "Leave Management Settings",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Enter details\" is visible or functionally represented under Leave Management / Leave Management Settings.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0932",
+        "title": "Leave Management Settings - Function: Submit",
+        "module": "Leave Management",
+        "page": "Leave Management Settings",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Submit\" is visible or functionally represented under Leave Management / Leave Management Settings.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0933",
+        "title": "Leave Management Settings - Function: Create Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Settings",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Create Leave Management\" is visible or functionally represented under Leave Management / Leave Management Settings.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0934",
+        "title": "Leave Management Settings - Function: Update Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Settings",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Update Leave Management\" is visible or functionally represented under Leave Management / Leave Management Settings.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0935",
+        "title": "Leave Management Settings - Function: Submit Leave Management for review",
+        "module": "Leave Management",
+        "page": "Leave Management Settings",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Submit Leave Management for review\" is visible or functionally represented under Leave Management / Leave Management Settings.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0936",
+        "title": "Leave Management Settings - Function: Approve or reject Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Settings",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Approve or reject Leave Management\" is visible or functionally represented under Leave Management / Leave Management Settings.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0937",
+        "title": "Leave Management Settings - Function: Export Leave Management evidence",
+        "module": "Leave Management",
+        "page": "Leave Management Settings",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Export Leave Management evidence\" is visible or functionally represented under Leave Management / Leave Management Settings.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      },
+      {
+        "id": "REQ-0938",
+        "title": "Leave Management Settings - Function: Search and filter Leave Management",
+        "module": "Leave Management",
+        "page": "Leave Management Settings",
+        "category": "Function",
+        "workflowId": "workflow-g9tz3bq",
+        "priority": "HIGH",
+        "acceptanceCriteria": [
+          "Function requirement \"Search and filter Leave Management\" is visible or functionally represented under Leave Management / Leave Management Settings.",
+          "The implementation uses Leave Management terminology, workflow context, validation behavior, and status language.",
+          "Loading, empty, validation, permission, error, and audit behavior are covered where applicable."
+        ],
+        "businessRules": [
+          "Apply Leave required fields are validated",
+          "Apply Leave business rules are enforced for Leave Management",
+          "Apply Leave status is updated and audited"
+        ]
+      }
+    ],
+    "domainAwareRequirements": [
+      {
+        "requirementId": "REQ-LEAVE-01",
+        "module": "Leave Management",
+        "page": "Leave Workspace",
+        "feature": "Apply",
+        "requirementType": "Workflow",
+        "title": "Apply (Leave Management)",
+        "businessReason": "Supports the Request-Approval Workflow business pattern for \"Leave Management\": Apply is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Requester",
+        "workflowStep": "Apply",
+        "fields": [
+          "LeaveRequestId",
+          "requesterId",
+          "requesterName",
+          "department",
+          "approverId",
+          "leaveType",
+          "balanceRemaining",
+          "fromDate",
+          "toDate",
+          "halfDay",
+          "numberOfDays/Units",
+          "reason",
+          "attachment",
+          "status",
+          "approvalLevel",
+          "approvedBy",
+          "rejectedBy",
+          "rejectionReason",
+          "downstreamImpact",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "fromDate must be before or equal to toDate",
+          "requested amount must not exceed remaining balance/eligibility",
+          "overlapping leave requests for the same requester are not allowed",
+          "leave type must be active/configured",
+          "attachment required when leave type requires supporting evidence",
+          "weekend/holiday exclusion rule applies when calculating requested days/units",
+          "approver cannot approve their own request",
+          "requests cannot be submitted past the configured cutoff window"
+        ],
+        "apis": [
+          "POST /leave-requests"
+        ],
+        "databaseEntities": [
+          "LeaveRequest",
+          "LeaveType",
+          "LeaveBalance",
+          "LeaveApproval",
+          "LeavePolicy",
+          "LeaveAuditLog"
+        ],
+        "acceptanceCriteria": "Requester can perform \"Apply\" only when business rules and validations for Leave are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Apply attempted with missing/invalid required fields",
+          "Apply attempted by a role without permission",
+          "Apply attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Apply succeeds with valid data and authorized role",
+          "Negative: Apply rejected with invalid data",
+          "Access: Apply rejected for unauthorized role"
+        ],
+        "priority": "HIGH",
+        "complexity": "LOW",
+        "traceability": "Request-Approval Workflow -> Leave Management -> Apply"
+      },
+      {
+        "requirementId": "REQ-LEAVE-02",
+        "module": "Leave Management",
+        "page": "Leave Workspace",
+        "feature": "Validate Balance/Eligibility",
+        "requirementType": "Automation",
+        "title": "Validate Balance/Eligibility (Leave Management)",
+        "businessReason": "Supports the Request-Approval Workflow business pattern for \"Leave Management\": Validate Balance/Eligibility is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "System",
+        "workflowStep": "Validate Balance/Eligibility",
+        "fields": [
+          "LeaveRequestId",
+          "requesterId",
+          "requesterName",
+          "department",
+          "approverId",
+          "leaveType",
+          "balanceRemaining",
+          "fromDate",
+          "toDate",
+          "halfDay",
+          "numberOfDays/Units",
+          "reason",
+          "attachment",
+          "status",
+          "approvalLevel",
+          "approvedBy",
+          "rejectedBy",
+          "rejectionReason",
+          "downstreamImpact",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "fromDate must be before or equal to toDate",
+          "requested amount must not exceed remaining balance/eligibility",
+          "overlapping leave requests for the same requester are not allowed",
+          "leave type must be active/configured",
+          "attachment required when leave type requires supporting evidence",
+          "weekend/holiday exclusion rule applies when calculating requested days/units",
+          "approver cannot approve their own request",
+          "requests cannot be submitted past the configured cutoff window"
+        ],
+        "apis": [
+          "GET /leave-balances/{requesterId}"
+        ],
+        "databaseEntities": [
+          "LeaveRequest",
+          "LeaveType",
+          "LeaveBalance",
+          "LeaveApproval",
+          "LeavePolicy",
+          "LeaveAuditLog"
+        ],
+        "acceptanceCriteria": "System can perform \"Validate Balance/Eligibility\" only when business rules and validations for Leave are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Validate Balance/Eligibility attempted with missing/invalid required fields",
+          "Validate Balance/Eligibility attempted by a role without permission",
+          "Validate Balance/Eligibility attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Validate Balance/Eligibility succeeds with valid data and authorized role",
+          "Negative: Validate Balance/Eligibility rejected with invalid data",
+          "Access: Validate Balance/Eligibility rejected for unauthorized role"
+        ],
+        "priority": "HIGH",
+        "complexity": "MEDIUM",
+        "traceability": "Request-Approval Workflow -> Leave Management -> Validate Balance/Eligibility"
+      },
+      {
+        "requirementId": "REQ-LEAVE-03",
+        "module": "Leave Management",
+        "page": "Leave Workspace",
+        "feature": "Submit",
+        "requirementType": "Workflow",
+        "title": "Submit (Leave Management)",
+        "businessReason": "Supports the Request-Approval Workflow business pattern for \"Leave Management\": Submit is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Requester",
+        "workflowStep": "Submit",
+        "fields": [
+          "LeaveRequestId",
+          "requesterId",
+          "requesterName",
+          "department",
+          "approverId",
+          "leaveType",
+          "balanceRemaining",
+          "fromDate",
+          "toDate",
+          "halfDay",
+          "numberOfDays/Units",
+          "reason",
+          "attachment",
+          "status",
+          "approvalLevel",
+          "approvedBy",
+          "rejectedBy",
+          "rejectionReason",
+          "downstreamImpact",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "fromDate must be before or equal to toDate",
+          "requested amount must not exceed remaining balance/eligibility",
+          "overlapping leave requests for the same requester are not allowed",
+          "leave type must be active/configured",
+          "attachment required when leave type requires supporting evidence",
+          "weekend/holiday exclusion rule applies when calculating requested days/units",
+          "approver cannot approve their own request",
+          "requests cannot be submitted past the configured cutoff window"
+        ],
+        "apis": [
+          "POST /leave-requests/{id}/submit"
+        ],
+        "databaseEntities": [
+          "LeaveRequest",
+          "LeaveType",
+          "LeaveBalance",
+          "LeaveApproval",
+          "LeavePolicy",
+          "LeaveAuditLog"
+        ],
+        "acceptanceCriteria": "Requester can perform \"Submit\" only when business rules and validations for Leave are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Submit attempted with missing/invalid required fields",
+          "Submit attempted by a role without permission",
+          "Submit attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Submit succeeds with valid data and authorized role",
+          "Negative: Submit rejected with invalid data",
+          "Access: Submit rejected for unauthorized role"
+        ],
+        "priority": "HIGH",
+        "complexity": "LOW",
+        "traceability": "Request-Approval Workflow -> Leave Management -> Submit"
+      },
+      {
+        "requirementId": "REQ-LEAVE-04",
+        "module": "Leave Management",
+        "page": "Leave Workspace",
+        "feature": "Manager Review",
+        "requirementType": "Workflow",
+        "title": "Manager Review (Leave Management)",
+        "businessReason": "Supports the Request-Approval Workflow business pattern for \"Leave Management\": Manager Review is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Approver",
+        "workflowStep": "Manager Review",
+        "fields": [
+          "LeaveRequestId",
+          "requesterId",
+          "requesterName",
+          "department",
+          "approverId",
+          "leaveType",
+          "balanceRemaining",
+          "fromDate",
+          "toDate",
+          "halfDay",
+          "numberOfDays/Units",
+          "reason",
+          "attachment",
+          "status",
+          "approvalLevel",
+          "approvedBy",
+          "rejectedBy",
+          "rejectionReason",
+          "downstreamImpact",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "fromDate must be before or equal to toDate",
+          "requested amount must not exceed remaining balance/eligibility",
+          "overlapping leave requests for the same requester are not allowed",
+          "leave type must be active/configured",
+          "attachment required when leave type requires supporting evidence",
+          "weekend/holiday exclusion rule applies when calculating requested days/units",
+          "approver cannot approve their own request",
+          "requests cannot be submitted past the configured cutoff window"
+        ],
+        "apis": [
+          "GET /leave-requests/{id}"
+        ],
+        "databaseEntities": [
+          "LeaveRequest",
+          "LeaveType",
+          "LeaveBalance",
+          "LeaveApproval",
+          "LeavePolicy",
+          "LeaveAuditLog"
+        ],
+        "acceptanceCriteria": "Approver can perform \"Manager Review\" only when business rules and validations for Leave are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Manager Review attempted with missing/invalid required fields",
+          "Manager Review attempted by a role without permission",
+          "Manager Review attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Manager Review succeeds with valid data and authorized role",
+          "Negative: Manager Review rejected with invalid data",
+          "Access: Manager Review rejected for unauthorized role"
+        ],
+        "priority": "HIGH",
+        "complexity": "LOW",
+        "traceability": "Request-Approval Workflow -> Leave Management -> Manager Review"
+      },
+      {
+        "requirementId": "REQ-LEAVE-05",
+        "module": "Leave Management",
+        "page": "Leave Workspace",
+        "feature": "Approve",
+        "requirementType": "Workflow",
+        "title": "Approve (Leave Management)",
+        "businessReason": "Supports the Request-Approval Workflow business pattern for \"Leave Management\": Approve is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Approver",
+        "workflowStep": "Approve",
+        "fields": [
+          "LeaveRequestId",
+          "requesterId",
+          "requesterName",
+          "department",
+          "approverId",
+          "leaveType",
+          "balanceRemaining",
+          "fromDate",
+          "toDate",
+          "halfDay",
+          "numberOfDays/Units",
+          "reason",
+          "attachment",
+          "status",
+          "approvalLevel",
+          "approvedBy",
+          "rejectedBy",
+          "rejectionReason",
+          "downstreamImpact",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "fromDate must be before or equal to toDate",
+          "requested amount must not exceed remaining balance/eligibility",
+          "overlapping leave requests for the same requester are not allowed",
+          "leave type must be active/configured",
+          "attachment required when leave type requires supporting evidence",
+          "weekend/holiday exclusion rule applies when calculating requested days/units",
+          "approver cannot approve their own request",
+          "requests cannot be submitted past the configured cutoff window"
+        ],
+        "apis": [
+          "POST /leave-requests/{id}/approve"
+        ],
+        "databaseEntities": [
+          "LeaveRequest",
+          "LeaveType",
+          "LeaveBalance",
+          "LeaveApproval",
+          "LeavePolicy",
+          "LeaveAuditLog"
+        ],
+        "acceptanceCriteria": "Approver can perform \"Approve\" only when business rules and validations for Leave are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Approve attempted with missing/invalid required fields",
+          "Approve attempted by a role without permission",
+          "Approve attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Approve succeeds with valid data and authorized role",
+          "Negative: Approve rejected with invalid data",
+          "Access: Approve rejected for unauthorized role"
+        ],
+        "priority": "MEDIUM",
+        "complexity": "LOW",
+        "traceability": "Request-Approval Workflow -> Leave Management -> Approve"
+      },
+      {
+        "requirementId": "REQ-LEAVE-06",
+        "module": "Leave Management",
+        "page": "Leave Workspace",
+        "feature": "Reject",
+        "requirementType": "Workflow",
+        "title": "Reject (Leave Management)",
+        "businessReason": "Supports the Request-Approval Workflow business pattern for \"Leave Management\": Reject is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Approver",
+        "workflowStep": "Reject",
+        "fields": [
+          "LeaveRequestId",
+          "requesterId",
+          "requesterName",
+          "department",
+          "approverId",
+          "leaveType",
+          "balanceRemaining",
+          "fromDate",
+          "toDate",
+          "halfDay",
+          "numberOfDays/Units",
+          "reason",
+          "attachment",
+          "status",
+          "approvalLevel",
+          "approvedBy",
+          "rejectedBy",
+          "rejectionReason",
+          "downstreamImpact",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "fromDate must be before or equal to toDate",
+          "requested amount must not exceed remaining balance/eligibility",
+          "overlapping leave requests for the same requester are not allowed",
+          "leave type must be active/configured",
+          "attachment required when leave type requires supporting evidence",
+          "weekend/holiday exclusion rule applies when calculating requested days/units",
+          "approver cannot approve their own request",
+          "requests cannot be submitted past the configured cutoff window"
+        ],
+        "apis": [
+          "POST /leave-requests/{id}/reject"
+        ],
+        "databaseEntities": [
+          "LeaveRequest",
+          "LeaveType",
+          "LeaveBalance",
+          "LeaveApproval",
+          "LeavePolicy",
+          "LeaveAuditLog"
+        ],
+        "acceptanceCriteria": "Approver can perform \"Reject\" only when business rules and validations for Leave are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Reject attempted with missing/invalid required fields",
+          "Reject attempted by a role without permission",
+          "Reject attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Reject succeeds with valid data and authorized role",
+          "Negative: Reject rejected with invalid data",
+          "Access: Reject rejected for unauthorized role"
+        ],
+        "priority": "MEDIUM",
+        "complexity": "LOW",
+        "traceability": "Request-Approval Workflow -> Leave Management -> Reject"
+      },
+      {
+        "requirementId": "REQ-LEAVE-07",
+        "module": "Leave Management",
+        "page": "Leave Workspace",
+        "feature": "Cancel",
+        "requirementType": "Workflow",
+        "title": "Cancel (Leave Management)",
+        "businessReason": "Supports the Request-Approval Workflow business pattern for \"Leave Management\": Cancel is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Requester",
+        "workflowStep": "Cancel",
+        "fields": [
+          "LeaveRequestId",
+          "requesterId",
+          "requesterName",
+          "department",
+          "approverId",
+          "leaveType",
+          "balanceRemaining",
+          "fromDate",
+          "toDate",
+          "halfDay",
+          "numberOfDays/Units",
+          "reason",
+          "attachment",
+          "status",
+          "approvalLevel",
+          "approvedBy",
+          "rejectedBy",
+          "rejectionReason",
+          "downstreamImpact",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "fromDate must be before or equal to toDate",
+          "requested amount must not exceed remaining balance/eligibility",
+          "overlapping leave requests for the same requester are not allowed",
+          "leave type must be active/configured",
+          "attachment required when leave type requires supporting evidence",
+          "weekend/holiday exclusion rule applies when calculating requested days/units",
+          "approver cannot approve their own request",
+          "requests cannot be submitted past the configured cutoff window"
+        ],
+        "apis": [
+          "POST /leave-requests/{id}/cancel"
+        ],
+        "databaseEntities": [
+          "LeaveRequest",
+          "LeaveType",
+          "LeaveBalance",
+          "LeaveApproval",
+          "LeavePolicy",
+          "LeaveAuditLog"
+        ],
+        "acceptanceCriteria": "Requester can perform \"Cancel\" only when business rules and validations for Leave are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Cancel attempted with missing/invalid required fields",
+          "Cancel attempted by a role without permission",
+          "Cancel attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Cancel succeeds with valid data and authorized role",
+          "Negative: Cancel rejected with invalid data",
+          "Access: Cancel rejected for unauthorized role"
+        ],
+        "priority": "MEDIUM",
+        "complexity": "LOW",
+        "traceability": "Request-Approval Workflow -> Leave Management -> Cancel"
+      },
+      {
+        "requirementId": "REQ-LEAVE-08",
+        "module": "Leave Management",
+        "page": "Leave Workspace",
+        "feature": "Notify Requester",
+        "requirementType": "Automation",
+        "title": "Notify Requester (Leave Management)",
+        "businessReason": "Supports the Request-Approval Workflow business pattern for \"Leave Management\": Notify Requester is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "System",
+        "workflowStep": "Notify Requester",
+        "fields": [
+          "LeaveRequestId",
+          "requesterId",
+          "requesterName",
+          "department",
+          "approverId",
+          "leaveType",
+          "balanceRemaining",
+          "fromDate",
+          "toDate",
+          "halfDay",
+          "numberOfDays/Units",
+          "reason",
+          "attachment",
+          "status",
+          "approvalLevel",
+          "approvedBy",
+          "rejectedBy",
+          "rejectionReason",
+          "downstreamImpact",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "fromDate must be before or equal to toDate",
+          "requested amount must not exceed remaining balance/eligibility",
+          "overlapping leave requests for the same requester are not allowed",
+          "leave type must be active/configured",
+          "attachment required when leave type requires supporting evidence",
+          "weekend/holiday exclusion rule applies when calculating requested days/units",
+          "approver cannot approve their own request",
+          "requests cannot be submitted past the configured cutoff window"
+        ],
+        "apis": [
+          "EVENT notification/requester-log (no direct CRUD endpoint)"
+        ],
+        "databaseEntities": [
+          "LeaveRequest",
+          "LeaveType",
+          "LeaveBalance",
+          "LeaveApproval",
+          "LeavePolicy",
+          "LeaveAuditLog"
+        ],
+        "acceptanceCriteria": "System can perform \"Notify Requester\" only when business rules and validations for Leave are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Notify Requester attempted with missing/invalid required fields",
+          "Notify Requester attempted by a role without permission",
+          "Notify Requester attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Notify Requester succeeds with valid data and authorized role",
+          "Negative: Notify Requester rejected with invalid data",
+          "Access: Notify Requester rejected for unauthorized role"
+        ],
+        "priority": "LOW",
+        "complexity": "MEDIUM",
+        "traceability": "Request-Approval Workflow -> Leave Management -> Notify Requester"
+      },
+      {
+        "requirementId": "REQ-LEAVE-09",
+        "module": "Leave Management",
+        "page": "Leave Workspace",
+        "feature": "Sync Downstream Impact",
+        "requirementType": "Automation",
+        "title": "Sync Downstream Impact (Leave Management)",
+        "businessReason": "Supports the Request-Approval Workflow business pattern for \"Leave Management\": Sync Downstream Impact is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "System",
+        "workflowStep": "Sync Downstream Impact",
+        "fields": [
+          "LeaveRequestId",
+          "requesterId",
+          "requesterName",
+          "department",
+          "approverId",
+          "leaveType",
+          "balanceRemaining",
+          "fromDate",
+          "toDate",
+          "halfDay",
+          "numberOfDays/Units",
+          "reason",
+          "attachment",
+          "status",
+          "approvalLevel",
+          "approvedBy",
+          "rejectedBy",
+          "rejectionReason",
+          "downstreamImpact",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "fromDate must be before or equal to toDate",
+          "requested amount must not exceed remaining balance/eligibility",
+          "overlapping leave requests for the same requester are not allowed",
+          "leave type must be active/configured",
+          "attachment required when leave type requires supporting evidence",
+          "weekend/holiday exclusion rule applies when calculating requested days/units",
+          "approver cannot approve their own request",
+          "requests cannot be submitted past the configured cutoff window"
+        ],
+        "apis": [
+          "GET /leave-calendar",
+          "GET /leave-balances/{requesterId}",
+          "EVENT audit/downstream-impact-log"
+        ],
+        "databaseEntities": [
+          "LeaveRequest",
+          "LeaveType",
+          "LeaveBalance",
+          "LeaveApproval",
+          "LeavePolicy",
+          "LeaveAuditLog"
+        ],
+        "acceptanceCriteria": "System can perform \"Sync Downstream Impact\" only when business rules and validations for Leave are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Sync Downstream Impact attempted with missing/invalid required fields",
+          "Sync Downstream Impact attempted by a role without permission",
+          "Sync Downstream Impact attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Sync Downstream Impact succeeds with valid data and authorized role",
+          "Negative: Sync Downstream Impact rejected with invalid data",
+          "Access: Sync Downstream Impact rejected for unauthorized role"
+        ],
+        "priority": "LOW",
+        "complexity": "MEDIUM",
+        "traceability": "Request-Approval Workflow -> Leave Management -> Sync Downstream Impact"
+      },
+      {
+        "requirementId": "REQ-LEAVE-10",
+        "module": "Leave Management",
+        "page": "Leave Workspace",
+        "feature": "Generate Report",
+        "requirementType": "Workflow",
+        "title": "Generate Report (Leave Management)",
+        "businessReason": "Supports the Request-Approval Workflow business pattern for \"Leave Management\": Generate Report is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Admin",
+        "workflowStep": "Generate Report",
+        "fields": [
+          "LeaveRequestId",
+          "requesterId",
+          "requesterName",
+          "department",
+          "approverId",
+          "leaveType",
+          "balanceRemaining",
+          "fromDate",
+          "toDate",
+          "halfDay",
+          "numberOfDays/Units",
+          "reason",
+          "attachment",
+          "status",
+          "approvalLevel",
+          "approvedBy",
+          "rejectedBy",
+          "rejectionReason",
+          "downstreamImpact",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "fromDate must be before or equal to toDate",
+          "requested amount must not exceed remaining balance/eligibility",
+          "overlapping leave requests for the same requester are not allowed",
+          "leave type must be active/configured",
+          "attachment required when leave type requires supporting evidence",
+          "weekend/holiday exclusion rule applies when calculating requested days/units",
+          "approver cannot approve their own request",
+          "requests cannot be submitted past the configured cutoff window"
+        ],
+        "apis": [
+          "GET /leave-reports"
+        ],
+        "databaseEntities": [
+          "LeaveRequest",
+          "LeaveType",
+          "LeaveBalance",
+          "LeaveApproval",
+          "LeavePolicy",
+          "LeaveAuditLog"
+        ],
+        "acceptanceCriteria": "Admin can perform \"Generate Report\" only when business rules and validations for Leave are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Generate Report attempted with missing/invalid required fields",
+          "Generate Report attempted by a role without permission",
+          "Generate Report attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Generate Report succeeds with valid data and authorized role",
+          "Negative: Generate Report rejected with invalid data",
+          "Access: Generate Report rejected for unauthorized role"
+        ],
+        "priority": "LOW",
+        "complexity": "LOW",
+        "traceability": "Request-Approval Workflow -> Leave Management -> Generate Report"
+      }
+    ],
+    "aiEnrichedRequirements": []
+  }
+}

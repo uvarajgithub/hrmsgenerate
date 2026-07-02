@@ -1,0 +1,86 @@
+[
+  {
+    "method": "POST",
+    "endpoint": "/leave-requests",
+    "description": "Submit a new leave request",
+    "linkedRequirements": [
+      "REQ-LEAVE-01"
+    ]
+  },
+  {
+    "method": "GET",
+    "endpoint": "/leave-requests",
+    "description": "List leave requests (filterable by requester, approver, status, date range)",
+    "linkedRequirements": []
+  },
+  {
+    "method": "GET",
+    "endpoint": "/leave-requests/{id}",
+    "description": "Get full detail of a single leave request",
+    "linkedRequirements": [
+      "REQ-LEAVE-04"
+    ]
+  },
+  {
+    "method": "PUT",
+    "endpoint": "/leave-requests/{id}",
+    "description": "Update a leave request while still editable",
+    "linkedRequirements": []
+  },
+  {
+    "method": "POST",
+    "endpoint": "/leave-requests/{id}/submit",
+    "description": "Submit a draft leave request for approval",
+    "linkedRequirements": [
+      "REQ-LEAVE-03"
+    ]
+  },
+  {
+    "method": "POST",
+    "endpoint": "/leave-requests/{id}/approve",
+    "description": "Approver approves a pending leave request",
+    "linkedRequirements": [
+      "REQ-LEAVE-05"
+    ]
+  },
+  {
+    "method": "POST",
+    "endpoint": "/leave-requests/{id}/reject",
+    "description": "Approver rejects a pending leave request with a mandatory reason",
+    "linkedRequirements": [
+      "REQ-LEAVE-06"
+    ]
+  },
+  {
+    "method": "POST",
+    "endpoint": "/leave-requests/{id}/cancel",
+    "description": "Requester cancels their own pending leave request",
+    "linkedRequirements": [
+      "REQ-LEAVE-07"
+    ]
+  },
+  {
+    "method": "GET",
+    "endpoint": "/leave-balances/{requesterId}",
+    "description": "Get remaining balance/eligibility for a requester",
+    "linkedRequirements": [
+      "REQ-LEAVE-02"
+    ]
+  },
+  {
+    "method": "GET",
+    "endpoint": "/leave-calendar",
+    "description": "Calendar view of approved leave entries",
+    "linkedRequirements": [
+      "REQ-LEAVE-09"
+    ]
+  },
+  {
+    "method": "GET",
+    "endpoint": "/leave-reports",
+    "description": "Generate leave utilization/summary reports",
+    "linkedRequirements": [
+      "REQ-LEAVE-10"
+    ]
+  }
+]
