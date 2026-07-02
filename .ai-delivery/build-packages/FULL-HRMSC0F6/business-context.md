@@ -4,19 +4,19 @@ Project: hrms (Human Resources)
 Scope: Full Application
 
 ## Why this module exists
-Supports the Entity-Record Management business pattern for "Employee Management": Create Employee Profile is a mandatory lifecycle step - without it the module cannot transition to the next state.
+Supports the Record-Lifecycle Workflow business pattern for "Human Resources": Create HumanResources Record is a mandatory lifecycle step - without it the module cannot transition to the next state.
 
 ## Real business behavior in scope (not generic CRUD)
-- Create Employee Profile (Employee Management): HR Staff / Record Owner can perform "Create Employee Profile" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
-- Verify & Validate Employee Details (Employee Management): HR Staff / Record Owner can perform "Verify & Validate Employee Details" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
-- Submit for Manager Approval (Employee Management): HR Staff / Record Owner can perform "Submit for Manager Approval" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
-- Manager Reviews Employee Record (Employee Management): Manager / Supervisor can perform "Manager Reviews Employee Record" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
-- Approve Employee Record (Employee Management): Manager / Supervisor can perform "Approve Employee Record" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
-- Activate Employee (Employee Management): Admin can perform "Activate Employee" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
-- Update Employee Information (Employee Management): HR Staff / Record Owner can perform "Update Employee Information" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
-- Deactivate / Offboard Employee (Employee Management): Admin can perform "Deactivate / Offboard Employee" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
-- Audit Log Capture (Employee Management): System can perform "Audit Log Capture" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
-- Generate Employee Reports (Employee Management): Admin can perform "Generate Employee Reports" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
+- Create HumanResources Record (Human Resources): Owner can perform "Create HumanResources Record" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.
+- Edit HumanResources Record (Human Resources): Owner can perform "Edit HumanResources Record" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.
+- Submit HumanResources for Review (Human Resources): Owner can perform "Submit HumanResources for Review" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.
+- Review HumanResources Record (Human Resources): Reviewer can perform "Review HumanResources Record" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.
+- Approve HumanResources Record (Human Resources): Reviewer can perform "Approve HumanResources Record" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.
+- Reject HumanResources Record (Human Resources): Reviewer can perform "Reject HumanResources Record" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.
+- Archive HumanResources Record (Human Resources): Admin can perform "Archive HumanResources Record" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.
+- Audit Trail Capture (Human Resources): System can perform "Audit Trail Capture" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.
+- Notify Stakeholders (Human Resources): System can perform "Notify Stakeholders" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.
+- Generate HumanResources Report (Human Resources): Admin can perform "Generate HumanResources Report" only when business rules and validations for HumanResources are satisfied; result is reflected in status and audit trail.
 
 ## Roles involved
 Owner, Reviewer, Admin

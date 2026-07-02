@@ -9,4 +9,5 @@
 7. Write .ai-delivery/build-result.json with files changed, requirements covered, and test results.
 8. Include every completed Requirement ID in requirementsCovered so the platform can turn those board cards to DEV_COMPLETED.
 9. If the built application can be viewed locally, start or verify the local app and include its actual URL in build-result.json as localPreviewUrl.
-10. Commit on ai/full-application-hrms, push, open a PR titled "FULL-HRMSC0F6: Full Application".
+10. Generate QA-consumable evidence for QA Test Mind: .ai-delivery/requirement-evidence.json, .ai-delivery/build-summary.md, test-results/, coverage/, and playwright-report/ when available.
+11. Commit on ai/full-application-hrms, push, open a PR titled "FULL-HRMSC0F6: Full Application".

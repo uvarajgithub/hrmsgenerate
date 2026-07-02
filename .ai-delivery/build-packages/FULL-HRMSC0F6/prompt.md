@@ -19,6 +19,34 @@ Never work outside the assigned scope.
 
 ---
 
+## Workspace Setup
+
+If the repository is not present locally, clone it first:
+
+```bash
+git clone https://github.com/uvarajgithub/hrmsgenerate
+```
+
+Then checkout or create the required branch:
+
+```bash
+git checkout ai/full-application-hrms || git checkout -b ai/full-application-hrms
+```
+
+Install dependencies if they are missing:
+
+```bash
+npm install
+```
+
+Environment rules:
+- Do not invent production secrets.
+- If required environment variables are missing, create or update `.env.example` with the required keys.
+- Use local/mock configuration when real services are unavailable.
+- Document any missing external service, credential, database, or API dependency in `.ai-delivery/build-result.json` under `manualActions` and `warnings`.
+
+---
+
 ## Read in this exact order
 
 1. README.md
@@ -84,7 +112,7 @@ Implement in this order:
 4. Automation assets from automation-assets.json
 5. Compatibility files only when older tooling needs them
 
-Implement every assigned Requirement ID (see requirement-scope.json - 222 requirements in scope).
+Implement every assigned Requirement ID (see requirement-scope.json - 10 requirements in scope).
 
 ---
 
@@ -97,6 +125,18 @@ Run every command defined in validation-rules.json. If available:
 - npm run build
 
 Fix implementation errors introduced by this build.
+
+---
+
+## Status Rules
+
+Use `Completed` only when every scoped Requirement ID is implemented, validated, and included in `requirementsCovered`.
+
+Use `Partial` when some scoped Requirement IDs are implemented but any requirement remains incomplete, untested, or not evidenced.
+
+Use `Blocked` only when implementation cannot continue because of missing contract data, missing dependency access, unavailable credentials, repository problems, or a required Change Request.
+
+Never put a Requirement ID in `requirementsCovered` unless the code, test/evidence, and validation for that requirement are actually present.
 
 ---
 
@@ -156,9 +196,42 @@ and `localPreviewUrl` to the real URL, for example `http://localhost:5173/`.
 ## Requirement Traceability
 
 Generate `.ai-delivery/requirement-evidence.json` mapping every Requirement ID to:
-Files, Components, APIs, Database entities, Tests.
+Files, Components, APIs, Database entities, Tests, status, evidence, and gaps.
+
+Use this schema for each requirement:
+
+```json
+{
+  "REQ-ID": {
+    "status": "implemented | tested | failed | blocked",
+    "files": [],
+    "components": [],
+    "apis": [],
+    "databaseEntities": [],
+    "tests": [],
+    "evidence": "",
+    "gaps": []
+  }
+}
+```
 
 Example: REQ-101 -> LeaveForm.tsx, LeaveService.ts, POST /leave, Leave table, LeaveForm.spec.ts
+
+---
+
+## QA Test Mind Handoff
+
+The generated application is the test producer. QA Test Mind / AI Delivery Studio is the independent validator.
+
+Produce QA-consumable evidence:
+- `.ai-delivery/build-result.json`
+- `.ai-delivery/requirement-evidence.json`
+- `.ai-delivery/build-summary.md`
+- `test-results/` when generated
+- `coverage/` when generated
+- `playwright-report/` when generated
+
+Do not mark QA as approved from inside the generated app. Only provide evidence. QA Test Mind consumes the evidence, verifies coverage, creates defects if needed, and decides release readiness.
 
 ---
 
