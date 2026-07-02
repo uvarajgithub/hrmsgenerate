@@ -1,0 +1,47 @@
+[
+  {
+    "method": "POST",
+    "endpoint": "/employees",
+    "description": "Create a new employee profile"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/employees",
+    "description": "List employee records (filterable by department, status, manager)"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/employees/{id}",
+    "description": "Get full detail of a single employee record"
+  },
+  {
+    "method": "PUT",
+    "endpoint": "/employees/{id}",
+    "description": "Update employee information"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/employees/{id}/submit",
+    "description": "Submit employee record for approval"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/employees/{id}/approve",
+    "description": "Manager approves a employee record"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/employees/{id}/activate",
+    "description": "Admin activates an approved employee"
+  },
+  {
+    "method": "POST",
+    "endpoint": "/employees/{id}/deactivate",
+    "description": "Deactivate / offboard a employee"
+  },
+  {
+    "method": "GET",
+    "endpoint": "/employee-reports",
+    "description": "Generate employee directory and status reports"
+  }
+]

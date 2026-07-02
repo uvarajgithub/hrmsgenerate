@@ -1,0 +1,107 @@
+{
+  "module": "Employee Management",
+  "patternMatched": "Entity-Record Management",
+  "roles": [
+    "HR Staff / Record Owner",
+    "Manager / Supervisor",
+    "Admin"
+  ],
+  "scenarios": [
+    {
+      "requirementId": "REQ-EMPLOYEE-01",
+      "positiveTest": "Create Employee Profile succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Create Employee Profile is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Create Employee Profile is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Employee Management is independently exercised against Create Employee Profile.",
+      "workflowTest": "Full lifecycle test: create -> Create Employee Profile -> downstream state is consistent with the Entity-Record Management pattern.",
+      "regressionRisk": "High - core lifecycle step, breaking this blocks the whole module"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-02",
+      "positiveTest": "Verify & Validate Employee Details succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Verify & Validate Employee Details is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Verify & Validate Employee Details is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Employee Management is independently exercised against Verify & Validate Employee Details.",
+      "workflowTest": "Full lifecycle test: create -> Verify & Validate Employee Details -> downstream state is consistent with the Entity-Record Management pattern.",
+      "regressionRisk": "High - core lifecycle step, breaking this blocks the whole module"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-03",
+      "positiveTest": "Submit for Manager Approval succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Submit for Manager Approval is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Submit for Manager Approval is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Employee Management is independently exercised against Submit for Manager Approval.",
+      "workflowTest": "Full lifecycle test: create -> Submit for Manager Approval -> downstream state is consistent with the Entity-Record Management pattern.",
+      "regressionRisk": "High - core lifecycle step, breaking this blocks the whole module"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-04",
+      "positiveTest": "Manager Reviews Employee Record succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Manager Reviews Employee Record is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Manager Reviews Employee Record is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Employee Management is independently exercised against Manager Reviews Employee Record.",
+      "workflowTest": "Full lifecycle test: create -> Manager Reviews Employee Record -> downstream state is consistent with the Entity-Record Management pattern.",
+      "regressionRisk": "High - core lifecycle step, breaking this blocks the whole module"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-05",
+      "positiveTest": "Approve Employee Record succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Approve Employee Record is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Approve Employee Record is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Employee Management is independently exercised against Approve Employee Record.",
+      "workflowTest": "Full lifecycle test: create -> Approve Employee Record -> downstream state is consistent with the Entity-Record Management pattern.",
+      "regressionRisk": "Medium - secondary step, breaking this degrades but does not block the module"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-06",
+      "positiveTest": "Activate Employee succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Activate Employee is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Activate Employee is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Employee Management is independently exercised against Activate Employee.",
+      "workflowTest": "Full lifecycle test: create -> Activate Employee -> downstream state is consistent with the Entity-Record Management pattern.",
+      "regressionRisk": "Medium - secondary step, breaking this degrades but does not block the module"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-07",
+      "positiveTest": "Update Employee Information succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Update Employee Information is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Update Employee Information is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Employee Management is independently exercised against Update Employee Information.",
+      "workflowTest": "Full lifecycle test: create -> Update Employee Information -> downstream state is consistent with the Entity-Record Management pattern.",
+      "regressionRisk": "Medium - secondary step, breaking this degrades but does not block the module"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-08",
+      "positiveTest": "Deactivate / Offboard Employee succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Deactivate / Offboard Employee is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Deactivate / Offboard Employee is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Employee Management is independently exercised against Deactivate / Offboard Employee.",
+      "workflowTest": "Full lifecycle test: create -> Deactivate / Offboard Employee -> downstream state is consistent with the Entity-Record Management pattern.",
+      "regressionRisk": "Medium - secondary step, breaking this degrades but does not block the module"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-09",
+      "positiveTest": "Audit Log Capture succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Audit Log Capture is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Audit Log Capture is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Employee Management is independently exercised against Audit Log Capture.",
+      "workflowTest": "Full lifecycle test: create -> Audit Log Capture -> downstream state is consistent with the Entity-Record Management pattern.",
+      "regressionRisk": "Medium - secondary step, breaking this degrades but does not block the module"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-10",
+      "positiveTest": "Generate Employee Reports succeeds end-to-end with valid data and an authorized role; status/audit trail updates correctly.",
+      "negativeTest": "Generate Employee Reports is rejected when required fields are missing or invalid, with a clear error message.",
+      "accessTest": "Generate Employee Reports is rejected for any role not listed in this step's authorized roles.",
+      "validationTest": "Each business validation listed for Employee Management is independently exercised against Generate Employee Reports.",
+      "workflowTest": "Full lifecycle test: create -> Generate Employee Reports -> downstream state is consistent with the Entity-Record Management pattern.",
+      "regressionRisk": "Medium - secondary step, breaking this degrades but does not block the module"
+    }
+  ],
+  "reports": [
+    "Employee Directory Report",
+    "Employee Status Report",
+    "Department Headcount Report",
+    "Onboarding Pipeline Report"
+  ]
+}

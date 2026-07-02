@@ -1,0 +1,16 @@
+{
+  "sharedComponents": [
+    "Table",
+    "Drawer",
+    "StatusBadge",
+    "FilterBar",
+    "Pagination",
+    "FormField"
+  ],
+  "moduleComponents": [
+    "Employee ManagementList",
+    "Employee ManagementForm",
+    "Employee ManagementDetail"
+  ],
+  "source": "Use the component library from selected-template.json (SAP Fiori Inspired HR)."
+}
