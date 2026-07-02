@@ -3,6 +3,7 @@
   "source": "Structured requirement scope. Business workflow is primary; UI and automation support it.",
   "counts": {
     "totalPlatformRequirements": 0,
+    "deduplicatedSummaryRequirements": 0,
     "businessWorkflowRequirements": 10,
     "uiContractRequirements": 0,
     "supportingUiRequirements": 0,

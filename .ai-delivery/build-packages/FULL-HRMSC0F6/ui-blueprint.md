@@ -1,5 +1,5 @@
 Project: hrms
-Generated: 2026-07-02T17:10:00.491Z
+Generated: 2026-07-02T17:27:38.334Z
 
 # UI Blueprint
 
