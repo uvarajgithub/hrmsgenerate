@@ -1,7 +1,7 @@
-# BUILD-001 Summary
+# BUILD-002 Summary
 
 ## Scope Completed
-Employee Management module implemented inside `src/modules/employee-management/` only.
+Employee Management module delivered as a self-contained slice with validation, workflow, audit history, report generation, and delivery evidence.
 
 ## Requirements Implemented
 - REQ-EMPLOYEE-01 Create Employee Profile
@@ -16,34 +16,34 @@ Employee Management module implemented inside `src/modules/employee-management/`
 - REQ-EMPLOYEE-10 Generate Employee Reports
 
 ## Files Created
-- `src/modules/employee-management/types/employee-management.ts`
-- `src/modules/employee-management/validators/employee-management.validators.ts`
-- `src/modules/employee-management/services/employee-management.service.ts`
-- `src/modules/employee-management/components/EmployeeManagementList.ts`
-- `src/modules/employee-management/components/EmployeeManagementForm.ts`
-- `src/modules/employee-management/components/EmployeeManagementDetail.ts`
-- `src/modules/employee-management/components/EmployeeActionBar.ts`
-- `src/modules/employee-management/components/StatusTimeline.ts`
-- `src/modules/employee-management/hooks/useEmployeeWorkspace.ts`
-- `src/modules/employee-management/pages/EmployeeWorkspace.ts`
-- `src/modules/employee-management/index.ts`
-- `src/modules/employee-management/tests/employee-management.test.ts`
+- `eslint.config.cjs`
+- `vite.config.js`
+- `vitest.config.js`
+- `scripts/run-employee-management-tests.mjs`
 
 ## Files Modified
+- `package.json`
+- `tsconfig.json`
+- `src/modules/employee-management/tests/employee-management.test.ts`
 - `.ai-delivery/build-result.json`
 - `.ai-delivery/requirement-evidence.json`
+- `.ai-delivery/build-summary.md`
+
+## Files Removed
+- `vite.config.ts`
+- `vitest.config.ts`
 
 ## Tests Executed
-- `npm.cmd run build`
 - `npm.cmd run lint`
 - `npm.cmd test`
+- `npm.cmd run build`
+- `Invoke-WebRequest http://127.0.0.1:3000/`
 
 ## Known Issues
-- The environment does not have `tsc`, `eslint`, or `vitest` installed, so validation could not run.
-- The repository currently has no top-level Vite app entry points, so a follow-up bootstrap slice is needed to wire this module into the shell.
+- A legacy tracked temp log file `.tmp-hrms-3011.log` remains locked by another process outside the build slice and was not part of the committed changes.
 
 ## Risks
-- The module is implemented as a self-contained slice, but repository-level build validation remains blocked by the missing toolchain.
+- The current build uses a local mock/service implementation for Employee Management rather than a remote production API.
 
 ## Recommended Next Build ID
-- `BUILD-002` - Application shell/bootstrap integration for Employee Workspace
+- `BUILD-003: Employee Management persistence and backend API wiring`

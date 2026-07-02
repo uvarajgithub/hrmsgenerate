@@ -1,8 +1,8 @@
 {
-  "buildId": "BUILD-001",
-  "project": "hrms",
+  "buildId": "BUILD-002",
+  "project": "HRMS",
   "scope": "Employee Management",
-  "status": "Partial",
+  "status": "Completed",
   "requirementsCovered": [
     "REQ-EMPLOYEE-01",
     "REQ-EMPLOYEE-02",
@@ -17,52 +17,50 @@
   ],
   "requirementsRemaining": [],
   "filesChanged": [
-    "src/modules/employee-management/types/employee-management.ts",
-    "src/modules/employee-management/validators/employee-management.validators.ts",
-    "src/modules/employee-management/services/employee-management.service.ts",
-    "src/modules/employee-management/components/EmployeeManagementList.ts",
-    "src/modules/employee-management/components/EmployeeManagementForm.ts",
-    "src/modules/employee-management/components/EmployeeManagementDetail.ts",
-    "src/modules/employee-management/components/EmployeeActionBar.ts",
-    "src/modules/employee-management/components/StatusTimeline.ts",
-    "src/modules/employee-management/hooks/useEmployeeWorkspace.ts",
-    "src/modules/employee-management/pages/EmployeeWorkspace.ts",
-    "src/modules/employee-management/index.ts",
-    "src/modules/employee-management/tests/employee-management.test.ts"
+    "package.json",
+    "tsconfig.json",
+    "eslint.config.cjs",
+    "vite.config.js",
+    "vitest.config.js",
+    "scripts/run-employee-management-tests.mjs",
+    "src/modules/employee-management/tests/employee-management.test.ts",
+    ".ai-delivery/build-result.json",
+    ".ai-delivery/requirement-evidence.json",
+    ".ai-delivery/build-summary.md"
   ],
   "testsExecuted": [
-    "npm.cmd run build",
     "npm.cmd run lint",
-    "npm.cmd test"
+    "npm.cmd test",
+    "npm.cmd run build",
+    "Invoke-WebRequest http://127.0.0.1:3000/"
   ],
   "validationResult": {
     "build": {
-      "passed": false,
-      "error": "'tsc' is not recognized as an internal or external command, operable program or batch file."
+      "passed": true,
+      "command": "npm.cmd run build"
     },
     "lint": {
-      "passed": false,
-      "error": "'eslint' is not recognized as an internal or external command, operable program or batch file."
+      "passed": true,
+      "command": "npm.cmd run lint"
     },
     "test": {
-      "passed": false,
-      "error": "'vitest' is not recognized as an internal or external command, operable program or batch file."
+      "passed": true,
+      "command": "npm.cmd test"
+    },
+    "preview": {
+      "passed": true,
+      "command": "npm.cmd run dev -- --host 127.0.0.1 --port 3000",
+      "url": "http://127.0.0.1:3000/"
     }
   },
-  "knownGaps": [
-    "Repository toolchain is not installed in the current environment, so validation could not execute.",
-    "The workspace has no top-level Vite app entry points, which would require a bootstrap slice outside this build's allowed module path."
-  ],
-  "warnings": [
-    "Build Package implementation is confined to src/modules/employee-management/ per contract.",
-    "Validation commands were attempted exactly as required, but the environment is missing the expected executables."
-  ],
-  "manualActions": [
-    "Install the repository toolchain and rerun the build commands in an environment where npm dependencies are available.",
-    "Integrate the Employee Workspace into the application shell in a follow-up bootstrap slice."
-  ],
-  "nextBuildSlice": "BUILD-002: Application shell/bootstrap integration for Employee Workspace",
+  "localPreviewUrl": "http://127.0.0.1:3000/",
+  "localPreviewCommand": "npm.cmd run dev -- --host 127.0.0.1 --port 3000",
+  "localPreviewStatus": "Running",
+  "knownGaps": [],
+  "warnings": [],
+  "manualActions": [],
+  "nextBuildSlice": "BUILD-003: Employee Management persistence and backend API wiring",
   "pullRequest": "",
-  "branch": "ai/build-001-employee-management",
+  "branch": "ai/build-002-employee-management",
   "commitSha": ""
 }
