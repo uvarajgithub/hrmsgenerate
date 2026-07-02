@@ -1,6 +1,6 @@
 [
   {
-    "id": "arch-rule-z8i2un3",
+    "id": "arch-rule-raguesw",
     "projectId": "hrms-c0f6fc62",
     "ruleName": "Each module owns its own folder.",
     "description": "Every discovered module should map to an isolated implementation area.",
@@ -8,7 +8,7 @@
     "enabled": true
   },
   {
-    "id": "arch-rule-2iwt7lk",
+    "id": "arch-rule-sax8991",
     "projectId": "hrms-c0f6fc62",
     "ruleName": "Modules expose public APIs only through index.ts.",
     "description": "Cross-module usage should depend on public exports.",
@@ -16,7 +16,7 @@
     "enabled": true
   },
   {
-    "id": "arch-rule-977uhel",
+    "id": "arch-rule-ktx8cfy",
     "projectId": "hrms-c0f6fc62",
     "ruleName": "Other modules cannot import internal files.",
     "description": "Imports from another module internal folder are forbidden.",
@@ -24,7 +24,7 @@
     "enabled": true
   },
   {
-    "id": "arch-rule-tmeus4i",
+    "id": "arch-rule-w7bhto0",
     "projectId": "hrms-c0f6fc62",
     "ruleName": "Shared UI must live in shared/ui.",
     "description": "Reusable visual components should be shared deliberately.",
@@ -32,7 +32,7 @@
     "enabled": true
   },
   {
-    "id": "arch-rule-aszyno2",
+    "id": "arch-rule-3q0vyjj",
     "projectId": "hrms-c0f6fc62",
     "ruleName": "Shared utilities must live in shared/utils.",
     "description": "Reusable non-UI helpers should not live inside feature modules.",
@@ -40,7 +40,7 @@
     "enabled": true
   },
   {
-    "id": "arch-rule-e0bdcxb",
+    "id": "arch-rule-iqs0twc",
     "projectId": "hrms-c0f6fc62",
     "ruleName": "Business logic must not live inside UI components.",
     "description": "Domain logic belongs in services, repositories, or hooks.",
@@ -48,7 +48,7 @@
     "enabled": true
   },
   {
-    "id": "arch-rule-nr2ecbt",
+    "id": "arch-rule-z3bwc35",
     "projectId": "hrms-c0f6fc62",
     "ruleName": "Database access must happen through services/repositories.",
     "description": "UI and routing layers should not write database state directly.",
@@ -56,7 +56,7 @@
     "enabled": true
   },
   {
-    "id": "arch-rule-v8rjvsv",
+    "id": "arch-rule-nqy0okv",
     "projectId": "hrms-c0f6fc62",
     "ruleName": "Cross-module writes are forbidden.",
     "description": "A module must not mutate another module owned table without a change request.",
@@ -64,7 +64,7 @@
     "enabled": true
   },
   {
-    "id": "arch-rule-63mgu5x",
+    "id": "arch-rule-3yscsnk",
     "projectId": "hrms-c0f6fc62",
     "ruleName": "Existing APIs cannot change without Change Request.",
     "description": "Endpoint, method, request, or response changes need traceability.",
@@ -72,7 +72,7 @@
     "enabled": true
   },
   {
-    "id": "arch-rule-ow1tv15",
+    "id": "arch-rule-6w76uk6",
     "projectId": "hrms-c0f6fc62",
     "ruleName": "Existing DB contracts cannot change without Change Request.",
     "description": "Ownership and migration changes need explicit approval.",
@@ -80,7 +80,7 @@
     "enabled": true
   },
   {
-    "id": "arch-rule-7egrfqf",
+    "id": "arch-rule-4olk8k0",
     "projectId": "hrms-c0f6fc62",
     "ruleName": "Every requirement must map to a module.",
     "description": "Unmapped requirements cannot proceed safely to build.",
@@ -88,7 +88,7 @@
     "enabled": true
   },
   {
-    "id": "arch-rule-gflkjjt",
+    "id": "arch-rule-3d2s00l",
     "projectId": "hrms-c0f6fc62",
     "ruleName": "Every bug fix must map to a defect and impacted requirement.",
     "description": "Fix work needs requirement traceability.",
@@ -96,7 +96,7 @@
     "enabled": true
   },
   {
-    "id": "arch-rule-yneasmh",
+    "id": "arch-rule-s8sffiq",
     "projectId": "hrms-c0f6fc62",
     "ruleName": "Every repo update must run architecture validation.",
     "description": "Changed files should create a validation report.",
@@ -104,7 +104,7 @@
     "enabled": true
   },
   {
-    "id": "arch-rule-q0vn07i",
+    "id": "arch-rule-oe3s61m",
     "projectId": "hrms-c0f6fc62",
     "ruleName": "Every release must pass regression gate.",
     "description": "Blocking architecture or regression failures stop release.",
