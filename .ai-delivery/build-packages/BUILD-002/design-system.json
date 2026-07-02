@@ -1,0 +1,4 @@
+{
+  "source": "selected-template.json",
+  "rule": "All UI must use the selected template design system - no generic admin dashboard."
+}

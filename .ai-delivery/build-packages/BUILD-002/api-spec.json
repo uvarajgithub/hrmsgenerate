@@ -1,0 +1,70 @@
+[
+  {
+    "method": "POST",
+    "endpoint": "/employees",
+    "description": "Create a new employee profile",
+    "linkedRequirements": [
+      "REQ-EMPLOYEE-01"
+    ]
+  },
+  {
+    "method": "GET",
+    "endpoint": "/employees",
+    "description": "List employee records (filterable by department, status, manager)",
+    "linkedRequirements": []
+  },
+  {
+    "method": "GET",
+    "endpoint": "/employees/{id}",
+    "description": "Get full detail of a single employee record",
+    "linkedRequirements": [
+      "REQ-EMPLOYEE-02"
+    ]
+  },
+  {
+    "method": "PUT",
+    "endpoint": "/employees/{id}",
+    "description": "Update employee information",
+    "linkedRequirements": []
+  },
+  {
+    "method": "POST",
+    "endpoint": "/employees/{id}/submit",
+    "description": "Submit employee record for approval",
+    "linkedRequirements": [
+      "REQ-EMPLOYEE-03"
+    ]
+  },
+  {
+    "method": "POST",
+    "endpoint": "/employees/{id}/approve",
+    "description": "Manager approves a employee record",
+    "linkedRequirements": [
+      "REQ-EMPLOYEE-05"
+    ]
+  },
+  {
+    "method": "POST",
+    "endpoint": "/employees/{id}/activate",
+    "description": "Admin activates an approved employee",
+    "linkedRequirements": [
+      "REQ-EMPLOYEE-06"
+    ]
+  },
+  {
+    "method": "POST",
+    "endpoint": "/employees/{id}/deactivate",
+    "description": "Deactivate / offboard a employee",
+    "linkedRequirements": [
+      "REQ-EMPLOYEE-08"
+    ]
+  },
+  {
+    "method": "GET",
+    "endpoint": "/employee-reports",
+    "description": "Generate employee directory and status reports",
+    "linkedRequirements": [
+      "REQ-EMPLOYEE-10"
+    ]
+  }
+]

@@ -1,0 +1,633 @@
+{
+  "buildId": "BUILD-002",
+  "scope": "Employee Management",
+  "compatibilityArtifact": true,
+  "supersededBy": [
+    "workflow-contract.json",
+    "requirement-contracts/*.json"
+  ],
+  "rule": "Primary implementation contract. Build these workflows before page-level UI details.",
+  "workflow": {
+    "rule": "Implement these first. They define the real business process and state transitions.",
+    "platformRequirements": [],
+    "domainAwareRequirements": [
+      {
+        "requirementId": "REQ-EMPLOYEE-01",
+        "module": "Employee Management",
+        "page": "Employee Workspace",
+        "feature": "Create Employee Profile",
+        "requirementType": "Workflow",
+        "title": "Create Employee Profile (Employee Management)",
+        "businessReason": "Supports the Entity-Record Management business pattern for \"Employee Management\": Create Employee Profile is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "HR Staff / Record Owner",
+        "workflowStep": "Create Employee Profile",
+        "fields": [
+          "employeeCode",
+          "employeeId",
+          "firstName",
+          "lastName",
+          "fullName",
+          "department",
+          "designation",
+          "jobTitle",
+          "managerId",
+          "managerName",
+          "joiningDate",
+          "employmentType",
+          "email",
+          "phone",
+          "address",
+          "documentIds",
+          "profilePhoto",
+          "status",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "employeeCode must be unique",
+          "email must be valid and unique",
+          "joiningDate must not be in the future",
+          "managerId must reference an active Employee record",
+          "required fields (name, department, email) must be present before activation"
+        ],
+        "apis": [
+          "POST /employees"
+        ],
+        "databaseEntities": [
+          "Employee",
+          "EmployeeDocument",
+          "EmployeeHistory"
+        ],
+        "acceptanceCriteria": "HR Staff / Record Owner can perform \"Create Employee Profile\" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Create Employee Profile attempted with missing/invalid required fields",
+          "Create Employee Profile attempted by a role without permission",
+          "Create Employee Profile attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Create Employee Profile succeeds with valid data and authorized role",
+          "Negative: Create Employee Profile rejected with invalid data",
+          "Access: Create Employee Profile rejected for unauthorized role"
+        ],
+        "priority": "HIGH",
+        "complexity": "LOW",
+        "traceability": "Entity-Record Management -> Employee Management -> Create Employee Profile"
+      },
+      {
+        "requirementId": "REQ-EMPLOYEE-02",
+        "module": "Employee Management",
+        "page": "Employee Workspace",
+        "feature": "Verify & Validate Employee Details",
+        "requirementType": "Workflow",
+        "title": "Verify & Validate Employee Details (Employee Management)",
+        "businessReason": "Supports the Entity-Record Management business pattern for \"Employee Management\": Verify & Validate Employee Details is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "HR Staff / Record Owner",
+        "workflowStep": "Verify & Validate Employee Details",
+        "fields": [
+          "employeeCode",
+          "employeeId",
+          "firstName",
+          "lastName",
+          "fullName",
+          "department",
+          "designation",
+          "jobTitle",
+          "managerId",
+          "managerName",
+          "joiningDate",
+          "employmentType",
+          "email",
+          "phone",
+          "address",
+          "documentIds",
+          "profilePhoto",
+          "status",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "employeeCode must be unique",
+          "email must be valid and unique",
+          "joiningDate must not be in the future",
+          "managerId must reference an active Employee record",
+          "required fields (name, department, email) must be present before activation"
+        ],
+        "apis": [
+          "GET /employees/{id}"
+        ],
+        "databaseEntities": [
+          "Employee",
+          "EmployeeDocument",
+          "EmployeeHistory"
+        ],
+        "acceptanceCriteria": "HR Staff / Record Owner can perform \"Verify & Validate Employee Details\" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Verify & Validate Employee Details attempted with missing/invalid required fields",
+          "Verify & Validate Employee Details attempted by a role without permission",
+          "Verify & Validate Employee Details attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Verify & Validate Employee Details succeeds with valid data and authorized role",
+          "Negative: Verify & Validate Employee Details rejected with invalid data",
+          "Access: Verify & Validate Employee Details rejected for unauthorized role"
+        ],
+        "priority": "HIGH",
+        "complexity": "LOW",
+        "traceability": "Entity-Record Management -> Employee Management -> Verify & Validate Employee Details"
+      },
+      {
+        "requirementId": "REQ-EMPLOYEE-03",
+        "module": "Employee Management",
+        "page": "Employee Workspace",
+        "feature": "Submit for Manager Approval",
+        "requirementType": "Workflow",
+        "title": "Submit for Manager Approval (Employee Management)",
+        "businessReason": "Supports the Entity-Record Management business pattern for \"Employee Management\": Submit for Manager Approval is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "HR Staff / Record Owner",
+        "workflowStep": "Submit for Manager Approval",
+        "fields": [
+          "employeeCode",
+          "employeeId",
+          "firstName",
+          "lastName",
+          "fullName",
+          "department",
+          "designation",
+          "jobTitle",
+          "managerId",
+          "managerName",
+          "joiningDate",
+          "employmentType",
+          "email",
+          "phone",
+          "address",
+          "documentIds",
+          "profilePhoto",
+          "status",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "employeeCode must be unique",
+          "email must be valid and unique",
+          "joiningDate must not be in the future",
+          "managerId must reference an active Employee record",
+          "required fields (name, department, email) must be present before activation"
+        ],
+        "apis": [
+          "POST /employees/{id}/submit"
+        ],
+        "databaseEntities": [
+          "Employee",
+          "EmployeeDocument",
+          "EmployeeHistory"
+        ],
+        "acceptanceCriteria": "HR Staff / Record Owner can perform \"Submit for Manager Approval\" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Submit for Manager Approval attempted with missing/invalid required fields",
+          "Submit for Manager Approval attempted by a role without permission",
+          "Submit for Manager Approval attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Submit for Manager Approval succeeds with valid data and authorized role",
+          "Negative: Submit for Manager Approval rejected with invalid data",
+          "Access: Submit for Manager Approval rejected for unauthorized role"
+        ],
+        "priority": "HIGH",
+        "complexity": "LOW",
+        "traceability": "Entity-Record Management -> Employee Management -> Submit for Manager Approval"
+      },
+      {
+        "requirementId": "REQ-EMPLOYEE-04",
+        "module": "Employee Management",
+        "page": "Employee Workspace",
+        "feature": "Manager Reviews Employee Record",
+        "requirementType": "Workflow",
+        "title": "Manager Reviews Employee Record (Employee Management)",
+        "businessReason": "Supports the Entity-Record Management business pattern for \"Employee Management\": Manager Reviews Employee Record is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Manager / Supervisor",
+        "workflowStep": "Manager Reviews Employee Record",
+        "fields": [
+          "employeeCode",
+          "employeeId",
+          "firstName",
+          "lastName",
+          "fullName",
+          "department",
+          "designation",
+          "jobTitle",
+          "managerId",
+          "managerName",
+          "joiningDate",
+          "employmentType",
+          "email",
+          "phone",
+          "address",
+          "documentIds",
+          "profilePhoto",
+          "status",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "employeeCode must be unique",
+          "email must be valid and unique",
+          "joiningDate must not be in the future",
+          "managerId must reference an active Employee record",
+          "required fields (name, department, email) must be present before activation"
+        ],
+        "apis": [],
+        "databaseEntities": [
+          "Employee",
+          "EmployeeDocument",
+          "EmployeeHistory"
+        ],
+        "acceptanceCriteria": "Manager / Supervisor can perform \"Manager Reviews Employee Record\" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Manager Reviews Employee Record attempted with missing/invalid required fields",
+          "Manager Reviews Employee Record attempted by a role without permission",
+          "Manager Reviews Employee Record attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Manager Reviews Employee Record succeeds with valid data and authorized role",
+          "Negative: Manager Reviews Employee Record rejected with invalid data",
+          "Access: Manager Reviews Employee Record rejected for unauthorized role"
+        ],
+        "priority": "HIGH",
+        "complexity": "LOW",
+        "traceability": "Entity-Record Management -> Employee Management -> Manager Reviews Employee Record"
+      },
+      {
+        "requirementId": "REQ-EMPLOYEE-05",
+        "module": "Employee Management",
+        "page": "Employee Workspace",
+        "feature": "Approve Employee Record",
+        "requirementType": "Workflow",
+        "title": "Approve Employee Record (Employee Management)",
+        "businessReason": "Supports the Entity-Record Management business pattern for \"Employee Management\": Approve Employee Record is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Manager / Supervisor",
+        "workflowStep": "Approve Employee Record",
+        "fields": [
+          "employeeCode",
+          "employeeId",
+          "firstName",
+          "lastName",
+          "fullName",
+          "department",
+          "designation",
+          "jobTitle",
+          "managerId",
+          "managerName",
+          "joiningDate",
+          "employmentType",
+          "email",
+          "phone",
+          "address",
+          "documentIds",
+          "profilePhoto",
+          "status",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "employeeCode must be unique",
+          "email must be valid and unique",
+          "joiningDate must not be in the future",
+          "managerId must reference an active Employee record",
+          "required fields (name, department, email) must be present before activation"
+        ],
+        "apis": [
+          "POST /employees/{id}/approve"
+        ],
+        "databaseEntities": [
+          "Employee",
+          "EmployeeDocument",
+          "EmployeeHistory"
+        ],
+        "acceptanceCriteria": "Manager / Supervisor can perform \"Approve Employee Record\" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Approve Employee Record attempted with missing/invalid required fields",
+          "Approve Employee Record attempted by a role without permission",
+          "Approve Employee Record attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Approve Employee Record succeeds with valid data and authorized role",
+          "Negative: Approve Employee Record rejected with invalid data",
+          "Access: Approve Employee Record rejected for unauthorized role"
+        ],
+        "priority": "MEDIUM",
+        "complexity": "LOW",
+        "traceability": "Entity-Record Management -> Employee Management -> Approve Employee Record"
+      },
+      {
+        "requirementId": "REQ-EMPLOYEE-06",
+        "module": "Employee Management",
+        "page": "Employee Workspace",
+        "feature": "Activate Employee",
+        "requirementType": "Workflow",
+        "title": "Activate Employee (Employee Management)",
+        "businessReason": "Supports the Entity-Record Management business pattern for \"Employee Management\": Activate Employee is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Admin",
+        "workflowStep": "Activate Employee",
+        "fields": [
+          "employeeCode",
+          "employeeId",
+          "firstName",
+          "lastName",
+          "fullName",
+          "department",
+          "designation",
+          "jobTitle",
+          "managerId",
+          "managerName",
+          "joiningDate",
+          "employmentType",
+          "email",
+          "phone",
+          "address",
+          "documentIds",
+          "profilePhoto",
+          "status",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "employeeCode must be unique",
+          "email must be valid and unique",
+          "joiningDate must not be in the future",
+          "managerId must reference an active Employee record",
+          "required fields (name, department, email) must be present before activation"
+        ],
+        "apis": [
+          "POST /employees/{id}/activate"
+        ],
+        "databaseEntities": [
+          "Employee",
+          "EmployeeDocument",
+          "EmployeeHistory"
+        ],
+        "acceptanceCriteria": "Admin can perform \"Activate Employee\" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Activate Employee attempted with missing/invalid required fields",
+          "Activate Employee attempted by a role without permission",
+          "Activate Employee attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Activate Employee succeeds with valid data and authorized role",
+          "Negative: Activate Employee rejected with invalid data",
+          "Access: Activate Employee rejected for unauthorized role"
+        ],
+        "priority": "MEDIUM",
+        "complexity": "LOW",
+        "traceability": "Entity-Record Management -> Employee Management -> Activate Employee"
+      },
+      {
+        "requirementId": "REQ-EMPLOYEE-07",
+        "module": "Employee Management",
+        "page": "Employee Workspace",
+        "feature": "Update Employee Information",
+        "requirementType": "Workflow",
+        "title": "Update Employee Information (Employee Management)",
+        "businessReason": "Supports the Entity-Record Management business pattern for \"Employee Management\": Update Employee Information is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "HR Staff / Record Owner",
+        "workflowStep": "Update Employee Information",
+        "fields": [
+          "employeeCode",
+          "employeeId",
+          "firstName",
+          "lastName",
+          "fullName",
+          "department",
+          "designation",
+          "jobTitle",
+          "managerId",
+          "managerName",
+          "joiningDate",
+          "employmentType",
+          "email",
+          "phone",
+          "address",
+          "documentIds",
+          "profilePhoto",
+          "status",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "employeeCode must be unique",
+          "email must be valid and unique",
+          "joiningDate must not be in the future",
+          "managerId must reference an active Employee record",
+          "required fields (name, department, email) must be present before activation"
+        ],
+        "apis": [],
+        "databaseEntities": [
+          "Employee",
+          "EmployeeDocument",
+          "EmployeeHistory"
+        ],
+        "acceptanceCriteria": "HR Staff / Record Owner can perform \"Update Employee Information\" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Update Employee Information attempted with missing/invalid required fields",
+          "Update Employee Information attempted by a role without permission",
+          "Update Employee Information attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Update Employee Information succeeds with valid data and authorized role",
+          "Negative: Update Employee Information rejected with invalid data",
+          "Access: Update Employee Information rejected for unauthorized role"
+        ],
+        "priority": "MEDIUM",
+        "complexity": "LOW",
+        "traceability": "Entity-Record Management -> Employee Management -> Update Employee Information"
+      },
+      {
+        "requirementId": "REQ-EMPLOYEE-08",
+        "module": "Employee Management",
+        "page": "Employee Workspace",
+        "feature": "Deactivate / Offboard Employee",
+        "requirementType": "Workflow",
+        "title": "Deactivate / Offboard Employee (Employee Management)",
+        "businessReason": "Supports the Entity-Record Management business pattern for \"Employee Management\": Deactivate / Offboard Employee is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Admin",
+        "workflowStep": "Deactivate / Offboard Employee",
+        "fields": [
+          "employeeCode",
+          "employeeId",
+          "firstName",
+          "lastName",
+          "fullName",
+          "department",
+          "designation",
+          "jobTitle",
+          "managerId",
+          "managerName",
+          "joiningDate",
+          "employmentType",
+          "email",
+          "phone",
+          "address",
+          "documentIds",
+          "profilePhoto",
+          "status",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "employeeCode must be unique",
+          "email must be valid and unique",
+          "joiningDate must not be in the future",
+          "managerId must reference an active Employee record",
+          "required fields (name, department, email) must be present before activation"
+        ],
+        "apis": [
+          "POST /employees/{id}/deactivate"
+        ],
+        "databaseEntities": [
+          "Employee",
+          "EmployeeDocument",
+          "EmployeeHistory"
+        ],
+        "acceptanceCriteria": "Admin can perform \"Deactivate / Offboard Employee\" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Deactivate / Offboard Employee attempted with missing/invalid required fields",
+          "Deactivate / Offboard Employee attempted by a role without permission",
+          "Deactivate / Offboard Employee attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Deactivate / Offboard Employee succeeds with valid data and authorized role",
+          "Negative: Deactivate / Offboard Employee rejected with invalid data",
+          "Access: Deactivate / Offboard Employee rejected for unauthorized role"
+        ],
+        "priority": "LOW",
+        "complexity": "LOW",
+        "traceability": "Entity-Record Management -> Employee Management -> Deactivate / Offboard Employee"
+      },
+      {
+        "requirementId": "REQ-EMPLOYEE-09",
+        "module": "Employee Management",
+        "page": "Employee Workspace",
+        "feature": "Audit Log Capture",
+        "requirementType": "Automation",
+        "title": "Audit Log Capture (Employee Management)",
+        "businessReason": "Supports the Entity-Record Management business pattern for \"Employee Management\": Audit Log Capture is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "System",
+        "workflowStep": "Audit Log Capture",
+        "fields": [
+          "employeeCode",
+          "employeeId",
+          "firstName",
+          "lastName",
+          "fullName",
+          "department",
+          "designation",
+          "jobTitle",
+          "managerId",
+          "managerName",
+          "joiningDate",
+          "employmentType",
+          "email",
+          "phone",
+          "address",
+          "documentIds",
+          "profilePhoto",
+          "status",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "employeeCode must be unique",
+          "email must be valid and unique",
+          "joiningDate must not be in the future",
+          "managerId must reference an active Employee record",
+          "required fields (name, department, email) must be present before activation"
+        ],
+        "apis": [
+          "EVENT audit/downstream-impact-log"
+        ],
+        "databaseEntities": [
+          "Employee",
+          "EmployeeDocument",
+          "EmployeeHistory"
+        ],
+        "acceptanceCriteria": "System can perform \"Audit Log Capture\" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Audit Log Capture attempted with missing/invalid required fields",
+          "Audit Log Capture attempted by a role without permission",
+          "Audit Log Capture attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Audit Log Capture succeeds with valid data and authorized role",
+          "Negative: Audit Log Capture rejected with invalid data",
+          "Access: Audit Log Capture rejected for unauthorized role"
+        ],
+        "priority": "LOW",
+        "complexity": "MEDIUM",
+        "traceability": "Entity-Record Management -> Employee Management -> Audit Log Capture"
+      },
+      {
+        "requirementId": "REQ-EMPLOYEE-10",
+        "module": "Employee Management",
+        "page": "Employee Workspace",
+        "feature": "Generate Employee Reports",
+        "requirementType": "Workflow",
+        "title": "Generate Employee Reports (Employee Management)",
+        "businessReason": "Supports the Entity-Record Management business pattern for \"Employee Management\": Generate Employee Reports is a mandatory lifecycle step - without it the module cannot transition to the next state.",
+        "userRole": "Admin",
+        "workflowStep": "Generate Employee Reports",
+        "fields": [
+          "employeeCode",
+          "employeeId",
+          "firstName",
+          "lastName",
+          "fullName",
+          "department",
+          "designation",
+          "jobTitle",
+          "managerId",
+          "managerName",
+          "joiningDate",
+          "employmentType",
+          "email",
+          "phone",
+          "address",
+          "documentIds",
+          "profilePhoto",
+          "status",
+          "createdAt",
+          "updatedAt"
+        ],
+        "validations": [
+          "employeeCode must be unique",
+          "email must be valid and unique",
+          "joiningDate must not be in the future",
+          "managerId must reference an active Employee record",
+          "required fields (name, department, email) must be present before activation"
+        ],
+        "apis": [
+          "GET /employee-reports"
+        ],
+        "databaseEntities": [
+          "Employee",
+          "EmployeeDocument",
+          "EmployeeHistory"
+        ],
+        "acceptanceCriteria": "Admin can perform \"Generate Employee Reports\" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.",
+        "edgeCases": [
+          "Generate Employee Reports attempted with missing/invalid required fields",
+          "Generate Employee Reports attempted by a role without permission",
+          "Generate Employee Reports attempted on a record in an incompatible status"
+        ],
+        "testScenarios": [
+          "Positive: Generate Employee Reports succeeds with valid data and authorized role",
+          "Negative: Generate Employee Reports rejected with invalid data",
+          "Access: Generate Employee Reports rejected for unauthorized role"
+        ],
+        "priority": "LOW",
+        "complexity": "LOW",
+        "traceability": "Entity-Record Management -> Employee Management -> Generate Employee Reports"
+      }
+    ],
+    "aiEnrichedRequirements": []
+  }
+}

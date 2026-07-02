@@ -1,0 +1,653 @@
+{
+  "buildId": "BUILD-002",
+  "module": "Employee Management",
+  "rule": "Automation assets are generated with the Build Package so QA does not recreate tests later.",
+  "playwrightAutomation": [
+    {
+      "requirementId": "REQ-EMPLOYEE-01",
+      "file": "tests/REQ-EMPLOYEE-01.spec.ts",
+      "scenario": [
+        "Full lifecycle test: create -> Create Employee Profile -> downstream state is consistent with the Entity-Record Management pattern."
+      ],
+      "locators": [
+        "[data-testid=\"req-employee-01\"]"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-02",
+      "file": "tests/REQ-EMPLOYEE-02.spec.ts",
+      "scenario": [
+        "Full lifecycle test: create -> Verify & Validate Employee Details -> downstream state is consistent with the Entity-Record Management pattern."
+      ],
+      "locators": [
+        "[data-testid=\"req-employee-02\"]"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-03",
+      "file": "tests/REQ-EMPLOYEE-03.spec.ts",
+      "scenario": [
+        "Full lifecycle test: create -> Submit for Manager Approval -> downstream state is consistent with the Entity-Record Management pattern."
+      ],
+      "locators": [
+        "[data-testid=\"req-employee-03\"]"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-04",
+      "file": "tests/REQ-EMPLOYEE-04.spec.ts",
+      "scenario": [
+        "Full lifecycle test: create -> Manager Reviews Employee Record -> downstream state is consistent with the Entity-Record Management pattern."
+      ],
+      "locators": [
+        "[data-testid=\"req-employee-04\"]"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-05",
+      "file": "tests/REQ-EMPLOYEE-05.spec.ts",
+      "scenario": [
+        "Full lifecycle test: create -> Approve Employee Record -> downstream state is consistent with the Entity-Record Management pattern."
+      ],
+      "locators": [
+        "[data-testid=\"req-employee-05\"]"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-06",
+      "file": "tests/REQ-EMPLOYEE-06.spec.ts",
+      "scenario": [
+        "Full lifecycle test: create -> Activate Employee -> downstream state is consistent with the Entity-Record Management pattern."
+      ],
+      "locators": [
+        "[data-testid=\"req-employee-06\"]"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-07",
+      "file": "tests/REQ-EMPLOYEE-07.spec.ts",
+      "scenario": [
+        "Full lifecycle test: create -> Update Employee Information -> downstream state is consistent with the Entity-Record Management pattern."
+      ],
+      "locators": [
+        "[data-testid=\"req-employee-07\"]"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-08",
+      "file": "tests/REQ-EMPLOYEE-08.spec.ts",
+      "scenario": [
+        "Full lifecycle test: create -> Deactivate / Offboard Employee -> downstream state is consistent with the Entity-Record Management pattern."
+      ],
+      "locators": [
+        "[data-testid=\"req-employee-08\"]"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-09",
+      "file": "tests/REQ-EMPLOYEE-09.spec.ts",
+      "scenario": [
+        "Full lifecycle test: create -> Audit Log Capture -> downstream state is consistent with the Entity-Record Management pattern."
+      ],
+      "locators": [
+        "[data-testid=\"req-employee-09\"]"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-10",
+      "file": "tests/REQ-EMPLOYEE-10.spec.ts",
+      "scenario": [
+        "Full lifecycle test: create -> Generate Employee Reports -> downstream state is consistent with the Entity-Record Management pattern."
+      ],
+      "locators": [
+        "[data-testid=\"req-employee-10\"]"
+      ]
+    }
+  ],
+  "apiAutomation": [
+    {
+      "requirementId": "REQ-EMPLOYEE-01",
+      "request": "POST /employees",
+      "assertions": [
+        "status is expected",
+        "response schema is valid",
+        "audit/evidence fields are present when applicable"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-02",
+      "request": "GET /employees/{id}",
+      "assertions": [
+        "status is expected",
+        "response schema is valid",
+        "audit/evidence fields are present when applicable"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-03",
+      "request": "POST /employees/{id}/submit",
+      "assertions": [
+        "status is expected",
+        "response schema is valid",
+        "audit/evidence fields are present when applicable"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-05",
+      "request": "POST /employees/{id}/approve",
+      "assertions": [
+        "status is expected",
+        "response schema is valid",
+        "audit/evidence fields are present when applicable"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-06",
+      "request": "POST /employees/{id}/activate",
+      "assertions": [
+        "status is expected",
+        "response schema is valid",
+        "audit/evidence fields are present when applicable"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-08",
+      "request": "POST /employees/{id}/deactivate",
+      "assertions": [
+        "status is expected",
+        "response schema is valid",
+        "audit/evidence fields are present when applicable"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-09",
+      "request": "EVENT audit/downstream-impact-log",
+      "assertions": [
+        "status is expected",
+        "response schema is valid",
+        "audit/evidence fields are present when applicable"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-10",
+      "request": "GET /employee-reports",
+      "assertions": [
+        "status is expected",
+        "response schema is valid",
+        "audit/evidence fields are present when applicable"
+      ]
+    }
+  ],
+  "pageObjects": [
+    {
+      "requirementId": "REQ-EMPLOYEE-01",
+      "pageObject": "Employee-ManagementPage",
+      "actions": [
+        "Create Employee Profile",
+        "Verify & Validate Employee Details",
+        "Submit for Manager Approval",
+        "Manager Reviews Employee Record",
+        "Approve Employee Record",
+        "Activate Employee",
+        "Update Employee Information",
+        "Deactivate / Offboard Employee",
+        "Audit Log Capture",
+        "Generate Employee Reports"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-02",
+      "pageObject": "Employee-ManagementPage",
+      "actions": [
+        "Create Employee Profile",
+        "Verify & Validate Employee Details",
+        "Submit for Manager Approval",
+        "Manager Reviews Employee Record",
+        "Approve Employee Record",
+        "Activate Employee",
+        "Update Employee Information",
+        "Deactivate / Offboard Employee",
+        "Audit Log Capture",
+        "Generate Employee Reports"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-03",
+      "pageObject": "Employee-ManagementPage",
+      "actions": [
+        "Create Employee Profile",
+        "Verify & Validate Employee Details",
+        "Submit for Manager Approval",
+        "Manager Reviews Employee Record",
+        "Approve Employee Record",
+        "Activate Employee",
+        "Update Employee Information",
+        "Deactivate / Offboard Employee",
+        "Audit Log Capture",
+        "Generate Employee Reports"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-04",
+      "pageObject": "Employee-ManagementPage",
+      "actions": [
+        "Create Employee Profile",
+        "Verify & Validate Employee Details",
+        "Submit for Manager Approval",
+        "Manager Reviews Employee Record",
+        "Approve Employee Record",
+        "Activate Employee",
+        "Update Employee Information",
+        "Deactivate / Offboard Employee",
+        "Audit Log Capture",
+        "Generate Employee Reports"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-05",
+      "pageObject": "Employee-ManagementPage",
+      "actions": [
+        "Create Employee Profile",
+        "Verify & Validate Employee Details",
+        "Submit for Manager Approval",
+        "Manager Reviews Employee Record",
+        "Approve Employee Record",
+        "Activate Employee",
+        "Update Employee Information",
+        "Deactivate / Offboard Employee",
+        "Audit Log Capture",
+        "Generate Employee Reports"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-06",
+      "pageObject": "Employee-ManagementPage",
+      "actions": [
+        "Create Employee Profile",
+        "Verify & Validate Employee Details",
+        "Submit for Manager Approval",
+        "Manager Reviews Employee Record",
+        "Approve Employee Record",
+        "Activate Employee",
+        "Update Employee Information",
+        "Deactivate / Offboard Employee",
+        "Audit Log Capture",
+        "Generate Employee Reports"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-07",
+      "pageObject": "Employee-ManagementPage",
+      "actions": [
+        "Create Employee Profile",
+        "Verify & Validate Employee Details",
+        "Submit for Manager Approval",
+        "Manager Reviews Employee Record",
+        "Approve Employee Record",
+        "Activate Employee",
+        "Update Employee Information",
+        "Deactivate / Offboard Employee",
+        "Audit Log Capture",
+        "Generate Employee Reports"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-08",
+      "pageObject": "Employee-ManagementPage",
+      "actions": [
+        "Create Employee Profile",
+        "Verify & Validate Employee Details",
+        "Submit for Manager Approval",
+        "Manager Reviews Employee Record",
+        "Approve Employee Record",
+        "Activate Employee",
+        "Update Employee Information",
+        "Deactivate / Offboard Employee",
+        "Audit Log Capture",
+        "Generate Employee Reports"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-09",
+      "pageObject": "Employee-ManagementPage",
+      "actions": [
+        "Create Employee Profile",
+        "Verify & Validate Employee Details",
+        "Submit for Manager Approval",
+        "Manager Reviews Employee Record",
+        "Approve Employee Record",
+        "Activate Employee",
+        "Update Employee Information",
+        "Deactivate / Offboard Employee",
+        "Audit Log Capture",
+        "Generate Employee Reports"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-10",
+      "pageObject": "Employee-ManagementPage",
+      "actions": [
+        "Create Employee Profile",
+        "Verify & Validate Employee Details",
+        "Submit for Manager Approval",
+        "Manager Reviews Employee Record",
+        "Approve Employee Record",
+        "Activate Employee",
+        "Update Employee Information",
+        "Deactivate / Offboard Employee",
+        "Audit Log Capture",
+        "Generate Employee Reports"
+      ]
+    }
+  ],
+  "locators": [
+    {
+      "requirementId": "REQ-EMPLOYEE-01",
+      "suggestedTestIds": [
+        "req-employee-01-root",
+        "req-employee-01-action"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-02",
+      "suggestedTestIds": [
+        "req-employee-02-root",
+        "req-employee-02-action"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-03",
+      "suggestedTestIds": [
+        "req-employee-03-root",
+        "req-employee-03-action"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-04",
+      "suggestedTestIds": [
+        "req-employee-04-root",
+        "req-employee-04-action"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-05",
+      "suggestedTestIds": [
+        "req-employee-05-root",
+        "req-employee-05-action"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-06",
+      "suggestedTestIds": [
+        "req-employee-06-root",
+        "req-employee-06-action"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-07",
+      "suggestedTestIds": [
+        "req-employee-07-root",
+        "req-employee-07-action"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-08",
+      "suggestedTestIds": [
+        "req-employee-08-root",
+        "req-employee-08-action"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-09",
+      "suggestedTestIds": [
+        "req-employee-09-root",
+        "req-employee-09-action"
+      ]
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-10",
+      "suggestedTestIds": [
+        "req-employee-10-root",
+        "req-employee-10-action"
+      ]
+    }
+  ],
+  "fixtures": [
+    {
+      "requirementId": "REQ-EMPLOYEE-01",
+      "fixtureName": "REQ-EMPLOYEE-01Fixture"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-02",
+      "fixtureName": "REQ-EMPLOYEE-02Fixture"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-03",
+      "fixtureName": "REQ-EMPLOYEE-03Fixture"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-04",
+      "fixtureName": "REQ-EMPLOYEE-04Fixture"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-05",
+      "fixtureName": "REQ-EMPLOYEE-05Fixture"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-06",
+      "fixtureName": "REQ-EMPLOYEE-06Fixture"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-07",
+      "fixtureName": "REQ-EMPLOYEE-07Fixture"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-08",
+      "fixtureName": "REQ-EMPLOYEE-08Fixture"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-09",
+      "fixtureName": "REQ-EMPLOYEE-09Fixture"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-10",
+      "fixtureName": "REQ-EMPLOYEE-10Fixture"
+    }
+  ],
+  "mockData": [
+    {
+      "requirementId": "REQ-EMPLOYEE-01",
+      "status": "Generate valid, invalid, unauthorized, and incompatible-state data."
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-02",
+      "status": "Generate valid, invalid, unauthorized, and incompatible-state data."
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-03",
+      "status": "Generate valid, invalid, unauthorized, and incompatible-state data."
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-04",
+      "status": "Generate valid, invalid, unauthorized, and incompatible-state data."
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-05",
+      "status": "Generate valid, invalid, unauthorized, and incompatible-state data."
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-06",
+      "status": "Generate valid, invalid, unauthorized, and incompatible-state data."
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-07",
+      "status": "Generate valid, invalid, unauthorized, and incompatible-state data."
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-08",
+      "status": "Generate valid, invalid, unauthorized, and incompatible-state data."
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-09",
+      "status": "Generate valid, invalid, unauthorized, and incompatible-state data."
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-10",
+      "status": "Generate valid, invalid, unauthorized, and incompatible-state data."
+    }
+  ],
+  "seedData": [
+    {
+      "requirementId": "REQ-EMPLOYEE-01",
+      "seedRule": "Create minimum records needed to execute this requirement deterministically."
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-02",
+      "seedRule": "Create minimum records needed to execute this requirement deterministically."
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-03",
+      "seedRule": "Create minimum records needed to execute this requirement deterministically."
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-04",
+      "seedRule": "Create minimum records needed to execute this requirement deterministically."
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-05",
+      "seedRule": "Create minimum records needed to execute this requirement deterministically."
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-06",
+      "seedRule": "Create minimum records needed to execute this requirement deterministically."
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-07",
+      "seedRule": "Create minimum records needed to execute this requirement deterministically."
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-08",
+      "seedRule": "Create minimum records needed to execute this requirement deterministically."
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-09",
+      "seedRule": "Create minimum records needed to execute this requirement deterministically."
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-10",
+      "seedRule": "Create minimum records needed to execute this requirement deterministically."
+    }
+  ],
+  "postmanCollection": [
+    {
+      "requirementId": "REQ-EMPLOYEE-01",
+      "name": "REQ-EMPLOYEE-01 POST /employees",
+      "request": "POST /employees"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-02",
+      "name": "REQ-EMPLOYEE-02 GET /employees/{id}",
+      "request": "GET /employees/{id}"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-03",
+      "name": "REQ-EMPLOYEE-03 POST /employees/{id}/submit",
+      "request": "POST /employees/{id}/submit"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-05",
+      "name": "REQ-EMPLOYEE-05 POST /employees/{id}/approve",
+      "request": "POST /employees/{id}/approve"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-06",
+      "name": "REQ-EMPLOYEE-06 POST /employees/{id}/activate",
+      "request": "POST /employees/{id}/activate"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-08",
+      "name": "REQ-EMPLOYEE-08 POST /employees/{id}/deactivate",
+      "request": "POST /employees/{id}/deactivate"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-09",
+      "name": "REQ-EMPLOYEE-09 EVENT audit/downstream-impact-log",
+      "request": "EVENT audit/downstream-impact-log"
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-10",
+      "name": "REQ-EMPLOYEE-10 GET /employee-reports",
+      "request": "GET /employee-reports"
+    }
+  ],
+  "testData": [
+    {
+      "requirementId": "REQ-EMPLOYEE-01",
+      "positive": {},
+      "negative": {},
+      "unauthorized": {}
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-02",
+      "positive": {},
+      "negative": {},
+      "unauthorized": {}
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-03",
+      "positive": {},
+      "negative": {},
+      "unauthorized": {}
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-04",
+      "positive": {},
+      "negative": {},
+      "unauthorized": {}
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-05",
+      "positive": {},
+      "negative": {},
+      "unauthorized": {}
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-06",
+      "positive": {},
+      "negative": {},
+      "unauthorized": {}
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-07",
+      "positive": {},
+      "negative": {},
+      "unauthorized": {}
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-08",
+      "positive": {},
+      "negative": {},
+      "unauthorized": {}
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-09",
+      "positive": {},
+      "negative": {},
+      "unauthorized": {}
+    },
+    {
+      "requirementId": "REQ-EMPLOYEE-10",
+      "positive": {},
+      "negative": {},
+      "unauthorized": {}
+    }
+  ],
+  "automationMetadata": {
+    "coverageRule": "Every requirement contract must have at least one automation asset or a documented non-automatable reason.",
+    "evidenceOutput": [
+      ".ai-delivery/build-result.json",
+      ".ai-delivery/requirement-evidence.json",
+      ".ai-delivery/qa-result.json"
+    ]
+  }
+}
