@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "vite --configLoader native",
-    "build": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build --configLoader native",
     "lint": "eslint .",
-    "test": "node scripts/run-employee-management-tests.mjs"
+    "test": "node scripts/run-employee-management-tests.mjs",
+    "preview": "node scripts/serve-dist.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.4",

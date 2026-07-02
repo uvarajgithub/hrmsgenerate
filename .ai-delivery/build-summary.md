@@ -20,6 +20,8 @@ Employee Management module delivered as a self-contained slice with validation, 
 - `vite.config.js`
 - `vitest.config.js`
 - `scripts/run-employee-management-tests.mjs`
+- `scripts/serve-dist.mjs`
+- `.gitignore`
 
 ## Files Modified
 - `package.json`
@@ -38,12 +40,16 @@ Employee Management module delivered as a self-contained slice with validation, 
 - `npm.cmd test`
 - `npm.cmd run build`
 - `Invoke-WebRequest http://127.0.0.1:3000/`
-- `Invoke-WebRequest http://127.0.0.1:3177/`
+- `Invoke-WebRequest http://127.0.0.1:4177/`
 
 ## Known Issues
 - A legacy tracked temp log file `.tmp-hrms-3011.log` remains locked by another process outside the build slice and was not part of the committed changes.
 - `http://127.0.0.1:3000/` is another local Vite application, not HRMS.
-- HRMS returns the correct shell on `http://127.0.0.1:3177/` when started with `--configLoader native`, but the process exited before follow-up module requests, so no stable preview URL is recorded.
+
+## Local Preview
+- URL: `http://127.0.0.1:4177/`
+- Command: `npm.cmd run build; node scripts/serve-dist.mjs`
+- Evidence: verified the HRMS page title and built asset strings for `Employee Workspace` and `HRMS navigation`.
 
 ## Risks
 - The current build uses a local mock/service implementation for Employee Management rather than a remote production API.

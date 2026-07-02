@@ -23,7 +23,9 @@
     "vite.config.js",
     "vitest.config.js",
     "scripts/run-employee-management-tests.mjs",
+    "scripts/serve-dist.mjs",
     "src/modules/employee-management/tests/employee-management.test.ts",
+    ".gitignore",
     ".ai-delivery/build-result.json",
     ".ai-delivery/requirement-evidence.json",
     ".ai-delivery/build-summary.md"
@@ -33,7 +35,7 @@
     "npm.cmd test",
     "npm.cmd run build",
     "Invoke-WebRequest http://127.0.0.1:3000/",
-    "Invoke-WebRequest http://127.0.0.1:3177/"
+    "Invoke-WebRequest http://127.0.0.1:4177/"
   ],
   "validationResult": {
     "build": {
@@ -49,23 +51,24 @@
       "command": "npm.cmd test"
     },
     "preview": {
-      "passed": false,
-      "command": "npm.cmd run dev -- --host 127.0.0.1 --port 3177 --strictPort",
-      "url": "",
-      "error": "Port 3000 served another local Vite app. HRMS returned the correct title on port 3177, but the dev server process exited before follow-up module requests, so no stable local preview is currently available."
+      "passed": true,
+      "command": "node scripts/serve-dist.mjs",
+      "url": "http://127.0.0.1:4177/",
+      "evidence": "Verified the HRMS page title and built asset strings for Employee Workspace and HRMS navigation."
     }
   },
-  "localPreviewUrl": "",
-  "localPreviewCommand": "npm.cmd run dev -- --host 127.0.0.1 --port 3177 --strictPort",
-  "localPreviewStatus": "Not Available",
+  "localPreviewUrl": "http://127.0.0.1:4177/",
+  "localPreviewCommand": "npm.cmd run build; node scripts/serve-dist.mjs",
+  "localPreviewStatus": "Running",
   "knownGaps": [],
   "warnings": [
     "http://127.0.0.1:3000/ belongs to another local application and must not be used as the HRMS preview URL.",
-    "Vite requires --configLoader native in this restricted workspace because the default config bundler cannot read the parent directory."
+    "Vite requires --configLoader native in this restricted workspace because the default config bundler cannot read the parent directory.",
+    "Use http://127.0.0.1:4177/ for HRMS preview."
   ],
   "manualActions": [],
   "nextBuildSlice": "BUILD-003: Employee Management persistence and backend API wiring",
   "pullRequest": "",
   "branch": "ai/build-002-employee-management",
-  "commitSha": "d06de1919e4e24691099c61f92745405eac1120e"
+  "commitSha": ""
 }

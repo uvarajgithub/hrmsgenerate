@@ -58,4 +58,8 @@ const runTests = spawnSync(process.execPath, [compiledTest], {
   stdio: 'inherit',
 });
 
+if (existsSync(outDir)) {
+  rmSync(outDir, { recursive: true, force: true });
+}
+
 process.exit(runTests.status ?? 1);
