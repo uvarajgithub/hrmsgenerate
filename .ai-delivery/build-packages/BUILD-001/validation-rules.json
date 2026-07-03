@@ -6,14 +6,11 @@
   ],
   "rule": "All three commands must pass before this build is marked complete. Do not mark IMPLEMENTED without evidence.",
   "businessValidations": [
-    "fromDate must be before or equal to toDate",
-    "requested amount must not exceed remaining balance/eligibility",
-    "overlapping leave requests for the same requester are not allowed",
-    "leave type must be active/configured",
-    "attachment required when leave type requires supporting evidence",
-    "weekend/holiday exclusion rule applies when calculating requested days/units",
-    "approver cannot approve their own request",
-    "requests cannot be submitted past the configured cutoff window"
+    "employeeCode must be unique",
+    "email must be valid and unique",
+    "joiningDate must not be in the future",
+    "managerId must reference an active Employee record",
+    "required fields (name, department, email) must be present before activation"
   ],
-  "businessValidationSource": "local Domain Intelligence Engine only (pattern matched: Request-Approval Workflow)"
+  "businessValidationSource": "local Domain Intelligence Engine only (pattern matched: Entity-Record Management)"
 }

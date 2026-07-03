@@ -1,6 +1,6 @@
 # Thinking - BUILD-002
 
-Before writing code, reason about why Employee Management needs to exist and how it actually works for HRMS, not just what CRUD screens to draw.
+Before writing code, reason about why Employee Management needs to exist and how it actually works for hrms, not just what CRUD screens to draw.
 
 ## Domain reasoning
 This module matched the **Entity-Record Management** business pattern - meaning it isn't a flat record store, it's a real workflow with state transitions, role-based authorization, and business rules that can reject a request, not just save it.

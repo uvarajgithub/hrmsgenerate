@@ -1,6 +1,6 @@
 # Business Context - Employee Management
 
-Project: HRMS (Human Resources)
+Project: hrms (Human Resources)
 Scope: Employee Management
 
 ## Why this module exists

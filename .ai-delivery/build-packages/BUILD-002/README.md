@@ -1,34 +1,23 @@
 # Build Package - BUILD-002
 
-Project: HRMS
+Project: hrms
 Scope: Employee Management (Pilot Build)
 Branch: ai/build-002-employee-management
 Repository: GitHub - https://github.com/uvarajgithub/hrmsgenerate
-Package Path: .ai-delivery/build-packages/BUILD-002
 Target Agent: Codex
 
 This folder is a versioned, agent-agnostic Build Package - hand `prompt.md` to
 any coding agent (Claude Code, Codex, Cursor, ...) along with these files and
 it has everything it needs without the platform regenerating anything.
 
-When this package is saved from the Build UI, the Local Delivery Agent writes it
-to `.ai-delivery/build-packages/BUILD-002` and automatically commits/pushes that package when the
-workspace has a clean Git index and an `origin` remote. If repository evidence
-is missing, finish Environment Setup before handing the package to a coding
-agent.
-
 ## Contents
 - `prompt.md` - the execution prompt. Start here.
-- `software-delivery-contract.md` - architecture, folder structure, examples, migration plan, and compatibility risks
-- `workflow-contract.json` - master business workflow contract
-- `requirement-contracts/*.json` - single source of truth per requirement
 - `thinking.md` - domain reasoning to do before writing code
 - `business-context.md` - why this module exists, not just what it does
 - `architecture.md`, `folder-structure.md`, `api-spec.json`, `database-spec.json` - system context
-- `automation-assets.json` - Playwright/API/page-object/fixture/mock/seed/Postman/test-data metadata
-- `business-requirements.json`, `ui-contract.json`, `automation-contract.json` - compatibility artifacts
+- `full-application-design.json`, `qa-design-coverage.md` - complete design context for QA verification
 - `selected-template.json`, `design-system.json`, `page-blueprints.json`, `component-map.json` - UI contract
-- `requirement-scope.json` - compatibility scope artifact; requirement contracts own detailed traceability
+- `requirement-scope.json` - the exact requirement IDs in scope, deduplicated
 - `build-contract.json` - allowed/forbidden paths, requirement IDs
 - `validation-rules.json` - commands that must pass before this build is complete
 

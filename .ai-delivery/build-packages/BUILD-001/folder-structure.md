@@ -1,4 +1,4 @@
-# Folder Structure - Leave Management
+# Folder Structure - Employee Management
 
 Existing files (do not duplicate):
 - src/app/*
@@ -9,7 +9,7 @@ Existing files (do not duplicate):
 
 Create only these (if missing):
 ```
-src/modules/leave-management/
+src/modules/employee-management/
   pages/
   components/
   hooks/
@@ -19,4 +19,4 @@ src/modules/leave-management/
   tests/
 ```
 
-Modify only files inside src/modules/leave-management/. Do not modify any other module folder.
+Modify only files inside src/modules/employee-management/. Do not modify any other module folder.

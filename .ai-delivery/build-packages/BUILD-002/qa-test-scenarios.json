@@ -1,11 +1,5 @@
 {
   "module": "Employee Management",
-  "compatibilityArtifact": true,
-  "supersededBy": [
-    "workflow-contract.json",
-    "automation-assets.json",
-    "requirement-contracts/*.json"
-  ],
   "patternMatched": "Entity-Record Management",
   "roles": [
     "HR Staff / Record Owner",

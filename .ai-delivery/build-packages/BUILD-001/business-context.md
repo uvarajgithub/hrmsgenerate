@@ -1,25 +1,25 @@
-# Business Context - Leave Management
+# Business Context - Employee Management
 
 Project: hrms (Human Resources)
-Scope: Leave Management
+Scope: Employee Management
 
 ## Why this module exists
-Design Contract Item: Feature. Module: Leave Management. Page: Leave Management Overview. Approved item: Open Leave Management Overview.
+Supports the Entity-Record Management business pattern for "Employee Management": Create Employee Profile is a mandatory lifecycle step - without it the module cannot transition to the next state.
 
 ## Real business behavior in scope (not generic CRUD)
-- Leave Management Overview - Feature: Open Leave Management Overview: Feature requirement "Open Leave Management Overview" is visible or functionally represented under Leave Management / Leave Management Overview.
-- Leave Management Overview - Feature: Review Leave Management workspace context: Feature requirement "Review Leave Management workspace context" is visible or functionally represented under Leave Management / Leave Management Overview.
-- Leave Management Overview - Feature: Manage apply leave journey: Feature requirement "Manage apply leave journey" is visible or functionally represented under Leave Management / Leave Management Overview.
-- Leave Management Overview - Feature: Track Leave Management status, owner, priority, and recent activity: Feature requirement "Track Leave Management status, owner, priority, and recent activity" is visible or functionally represented under Leave Management / Leave Management Overview.
-- Leave Management Overview - Function: Open Leave Management: Function requirement "Open Leave Management" is visible or functionally represented under Leave Management / Leave Management Overview.
-- Leave Management Overview - Function: Start Apply Leave: Function requirement "Start Apply Leave" is visible or functionally represented under Leave Management / Leave Management Overview.
-- Leave Management Overview - Function: Enter details: Function requirement "Enter details" is visible or functionally represented under Leave Management / Leave Management Overview.
-- Leave Management Overview - Function: Submit: Function requirement "Submit" is visible or functionally represented under Leave Management / Leave Management Overview.
-- Leave Management Overview - Function: Create Leave Management: Function requirement "Create Leave Management" is visible or functionally represented under Leave Management / Leave Management Overview.
-- Leave Management Overview - Function: Update Leave Management: Function requirement "Update Leave Management" is visible or functionally represented under Leave Management / Leave Management Overview.
+- Create Employee Profile (Employee Management): HR Staff / Record Owner can perform "Create Employee Profile" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
+- Verify & Validate Employee Details (Employee Management): HR Staff / Record Owner can perform "Verify & Validate Employee Details" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
+- Submit for Manager Approval (Employee Management): HR Staff / Record Owner can perform "Submit for Manager Approval" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
+- Manager Reviews Employee Record (Employee Management): Manager / Supervisor can perform "Manager Reviews Employee Record" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
+- Approve Employee Record (Employee Management): Manager / Supervisor can perform "Approve Employee Record" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
+- Activate Employee (Employee Management): Admin can perform "Activate Employee" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
+- Update Employee Information (Employee Management): HR Staff / Record Owner can perform "Update Employee Information" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
+- Deactivate / Offboard Employee (Employee Management): Admin can perform "Deactivate / Offboard Employee" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
+- Audit Log Capture (Employee Management): System can perform "Audit Log Capture" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
+- Generate Employee Reports (Employee Management): Admin can perform "Generate Employee Reports" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
 
 ## Roles involved
-Requester, Approver, Admin
+HR Staff / Record Owner, Manager / Supervisor, Admin
 
 ## What happens downstream
 Once implemented, requirements in this scope feed Development tracking (via `.ai-delivery/build-result.json`), then QA, then Release - see `requirement-scope.json`'s traceability for exact requirement IDs this build must account for.

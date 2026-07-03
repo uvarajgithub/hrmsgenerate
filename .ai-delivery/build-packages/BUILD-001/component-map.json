@@ -8,9 +8,9 @@
     "FormField"
   ],
   "moduleComponents": [
-    "Leave ManagementList",
-    "Leave ManagementForm",
-    "Leave ManagementDetail"
+    "Employee ManagementList",
+    "Employee ManagementForm",
+    "Employee ManagementDetail"
   ],
-  "source": "Use the component library from selected-template.json (Modern HRMS Enterprise)."
+  "source": "Use the component library from selected-template.json (SAP Fiori Inspired HR)."
 }

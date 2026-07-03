@@ -1,151 +1,5 @@
 [
   {
-    "entityName": "LeaveRequest",
-    "fields": [
-      "id",
-      "requesterId",
-      "type",
-      "fromDate",
-      "toDate",
-      "halfDay",
-      "units",
-      "reason",
-      "attachmentUrl",
-      "status",
-      "approverId",
-      "rejectionReason",
-      "createdAt",
-      "updatedAt"
-    ],
-    "linkedRequirements": [
-      "REQ-LEAVE-01",
-      "REQ-LEAVE-02",
-      "REQ-LEAVE-03",
-      "REQ-LEAVE-04",
-      "REQ-LEAVE-05",
-      "REQ-LEAVE-06",
-      "REQ-LEAVE-07",
-      "REQ-LEAVE-08",
-      "REQ-LEAVE-09",
-      "REQ-LEAVE-10"
-    ]
-  },
-  {
-    "entityName": "LeaveType",
-    "fields": [
-      "id",
-      "name",
-      "annualEntitlement",
-      "requiresAttachment",
-      "requiresReason",
-      "isActive"
-    ],
-    "linkedRequirements": [
-      "REQ-LEAVE-01",
-      "REQ-LEAVE-02",
-      "REQ-LEAVE-03",
-      "REQ-LEAVE-04",
-      "REQ-LEAVE-05",
-      "REQ-LEAVE-06",
-      "REQ-LEAVE-07",
-      "REQ-LEAVE-08",
-      "REQ-LEAVE-09",
-      "REQ-LEAVE-10"
-    ]
-  },
-  {
-    "entityName": "LeaveBalance",
-    "fields": [
-      "id",
-      "requesterId",
-      "typeId",
-      "period",
-      "entitled",
-      "used",
-      "remaining"
-    ],
-    "linkedRequirements": [
-      "REQ-LEAVE-01",
-      "REQ-LEAVE-02",
-      "REQ-LEAVE-03",
-      "REQ-LEAVE-04",
-      "REQ-LEAVE-05",
-      "REQ-LEAVE-06",
-      "REQ-LEAVE-07",
-      "REQ-LEAVE-08",
-      "REQ-LEAVE-09",
-      "REQ-LEAVE-10"
-    ]
-  },
-  {
-    "entityName": "LeaveApproval",
-    "fields": [
-      "id",
-      "requestId",
-      "approverId",
-      "decision",
-      "decidedAt",
-      "comment"
-    ],
-    "linkedRequirements": [
-      "REQ-LEAVE-01",
-      "REQ-LEAVE-02",
-      "REQ-LEAVE-03",
-      "REQ-LEAVE-04",
-      "REQ-LEAVE-05",
-      "REQ-LEAVE-06",
-      "REQ-LEAVE-07",
-      "REQ-LEAVE-08",
-      "REQ-LEAVE-09",
-      "REQ-LEAVE-10"
-    ]
-  },
-  {
-    "entityName": "LeavePolicy",
-    "fields": [
-      "id",
-      "name",
-      "rule",
-      "effectiveFrom",
-      "effectiveTo"
-    ],
-    "linkedRequirements": [
-      "REQ-LEAVE-01",
-      "REQ-LEAVE-02",
-      "REQ-LEAVE-03",
-      "REQ-LEAVE-04",
-      "REQ-LEAVE-05",
-      "REQ-LEAVE-06",
-      "REQ-LEAVE-07",
-      "REQ-LEAVE-08",
-      "REQ-LEAVE-09",
-      "REQ-LEAVE-10"
-    ]
-  },
-  {
-    "entityName": "LeaveAuditLog",
-    "fields": [
-      "id",
-      "requestId",
-      "fromStatus",
-      "toStatus",
-      "changedBy",
-      "changedAt"
-    ],
-    "linkedRequirements": [
-      "REQ-LEAVE-01",
-      "REQ-LEAVE-02",
-      "REQ-LEAVE-03",
-      "REQ-LEAVE-04",
-      "REQ-LEAVE-05",
-      "REQ-LEAVE-06",
-      "REQ-LEAVE-07",
-      "REQ-LEAVE-08",
-      "REQ-LEAVE-09",
-      "REQ-LEAVE-10"
-    ]
-  },
-  {
     "entityName": "Employee",
     "fields": [
       "id",
@@ -253,6 +107,80 @@
   },
   {
     "entityName": "AttendanceAuditLog",
+    "fields": [
+      "id",
+      "requestId",
+      "fromStatus",
+      "toStatus",
+      "changedBy",
+      "changedAt"
+    ]
+  },
+  {
+    "entityName": "LeaveRequest",
+    "fields": [
+      "id",
+      "requesterId",
+      "type",
+      "fromDate",
+      "toDate",
+      "halfDay",
+      "units",
+      "reason",
+      "attachmentUrl",
+      "status",
+      "approverId",
+      "rejectionReason",
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  {
+    "entityName": "LeaveType",
+    "fields": [
+      "id",
+      "name",
+      "annualEntitlement",
+      "requiresAttachment",
+      "requiresReason",
+      "isActive"
+    ]
+  },
+  {
+    "entityName": "LeaveBalance",
+    "fields": [
+      "id",
+      "requesterId",
+      "typeId",
+      "period",
+      "entitled",
+      "used",
+      "remaining"
+    ]
+  },
+  {
+    "entityName": "LeaveApproval",
+    "fields": [
+      "id",
+      "requestId",
+      "approverId",
+      "decision",
+      "decidedAt",
+      "comment"
+    ]
+  },
+  {
+    "entityName": "LeavePolicy",
+    "fields": [
+      "id",
+      "name",
+      "rule",
+      "effectiveFrom",
+      "effectiveTo"
+    ]
+  },
+  {
+    "entityName": "LeaveAuditLog",
     "fields": [
       "id",
       "requestId",

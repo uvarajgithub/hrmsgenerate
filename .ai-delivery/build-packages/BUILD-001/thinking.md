@@ -1,23 +1,21 @@
 # Thinking - BUILD-001
 
-Before writing code, reason about why Leave Management needs to exist and how it actually works for hrms, not just what CRUD screens to draw.
+Before writing code, reason about why Employee Management needs to exist and how it actually works for hrms, not just what CRUD screens to draw.
 
 ## Domain reasoning
-This module matched the **Request-Approval Workflow** business pattern - meaning it isn't a flat record store, it's a real workflow with state transitions, role-based authorization, and business rules that can reject a request, not just save it.
+This module matched the **Entity-Record Management** business pattern - meaning it isn't a flat record store, it's a real workflow with state transitions, role-based authorization, and business rules that can reject a request, not just save it.
 
 ## What "done" looks like for this scope
-- REQ-0673: Leave Management Overview - Feature: Open Leave Management Overview - because Feature requirement "Open Leave Management Overview" is visible or functionally represented under Leave Management / Leave Management Overview.
-- REQ-0674: Leave Management Overview - Feature: Review Leave Management workspace context - because Feature requirement "Review Leave Management workspace context" is visible or functionally represented under Leave Management / Leave Management Overview.
-- REQ-0675: Leave Management Overview - Feature: Manage apply leave journey - because Feature requirement "Manage apply leave journey" is visible or functionally represented under Leave Management / Leave Management Overview.
-- REQ-0676: Leave Management Overview - Feature: Track Leave Management status, owner, priority, and recent activity - because Feature requirement "Track Leave Management status, owner, priority, and recent activity" is visible or functionally represented under Leave Management / Leave Management Overview.
-- REQ-0677: Leave Management Overview - Function: Open Leave Management - because Function requirement "Open Leave Management" is visible or functionally represented under Leave Management / Leave Management Overview.
-- REQ-0678: Leave Management Overview - Function: Start Apply Leave - because Function requirement "Start Apply Leave" is visible or functionally represented under Leave Management / Leave Management Overview.
-- REQ-0679: Leave Management Overview - Function: Enter details - because Function requirement "Enter details" is visible or functionally represented under Leave Management / Leave Management Overview.
-- REQ-0680: Leave Management Overview - Function: Submit - because Function requirement "Submit" is visible or functionally represented under Leave Management / Leave Management Overview.
-- REQ-0681: Leave Management Overview - Function: Create Leave Management - because Function requirement "Create Leave Management" is visible or functionally represented under Leave Management / Leave Management Overview.
-- REQ-0682: Leave Management Overview - Function: Update Leave Management - because Function requirement "Update Leave Management" is visible or functionally represented under Leave Management / Leave Management Overview.
-- REQ-0683: Leave Management Overview - Function: Submit Leave Management for review - because Function requirement "Submit Leave Management for review" is visible or functionally represented under Leave Management / Leave Management Overview.
-- REQ-0684: Leave Management Overview - Function: Approve or reject Leave Management - because Function requirement "Approve or reject Leave Management" is visible or functionally represented under Leave Management / Leave Management Overview.
+- REQ-EMPLOYEE-01: Create Employee Profile (Employee Management) - because HR Staff / Record Owner can perform "Create Employee Profile" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
+- REQ-EMPLOYEE-02: Verify & Validate Employee Details (Employee Management) - because HR Staff / Record Owner can perform "Verify & Validate Employee Details" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
+- REQ-EMPLOYEE-03: Submit for Manager Approval (Employee Management) - because HR Staff / Record Owner can perform "Submit for Manager Approval" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
+- REQ-EMPLOYEE-04: Manager Reviews Employee Record (Employee Management) - because Manager / Supervisor can perform "Manager Reviews Employee Record" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
+- REQ-EMPLOYEE-05: Approve Employee Record (Employee Management) - because Manager / Supervisor can perform "Approve Employee Record" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
+- REQ-EMPLOYEE-06: Activate Employee (Employee Management) - because Admin can perform "Activate Employee" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
+- REQ-EMPLOYEE-07: Update Employee Information (Employee Management) - because HR Staff / Record Owner can perform "Update Employee Information" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
+- REQ-EMPLOYEE-08: Deactivate / Offboard Employee (Employee Management) - because Admin can perform "Deactivate / Offboard Employee" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
+- REQ-EMPLOYEE-09: Audit Log Capture (Employee Management) - because System can perform "Audit Log Capture" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
+- REQ-EMPLOYEE-10: Generate Employee Reports (Employee Management) - because Admin can perform "Generate Employee Reports" only when business rules and validations for Employee are satisfied; result is reflected in status and audit trail.
 
 ## Questions to resolve before implementing, not after
 - Which of the validations in `validation-rules.json` are enforced client-side vs server-side?
