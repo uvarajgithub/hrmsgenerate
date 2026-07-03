@@ -1,1004 +1,892 @@
 {
   "requirements": [
     {
-      "id": "REQ-0001",
-      "title": "Employee Onboarding workflow states and transitions",
+      "id": "REQ-INT-0001",
+      "title": "Employee Lifecycle Workflow: Employee Onboarding end-to-end workflow",
+      "moduleId": "module-employee-lifecycle",
+      "category": "Functional",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0002",
+      "title": "Employee Lifecycle Validation: Employee Onboarding validation - Mandatory document checklist is complete",
+      "moduleId": "module-employee-lifecycle",
+      "category": "Validation",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0003",
+      "title": "Employee Lifecycle Validation: Employee Onboarding validation - Joining date is not before offer acceptance",
+      "moduleId": "module-employee-lifecycle",
+      "category": "Validation",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0004",
+      "title": "Employee Lifecycle Validation: Employee Onboarding validation - Manager belongs to same legal entity or approved matrix override exists",
+      "moduleId": "module-employee-lifecycle",
+      "category": "Validation",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0005",
+      "title": "Employee Lifecycle State: Employee Onboarding state - Draft",
       "moduleId": "module-employee-lifecycle",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0002",
-      "title": "Employee Onboarding validation - Mandatory document checklist is complete",
+      "id": "REQ-INT-0006",
+      "title": "Employee Lifecycle State: Employee Onboarding state - Documents Pending",
       "moduleId": "module-employee-lifecycle",
-      "category": "Validation",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0003",
-      "title": "Employee Onboarding validation - Joining date is not before offer acceptance",
-      "moduleId": "module-employee-lifecycle",
-      "category": "Validation",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0004",
-      "title": "Employee Onboarding validation - Manager belongs to same legal entity or approved matrix override exists",
-      "moduleId": "module-employee-lifecycle",
-      "category": "Validation",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0005",
-      "title": "Employee Onboarding data object - Employee",
-      "moduleId": "module-employee-lifecycle",
-      "category": "API/Data",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0006",
-      "title": "Employee Onboarding data object - OnboardingCase",
-      "moduleId": "module-employee-lifecycle",
-      "category": "API/Data",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0007",
-      "title": "Employee Onboarding data object - DocumentChecklist",
-      "moduleId": "module-employee-lifecycle",
-      "category": "API/Data",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0008",
-      "title": "Employee Onboarding state handling - Draft",
-      "moduleId": "module-employee-lifecycle",
-      "category": "State",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0009",
-      "title": "Employee Onboarding state handling - Documents Pending",
-      "moduleId": "module-employee-lifecycle",
-      "category": "State",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0010",
-      "title": "Employee Onboarding state handling - Verification Pending",
-      "moduleId": "module-employee-lifecycle",
-      "category": "State",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0011",
-      "title": "Employee Onboarding state handling - Policy Assignment Pending",
-      "moduleId": "module-employee-lifecycle",
-      "category": "State",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0012",
-      "title": "Employee Onboarding state handling - Access Pending",
-      "moduleId": "module-employee-lifecycle",
-      "category": "State",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0013",
-      "title": "Employee Onboarding state handling - Ready To Join",
-      "moduleId": "module-employee-lifecycle",
-      "category": "State",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0014",
-      "title": "Employee Onboarding role permission - HR Admin",
-      "moduleId": "module-employee-lifecycle",
-      "category": "Role Access",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0015",
-      "title": "Employee Onboarding role permission - Hiring Manager",
-      "moduleId": "module-employee-lifecycle",
-      "category": "Role Access",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0016",
-      "title": "Employee Onboarding role permission - Employee",
-      "moduleId": "module-employee-lifecycle",
-      "category": "Role Access",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0017",
-      "title": "Employee Onboarding role permission - IT Admin",
-      "moduleId": "module-employee-lifecycle",
-      "category": "Role Access",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0018",
-      "title": "Employee Onboarding role permission - Payroll Officer",
-      "moduleId": "module-employee-lifecycle",
-      "category": "Role Access",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0019",
-      "title": "Employee Onboarding exception path - Document rejected",
-      "moduleId": "module-employee-lifecycle",
-      "category": "Exception Path",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0020",
-      "title": "Employee Onboarding exception path - Background verification failed",
-      "moduleId": "module-employee-lifecycle",
-      "category": "Exception Path",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0021",
-      "title": "Employee Onboarding exception path - Joining date changed",
-      "moduleId": "module-employee-lifecycle",
-      "category": "Exception Path",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0022",
-      "title": "Employee Onboarding exception path - Manager unavailable",
-      "moduleId": "module-employee-lifecycle",
-      "category": "Exception Path",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0023",
-      "title": "Employee Onboarding exception path - Access provisioning failed",
-      "moduleId": "module-employee-lifecycle",
-      "category": "Exception Path",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0024",
-      "title": "Leave Request and Balance Control workflow states and transitions",
-      "moduleId": "module-1ht7h9p",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0025",
-      "title": "Leave Request and Balance Control validation - Date range is valid",
-      "moduleId": "module-1ht7h9p",
-      "category": "Validation",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0026",
-      "title": "Leave Request and Balance Control validation - Leave type is assigned to employee policy",
-      "moduleId": "module-1ht7h9p",
-      "category": "Validation",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0027",
-      "title": "Leave Request and Balance Control validation - Approver is active and has authority",
-      "moduleId": "module-1ht7h9p",
-      "category": "Validation",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0028",
-      "title": "Leave Request and Balance Control data object - LeaveRequest",
-      "moduleId": "module-1ht7h9p",
-      "category": "API/Data",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0029",
-      "title": "Leave Request and Balance Control data object - LeaveBalance",
-      "moduleId": "module-1ht7h9p",
-      "category": "API/Data",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0030",
-      "title": "Leave Request and Balance Control data object - LeavePolicy",
-      "moduleId": "module-1ht7h9p",
-      "category": "API/Data",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0031",
-      "title": "Leave Request and Balance Control state handling - Draft",
-      "moduleId": "module-1ht7h9p",
-      "category": "State",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0032",
-      "title": "Leave Request and Balance Control state handling - Submitted",
-      "moduleId": "module-1ht7h9p",
-      "category": "State",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0033",
-      "title": "Leave Request and Balance Control state handling - Manager Approved",
-      "moduleId": "module-1ht7h9p",
-      "category": "State",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0034",
-      "title": "Leave Request and Balance Control state handling - HR Review",
-      "moduleId": "module-1ht7h9p",
-      "category": "State",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0035",
-      "title": "Leave Request and Balance Control state handling - Approved",
-      "moduleId": "module-1ht7h9p",
-      "category": "State",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0036",
-      "title": "Leave Request and Balance Control state handling - Rejected",
-      "moduleId": "module-1ht7h9p",
-      "category": "State",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0037",
-      "title": "Leave Request and Balance Control role permission - Employee",
-      "moduleId": "module-1ht7h9p",
-      "category": "Role Access",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0038",
-      "title": "Leave Request and Balance Control role permission - Reporting Manager",
-      "moduleId": "module-1ht7h9p",
-      "category": "Role Access",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0039",
-      "title": "Leave Request and Balance Control role permission - HR Admin",
-      "moduleId": "module-1ht7h9p",
-      "category": "Role Access",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0040",
-      "title": "Leave Request and Balance Control exception path - Insufficient balance",
-      "moduleId": "module-1ht7h9p",
-      "category": "Exception Path",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0041",
-      "title": "Leave Request and Balance Control exception path - Manager timeout",
-      "moduleId": "module-1ht7h9p",
-      "category": "Exception Path",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0042",
-      "title": "Leave Request and Balance Control exception path - Payroll period locked",
-      "moduleId": "module-1ht7h9p",
-      "category": "Exception Path",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0043",
-      "title": "Leave Request and Balance Control exception path - Policy not assigned",
-      "moduleId": "module-1ht7h9p",
-      "category": "Exception Path",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0044",
-      "title": "Payroll Run workflow states and transitions",
-      "moduleId": "module-g1urls1",
+      "id": "REQ-INT-0007",
+      "title": "Employee Lifecycle State: Employee Onboarding state - Verification Pending",
+      "moduleId": "module-employee-lifecycle",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0045",
-      "title": "Payroll Run validation - All active employees have payroll profiles",
-      "moduleId": "module-g1urls1",
-      "category": "Validation",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0046",
-      "title": "Payroll Run validation - Bank details are verified",
-      "moduleId": "module-g1urls1",
-      "category": "Validation",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0047",
-      "title": "Payroll Run validation - Negative net pay requires exception approval",
-      "moduleId": "module-g1urls1",
-      "category": "Validation",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0048",
-      "title": "Payroll Run data object - PayrollPeriod",
-      "moduleId": "module-g1urls1",
-      "category": "API/Data",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0049",
-      "title": "Payroll Run data object - PayrollRun",
-      "moduleId": "module-g1urls1",
-      "category": "API/Data",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0050",
-      "title": "Payroll Run data object - SalaryComponent",
-      "moduleId": "module-g1urls1",
-      "category": "API/Data",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0051",
-      "title": "Payroll Run state handling - Open",
-      "moduleId": "module-g1urls1",
-      "category": "State",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0052",
-      "title": "Payroll Run state handling - Inputs Pending",
-      "moduleId": "module-g1urls1",
-      "category": "State",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0053",
-      "title": "Payroll Run state handling - Calculated",
-      "moduleId": "module-g1urls1",
-      "category": "State",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0054",
-      "title": "Payroll Run state handling - Exception Review",
-      "moduleId": "module-g1urls1",
-      "category": "State",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0055",
-      "title": "Payroll Run state handling - Approved",
-      "moduleId": "module-g1urls1",
-      "category": "State",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0056",
-      "title": "Payroll Run state handling - Paid",
-      "moduleId": "module-g1urls1",
-      "category": "State",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0057",
-      "title": "Payroll Run role permission - Payroll Officer",
-      "moduleId": "module-g1urls1",
-      "category": "Role Access",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0058",
-      "title": "Payroll Run role permission - HR Admin",
-      "moduleId": "module-g1urls1",
-      "category": "Role Access",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0059",
-      "title": "Payroll Run role permission - Finance Approver",
-      "moduleId": "module-g1urls1",
-      "category": "Role Access",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0060",
-      "title": "Payroll Run exception path - Attendance missing",
-      "moduleId": "module-g1urls1",
-      "category": "Exception Path",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0061",
-      "title": "Payroll Run exception path - Duplicate salary component",
-      "moduleId": "module-g1urls1",
-      "category": "Exception Path",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0062",
-      "title": "Payroll Run exception path - Bank export failed",
-      "moduleId": "module-g1urls1",
-      "category": "Exception Path",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0063",
-      "title": "Payroll Run exception path - Tax calculation exception",
-      "moduleId": "module-g1urls1",
-      "category": "Exception Path",
-      "approvalStatus": "BASELINED"
-    },
-    {
-      "id": "REQ-0064",
-      "title": "Attendance Regularization workflow states and transitions",
-      "moduleId": "module-1aypt9l",
+      "id": "REQ-INT-0008",
+      "title": "Employee Lifecycle State: Employee Onboarding state - Policy Assignment Pending",
+      "moduleId": "module-employee-lifecycle",
       "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0065",
-      "title": "Attendance Regularization validation - Requested time falls inside shift tolerance",
-      "moduleId": "module-1aypt9l",
+      "id": "REQ-INT-0009",
+      "title": "Employee Lifecycle State: Employee Onboarding state - Access Pending",
+      "moduleId": "module-employee-lifecycle",
+      "category": "Workflow",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0010",
+      "title": "Employee Lifecycle State: Employee Onboarding state - Ready To Join",
+      "moduleId": "module-employee-lifecycle",
+      "category": "Workflow",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0011",
+      "title": "Employee Lifecycle State: Employee Onboarding state - Active",
+      "moduleId": "module-employee-lifecycle",
+      "category": "Workflow",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0012",
+      "title": "Employee Lifecycle State: Employee Onboarding state - Blocked",
+      "moduleId": "module-employee-lifecycle",
+      "category": "Workflow",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0013",
+      "title": "Employee Lifecycle Exception: Employee Onboarding exception - Document rejected",
+      "moduleId": "module-employee-lifecycle",
+      "category": "Functional",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0014",
+      "title": "Employee Lifecycle Exception: Employee Onboarding exception - Background verification failed",
+      "moduleId": "module-employee-lifecycle",
+      "category": "Functional",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0015",
+      "title": "Employee Lifecycle Exception: Employee Onboarding exception - Joining date changed",
+      "moduleId": "module-employee-lifecycle",
+      "category": "Functional",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0016",
+      "title": "Employee Lifecycle Exception: Employee Onboarding exception - Manager unavailable",
+      "moduleId": "module-employee-lifecycle",
+      "category": "Functional",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0017",
+      "title": "Employee Lifecycle Exception: Employee Onboarding exception - Access provisioning failed",
+      "moduleId": "module-employee-lifecycle",
+      "category": "Functional",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0018",
+      "title": "Leave Management Workflow: Leave Request and Balance Control end-to-end workflow",
+      "moduleId": "module-5e6wbvk",
+      "category": "Functional",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0019",
+      "title": "Leave Management Validation: Leave Request and Balance Control validation - Date range is valid",
+      "moduleId": "module-5e6wbvk",
       "category": "Validation",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0066",
-      "title": "Attendance Regularization validation - Reason and evidence are present for missing punch",
-      "moduleId": "module-1aypt9l",
+      "id": "REQ-INT-0020",
+      "title": "Leave Management Validation: Leave Request and Balance Control validation - Leave type is assigned to employee policy",
+      "moduleId": "module-5e6wbvk",
       "category": "Validation",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0067",
-      "title": "Attendance Regularization validation - No conflicting leave exists",
-      "moduleId": "module-1aypt9l",
+      "id": "REQ-INT-0021",
+      "title": "Leave Management Validation: Leave Request and Balance Control validation - Approver is active and has authority",
+      "moduleId": "module-5e6wbvk",
       "category": "Validation",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0068",
-      "title": "Attendance Regularization data object - AttendanceLog",
-      "moduleId": "module-1aypt9l",
-      "category": "API/Data",
+      "id": "REQ-INT-0022",
+      "title": "Leave Management State: Leave Request and Balance Control state - Draft",
+      "moduleId": "module-5e6wbvk",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0069",
-      "title": "Attendance Regularization data object - RegularizationRequest",
-      "moduleId": "module-1aypt9l",
-      "category": "API/Data",
+      "id": "REQ-INT-0023",
+      "title": "Leave Management State: Leave Request and Balance Control state - Submitted",
+      "moduleId": "module-5e6wbvk",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0070",
-      "title": "Attendance Regularization data object - ShiftPolicy",
-      "moduleId": "module-1aypt9l",
-      "category": "API/Data",
+      "id": "REQ-INT-0024",
+      "title": "Leave Management State: Leave Request and Balance Control state - Manager Approved",
+      "moduleId": "module-5e6wbvk",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0071",
-      "title": "Attendance Regularization state handling - Exception Detected",
-      "moduleId": "module-1aypt9l",
-      "category": "State",
+      "id": "REQ-INT-0025",
+      "title": "Leave Management State: Leave Request and Balance Control state - HR Review",
+      "moduleId": "module-5e6wbvk",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0072",
-      "title": "Attendance Regularization state handling - Submitted",
-      "moduleId": "module-1aypt9l",
-      "category": "State",
+      "id": "REQ-INT-0026",
+      "title": "Leave Management State: Leave Request and Balance Control state - Approved",
+      "moduleId": "module-5e6wbvk",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0073",
-      "title": "Attendance Regularization state handling - Approved",
-      "moduleId": "module-1aypt9l",
-      "category": "State",
+      "id": "REQ-INT-0027",
+      "title": "Leave Management State: Leave Request and Balance Control state - Rejected",
+      "moduleId": "module-5e6wbvk",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0074",
-      "title": "Attendance Regularization state handling - Rejected",
-      "moduleId": "module-1aypt9l",
-      "category": "State",
+      "id": "REQ-INT-0028",
+      "title": "Leave Management State: Leave Request and Balance Control state - Cancelled",
+      "moduleId": "module-5e6wbvk",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0075",
-      "title": "Attendance Regularization state handling - Recalculated",
-      "moduleId": "module-1aypt9l",
-      "category": "State",
+      "id": "REQ-INT-0029",
+      "title": "Leave Management State: Leave Request and Balance Control state - Payroll Synced",
+      "moduleId": "module-5e6wbvk",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0076",
-      "title": "Attendance Regularization state handling - Payroll Locked",
-      "moduleId": "module-1aypt9l",
-      "category": "State",
+      "id": "REQ-INT-0030",
+      "title": "Leave Management Exception: Leave Request and Balance Control exception - Insufficient balance",
+      "moduleId": "module-5e6wbvk",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0077",
-      "title": "Attendance Regularization role permission - Employee",
-      "moduleId": "module-1aypt9l",
-      "category": "Role Access",
+      "id": "REQ-INT-0031",
+      "title": "Leave Management Exception: Leave Request and Balance Control exception - Manager timeout",
+      "moduleId": "module-5e6wbvk",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0078",
-      "title": "Attendance Regularization role permission - Reporting Manager",
-      "moduleId": "module-1aypt9l",
-      "category": "Role Access",
+      "id": "REQ-INT-0032",
+      "title": "Leave Management Exception: Leave Request and Balance Control exception - Payroll period locked",
+      "moduleId": "module-5e6wbvk",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0079",
-      "title": "Attendance Regularization role permission - HR Admin",
-      "moduleId": "module-1aypt9l",
-      "category": "Role Access",
+      "id": "REQ-INT-0033",
+      "title": "Leave Management Exception: Leave Request and Balance Control exception - Policy not assigned",
+      "moduleId": "module-5e6wbvk",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0080",
-      "title": "Attendance Regularization exception path - Payroll locked",
-      "moduleId": "module-1aypt9l",
-      "category": "Exception Path",
+      "id": "REQ-INT-0034",
+      "title": "Payroll Workflow: Payroll Run end-to-end workflow",
+      "moduleId": "module-k31f0iq",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0081",
-      "title": "Attendance Regularization exception path - Evidence missing",
-      "moduleId": "module-1aypt9l",
-      "category": "Exception Path",
+      "id": "REQ-INT-0035",
+      "title": "Payroll Validation: Payroll Run validation - All active employees have payroll profiles",
+      "moduleId": "module-k31f0iq",
+      "category": "Validation",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0082",
-      "title": "Attendance Regularization exception path - Conflicting approved leave",
-      "moduleId": "module-1aypt9l",
-      "category": "Exception Path",
+      "id": "REQ-INT-0036",
+      "title": "Payroll Validation: Payroll Run validation - Bank details are verified",
+      "moduleId": "module-k31f0iq",
+      "category": "Validation",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0083",
-      "title": "Attendance Regularization exception path - Shift not assigned",
-      "moduleId": "module-1aypt9l",
-      "category": "Exception Path",
+      "id": "REQ-INT-0037",
+      "title": "Payroll Validation: Payroll Run validation - Negative net pay requires exception approval",
+      "moduleId": "module-k31f0iq",
+      "category": "Validation",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0084",
-      "title": "Offer Accepted to Preboarding lifecycle governance",
-      "moduleId": "module-offer-accepted-to-preboarding",
-      "category": "Lifecycle",
+      "id": "REQ-INT-0038",
+      "title": "Payroll State: Payroll Run state - Open",
+      "moduleId": "module-k31f0iq",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0085",
-      "title": "Employee Activation lifecycle governance",
-      "moduleId": "module-employee-activation",
-      "category": "Lifecycle",
+      "id": "REQ-INT-0039",
+      "title": "Payroll State: Payroll Run state - Inputs Pending",
+      "moduleId": "module-k31f0iq",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0086",
-      "title": "Active Employment Operations lifecycle governance",
-      "moduleId": "module-active-employment-operations",
-      "category": "Lifecycle",
+      "id": "REQ-INT-0040",
+      "title": "Payroll State: Payroll Run state - Calculated",
+      "moduleId": "module-k31f0iq",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0087",
-      "title": "Exit and Final Settlement lifecycle governance",
-      "moduleId": "module-exit-and-final-settlement",
-      "category": "Lifecycle",
+      "id": "REQ-INT-0041",
+      "title": "Payroll State: Payroll Run state - Exception Review",
+      "moduleId": "module-k31f0iq",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0088",
-      "title": "HR Operations Command Center job - Resolve onboarding blockers",
-      "moduleId": "module-hr-operations-command-center",
-      "category": "Persona Job",
+      "id": "REQ-INT-0042",
+      "title": "Payroll State: Payroll Run state - Approved",
+      "moduleId": "module-k31f0iq",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0089",
-      "title": "HR Operations Command Center job - Monitor attendance/payroll exceptions",
-      "moduleId": "module-hr-operations-command-center",
-      "category": "Persona Job",
+      "id": "REQ-INT-0043",
+      "title": "Payroll State: Payroll Run state - Paid",
+      "moduleId": "module-k31f0iq",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0090",
-      "title": "HR Operations Command Center job - Maintain employee master data",
-      "moduleId": "module-hr-operations-command-center",
-      "category": "Persona Job",
+      "id": "REQ-INT-0044",
+      "title": "Payroll State: Payroll Run state - Closed",
+      "moduleId": "module-k31f0iq",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0091",
-      "title": "HR Operations Command Center action - Create employee",
-      "moduleId": "module-hr-operations-command-center",
-      "category": "Action",
+      "id": "REQ-INT-0045",
+      "title": "Payroll State: Payroll Run state - Reopened",
+      "moduleId": "module-k31f0iq",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0092",
-      "title": "HR Operations Command Center action - Verify documents",
-      "moduleId": "module-hr-operations-command-center",
-      "category": "Action",
+      "id": "REQ-INT-0046",
+      "title": "Payroll Exception: Payroll Run exception - Attendance missing",
+      "moduleId": "module-k31f0iq",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0093",
-      "title": "HR Operations Command Center action - Override policy with audit",
-      "moduleId": "module-hr-operations-command-center",
-      "category": "Action",
+      "id": "REQ-INT-0047",
+      "title": "Payroll Exception: Payroll Run exception - Duplicate salary component",
+      "moduleId": "module-k31f0iq",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0094",
-      "title": "HR Operations Command Center action - Reopen payroll input",
-      "moduleId": "module-hr-operations-command-center",
-      "category": "Action",
+      "id": "REQ-INT-0048",
+      "title": "Payroll Exception: Payroll Run exception - Bank export failed",
+      "moduleId": "module-k31f0iq",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0095",
-      "title": "Manager Team Workspace job - Approve leave and attendance",
-      "moduleId": "module-manager-team-workspace",
-      "category": "Persona Job",
+      "id": "REQ-INT-0049",
+      "title": "Payroll Exception: Payroll Run exception - Tax calculation exception",
+      "moduleId": "module-k31f0iq",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0096",
-      "title": "Manager Team Workspace job - Track team availability",
-      "moduleId": "module-manager-team-workspace",
-      "category": "Persona Job",
+      "id": "REQ-INT-0050",
+      "title": "Attendance Workflow: Attendance Capture, Regularization, and Overtime Control end-to-end workflow",
+      "moduleId": "module-5pki94n",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0097",
-      "title": "Manager Team Workspace job - Review onboarding readiness",
-      "moduleId": "module-manager-team-workspace",
-      "category": "Persona Job",
+      "id": "REQ-INT-0051",
+      "title": "Attendance Validation: Attendance Capture, Regularization, and Overtime Control validation - Requested time falls inside shift tolerance",
+      "moduleId": "module-5pki94n",
+      "category": "Validation",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0098",
-      "title": "Manager Team Workspace action - Approve",
-      "moduleId": "module-manager-team-workspace",
-      "category": "Action",
+      "id": "REQ-INT-0052",
+      "title": "Attendance Validation: Attendance Capture, Regularization, and Overtime Control validation - Reason and evidence are present for missing punch",
+      "moduleId": "module-5pki94n",
+      "category": "Validation",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0099",
-      "title": "Manager Team Workspace action - Reject",
-      "moduleId": "module-manager-team-workspace",
-      "category": "Action",
+      "id": "REQ-INT-0053",
+      "title": "Attendance Validation: Attendance Capture, Regularization, and Overtime Control validation - No conflicting leave exists",
+      "moduleId": "module-5pki94n",
+      "category": "Validation",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0100",
-      "title": "Manager Team Workspace action - Delegate",
-      "moduleId": "module-manager-team-workspace",
-      "category": "Action",
+      "id": "REQ-INT-0054",
+      "title": "Attendance Validation: Attendance Capture, Regularization, and Overtime Control validation - Check-out cannot be earlier than check-in",
+      "moduleId": "module-5pki94n",
+      "category": "Validation",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0101",
-      "title": "Manager Team Workspace action - Request clarification",
-      "moduleId": "module-manager-team-workspace",
-      "category": "Action",
+      "id": "REQ-INT-0055",
+      "title": "Attendance Validation: Attendance Capture, Regularization, and Overtime Control validation - Overtime hours cannot exceed policy cap",
+      "moduleId": "module-5pki94n",
+      "category": "Validation",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0102",
-      "title": "Employee Self Service job - Apply leave",
-      "moduleId": "module-employee-self-service",
-      "category": "Persona Job",
+      "id": "REQ-INT-0056",
+      "title": "Attendance Validation: Attendance Capture, Regularization, and Overtime Control validation - Payroll readiness requires all attendance exceptions closed",
+      "moduleId": "module-5pki94n",
+      "category": "Validation",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0103",
-      "title": "Employee Self Service job - View attendance",
-      "moduleId": "module-employee-self-service",
-      "category": "Persona Job",
+      "id": "REQ-INT-0057",
+      "title": "Attendance State: Attendance Capture, Regularization, and Overtime Control state - Shift Assigned",
+      "moduleId": "module-5pki94n",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0104",
-      "title": "Employee Self Service job - Download payslip",
-      "moduleId": "module-employee-self-service",
-      "category": "Persona Job",
+      "id": "REQ-INT-0058",
+      "title": "Attendance State: Attendance Capture, Regularization, and Overtime Control state - Checked In",
+      "moduleId": "module-5pki94n",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0105",
-      "title": "Employee Self Service job - Complete onboarding tasks",
-      "moduleId": "module-employee-self-service",
-      "category": "Persona Job",
+      "id": "REQ-INT-0059",
+      "title": "Attendance State: Attendance Capture, Regularization, and Overtime Control state - Checked Out",
+      "moduleId": "module-5pki94n",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0106",
-      "title": "Employee Self Service action - Submit request",
-      "moduleId": "module-employee-self-service",
-      "category": "Action",
+      "id": "REQ-INT-0060",
+      "title": "Attendance State: Attendance Capture, Regularization, and Overtime Control state - Exception Detected",
+      "moduleId": "module-5pki94n",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0107",
-      "title": "Employee Self Service action - Upload document",
-      "moduleId": "module-employee-self-service",
-      "category": "Action",
+      "id": "REQ-INT-0061",
+      "title": "Attendance State: Attendance Capture, Regularization, and Overtime Control state - Regularization Submitted",
+      "moduleId": "module-5pki94n",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0108",
-      "title": "Employee Self Service action - Regularize attendance",
-      "moduleId": "module-employee-self-service",
-      "category": "Action",
+      "id": "REQ-INT-0062",
+      "title": "Attendance State: Attendance Capture, Regularization, and Overtime Control state - Overtime Review",
+      "moduleId": "module-5pki94n",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0109",
-      "title": "Employee Self Service action - Acknowledge policy",
-      "moduleId": "module-employee-self-service",
-      "category": "Action",
+      "id": "REQ-INT-0063",
+      "title": "Attendance State: Attendance Capture, Regularization, and Overtime Control state - Manager Approved",
+      "moduleId": "module-5pki94n",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0110",
-      "title": "Payroll Control Room job - Run payroll",
-      "moduleId": "module-payroll-control-room",
-      "category": "Persona Job",
+      "id": "REQ-INT-0064",
+      "title": "Attendance State: Attendance Capture, Regularization, and Overtime Control state - HR Review",
+      "moduleId": "module-5pki94n",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0111",
-      "title": "Payroll Control Room job - Resolve input exceptions",
-      "moduleId": "module-payroll-control-room",
-      "category": "Persona Job",
+      "id": "REQ-INT-0065",
+      "title": "Attendance State: Attendance Capture, Regularization, and Overtime Control state - Rejected",
+      "moduleId": "module-5pki94n",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0112",
-      "title": "Payroll Control Room job - Publish payslips",
-      "moduleId": "module-payroll-control-room",
-      "category": "Persona Job",
+      "id": "REQ-INT-0066",
+      "title": "Attendance State: Attendance Capture, Regularization, and Overtime Control state - Recalculated",
+      "moduleId": "module-5pki94n",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0113",
-      "title": "Payroll Control Room action - Lock inputs",
-      "moduleId": "module-payroll-control-room",
-      "category": "Action",
+      "id": "REQ-INT-0067",
+      "title": "Attendance State: Attendance Capture, Regularization, and Overtime Control state - Payroll Ready",
+      "moduleId": "module-5pki94n",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0114",
-      "title": "Payroll Control Room action - Recalculate",
-      "moduleId": "module-payroll-control-room",
-      "category": "Action",
+      "id": "REQ-INT-0068",
+      "title": "Attendance State: Attendance Capture, Regularization, and Overtime Control state - Payroll Locked",
+      "moduleId": "module-5pki94n",
+      "category": "Workflow",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0115",
-      "title": "Payroll Control Room action - Approve run",
-      "moduleId": "module-payroll-control-room",
-      "category": "Action",
+      "id": "REQ-INT-0069",
+      "title": "Attendance Exception: Attendance Capture, Regularization, and Overtime Control exception - Payroll locked",
+      "moduleId": "module-5pki94n",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0116",
-      "title": "Payroll Control Room action - Export bank file",
-      "moduleId": "module-payroll-control-room",
-      "category": "Action",
+      "id": "REQ-INT-0070",
+      "title": "Attendance Exception: Attendance Capture, Regularization, and Overtime Control exception - Evidence missing",
+      "moduleId": "module-5pki94n",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0117",
-      "title": "Employee Onboarding approval - Activate employee",
-      "moduleId": "module-employee-onboarding",
-      "category": "Approval",
+      "id": "REQ-INT-0071",
+      "title": "Attendance Exception: Attendance Capture, Regularization, and Overtime Control exception - Conflicting approved leave",
+      "moduleId": "module-5pki94n",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0118",
-      "title": "Leave Request and Balance Control approval - Approve leave",
-      "moduleId": "module-leave-request-and-balance-control",
-      "category": "Approval",
+      "id": "REQ-INT-0072",
+      "title": "Attendance Exception: Attendance Capture, Regularization, and Overtime Control exception - Shift not assigned",
+      "moduleId": "module-5pki94n",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0119",
-      "title": "Payroll Run approval - Approve payroll register",
-      "moduleId": "module-payroll-run",
-      "category": "Approval",
+      "id": "REQ-INT-0073",
+      "title": "Attendance Exception: Attendance Capture, Regularization, and Overtime Control exception - Missing check-out punch",
+      "moduleId": "module-5pki94n",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0120",
-      "title": "Employee Onboarding exception - Mandatory document rejected",
-      "moduleId": "module-employee-onboarding",
-      "category": "Exception",
+      "id": "REQ-INT-0074",
+      "title": "Attendance Exception: Attendance Capture, Regularization, and Overtime Control exception - Overtime over policy cap",
+      "moduleId": "module-5pki94n",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0121",
-      "title": "Leave Request and Balance Control exception - Insufficient leave balance",
-      "moduleId": "module-leave-request-and-balance-control",
-      "category": "Exception",
+      "id": "REQ-INT-0075",
+      "title": "Attendance Exception: Attendance Capture, Regularization, and Overtime Control exception - Device sync failed",
+      "moduleId": "module-5pki94n",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0122",
-      "title": "Payroll Run exception - Attendance exceptions unresolved",
-      "moduleId": "module-payroll-run",
-      "category": "Exception",
+      "id": "REQ-INT-0076",
+      "title": "mod-employee-onboarding Approval: Employee Onboarding approval - Activate employee",
+      "moduleId": "module-mod-employee-onboarding",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0123",
-      "title": "Biometric Attendance Device integration - Import punches and device events",
-      "moduleId": "module-biometric-attendance-device",
+      "id": "REQ-INT-0077",
+      "title": "mod-leave-request-and-balance-control Approval: Leave Request and Balance Control approval - Approve leave",
+      "moduleId": "module-mod-leave-request-and-balance-control",
+      "category": "Functional",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0078",
+      "title": "mod-payroll-run Approval: Payroll Run approval - Approve payroll register",
+      "moduleId": "module-mod-payroll-run",
+      "category": "Functional",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0079",
+      "title": "mod-attendance-capture-regularization-and-overtime-control Approval: Attendance Capture, Regularization, and Overtime Control approval - Approve attendance correction or overtime",
+      "moduleId": "module-mod-attendance-capture-regularization-and-overtime-control",
+      "category": "Functional",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0080",
+      "title": "mod-biometric-attendance-device Integration: Biometric Attendance Device integration",
+      "moduleId": "module-mod-biometric-attendance-device",
       "category": "Integration",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0124",
-      "title": "Identity Provider integration - Provision employee access and revoke exit users",
-      "moduleId": "module-identity-provider",
+      "id": "REQ-INT-0081",
+      "title": "mod-identity-provider Integration: Identity Provider integration",
+      "moduleId": "module-mod-identity-provider",
       "category": "Integration",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0125",
-      "title": "Banking / Finance Export integration - Send salary payment file and accounting summary",
-      "moduleId": "module-banking-finance-export",
+      "id": "REQ-INT-0082",
+      "title": "mod-banking-finance-export Integration: Banking / Finance Export integration",
+      "moduleId": "module-mod-banking-finance-export",
       "category": "Integration",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0126",
-      "title": "HR Operations Command Center UX workspace",
+      "id": "REQ-INT-0083",
+      "title": "mod-hr-operations-dashboard KPI: HR Operations Dashboard metric - Onboarding readiness",
+      "moduleId": "module-mod-hr-operations-dashboard",
+      "category": "Reporting",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0084",
+      "title": "mod-hr-operations-dashboard KPI: HR Operations Dashboard metric - Document rejection count",
+      "moduleId": "module-mod-hr-operations-dashboard",
+      "category": "Reporting",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0085",
+      "title": "mod-hr-operations-dashboard KPI: HR Operations Dashboard metric - Open attendance exceptions",
+      "moduleId": "module-mod-hr-operations-dashboard",
+      "category": "Reporting",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0086",
+      "title": "mod-hr-operations-dashboard KPI: HR Operations Dashboard metric - Leave approval SLA",
+      "moduleId": "module-mod-hr-operations-dashboard",
+      "category": "Reporting",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0087",
+      "title": "mod-team-availability-dashboard KPI: Team Availability Dashboard metric - Team leave overlap",
+      "moduleId": "module-mod-team-availability-dashboard",
+      "category": "Reporting",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0088",
+      "title": "mod-team-availability-dashboard KPI: Team Availability Dashboard metric - Pending approvals",
+      "moduleId": "module-mod-team-availability-dashboard",
+      "category": "Reporting",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0089",
+      "title": "mod-team-availability-dashboard KPI: Team Availability Dashboard metric - Attendance exceptions",
+      "moduleId": "module-mod-team-availability-dashboard",
+      "category": "Reporting",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0090",
+      "title": "mod-team-availability-dashboard KPI: Team Availability Dashboard metric - New joiner readiness",
+      "moduleId": "module-mod-team-availability-dashboard",
+      "category": "Reporting",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0091",
+      "title": "mod-payroll-readiness-dashboard KPI: Payroll Readiness Dashboard metric - Employees ready for payroll",
+      "moduleId": "module-mod-payroll-readiness-dashboard",
+      "category": "Reporting",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0092",
+      "title": "mod-payroll-readiness-dashboard KPI: Payroll Readiness Dashboard metric - Open payroll exceptions",
+      "moduleId": "module-mod-payroll-readiness-dashboard",
+      "category": "Reporting",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0093",
+      "title": "mod-payroll-readiness-dashboard KPI: Payroll Readiness Dashboard metric - Net pay variance",
+      "moduleId": "module-mod-payroll-readiness-dashboard",
+      "category": "Reporting",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0094",
+      "title": "mod-payroll-readiness-dashboard KPI: Payroll Readiness Dashboard metric - Bank verification gaps",
+      "moduleId": "module-mod-payroll-readiness-dashboard",
+      "category": "Reporting",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0095",
+      "title": "HR Operations Command Center Workspace: HR Operations Command Center operational workspace",
       "moduleId": "module-hr-operations-command-center",
-      "category": "UX Workspace",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0127",
-      "title": "Employee Self Service UX workspace",
+      "id": "REQ-INT-0096",
+      "title": "Employee Self Service Workspace: Employee Self Service operational workspace",
       "moduleId": "module-employee-self-service",
-      "category": "UX Workspace",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0128",
-      "title": "Payroll Control Room UX workspace",
+      "id": "REQ-INT-0097",
+      "title": "Payroll Control Room Workspace: Payroll Control Room operational workspace",
       "moduleId": "module-payroll-control-room",
-      "category": "UX Workspace",
+      "category": "Functional",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0129",
-      "title": "HR Operations Dashboard KPI dashboard",
-      "moduleId": "module-hr-operations-dashboard",
-      "category": "KPI",
+      "id": "REQ-INT-0098",
+      "title": "HR Operations Command Center enterprise workspace requirement",
+      "moduleId": "module-employee-lifecycle",
+      "category": "UI",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0130",
-      "title": "Team Availability Dashboard KPI dashboard",
-      "moduleId": "module-team-availability-dashboard",
-      "category": "KPI",
+      "id": "REQ-INT-0099",
+      "title": "Employee Self Service enterprise workspace requirement",
+      "moduleId": "module-5e6wbvk",
+      "category": "UI",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0131",
-      "title": "Payroll Readiness Dashboard KPI dashboard",
-      "moduleId": "module-payroll-readiness-dashboard",
-      "category": "KPI",
+      "id": "REQ-INT-0100",
+      "title": "Payroll Control Room enterprise workspace requirement",
+      "moduleId": "module-payroll-control-room",
+      "category": "UI",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0132",
-      "title": "HR Operations Dashboard metric - Onboarding readiness",
-      "moduleId": "module-hr-operations-dashboard",
-      "category": "Metric",
+      "id": "REQ-INT-0101",
+      "title": "HR Admin permission enforcement for HR Operations Command Center",
+      "moduleId": "module-hr-operations-command-center",
+      "category": "Security",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0133",
-      "title": "HR Operations Dashboard metric - Document rejection count",
-      "moduleId": "module-hr-operations-dashboard",
-      "category": "Metric",
+      "id": "REQ-INT-0102",
+      "title": "Reporting Manager permission enforcement for Manager Team Workspace",
+      "moduleId": "module-manager-team-workspace",
+      "category": "Security",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0134",
-      "title": "HR Operations Dashboard metric - Open attendance exceptions",
-      "moduleId": "module-hr-operations-dashboard",
-      "category": "Metric",
+      "id": "REQ-INT-0103",
+      "title": "Employee permission enforcement for Employee Self Service",
+      "moduleId": "module-employee-self-service",
+      "category": "Security",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0135",
-      "title": "HR Operations Dashboard metric - Leave approval SLA",
-      "moduleId": "module-hr-operations-dashboard",
-      "category": "Metric",
+      "id": "REQ-INT-0104",
+      "title": "Payroll Officer permission enforcement for Payroll Control Room",
+      "moduleId": "module-payroll-control-room",
+      "category": "Security",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0136",
-      "title": "Team Availability Dashboard metric - Team leave overlap",
-      "moduleId": "module-team-availability-dashboard",
-      "category": "Metric",
+      "id": "REQ-INT-0105",
+      "title": "API coverage requirement: /api/team-availability-dashboard/metrics/team-availability-dashboard-metric-pending-approvals",
+      "moduleId": "module-mod-team-availability-dashboard",
+      "category": "API",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0137",
-      "title": "Team Availability Dashboard metric - Pending approvals",
-      "moduleId": "module-team-availability-dashboard",
-      "category": "Metric",
+      "id": "REQ-INT-0106",
+      "title": "API coverage requirement: /api/team-availability-dashboard/metrics/team-availability-dashboard-metric-attendance-exceptions",
+      "moduleId": "module-mod-team-availability-dashboard",
+      "category": "API",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0138",
-      "title": "Team Availability Dashboard metric - Attendance exceptions",
-      "moduleId": "module-team-availability-dashboard",
-      "category": "Metric",
+      "id": "REQ-INT-0107",
+      "title": "API coverage requirement: /api/team-availability-dashboard/metrics/team-availability-dashboard-metric-new-joiner-readiness",
+      "moduleId": "module-mod-team-availability-dashboard",
+      "category": "API",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0139",
-      "title": "Team Availability Dashboard metric - New joiner readiness",
-      "moduleId": "module-team-availability-dashboard",
-      "category": "Metric",
+      "id": "REQ-INT-0108",
+      "title": "Database coverage requirement: Policyassignment",
+      "moduleId": "module-employee-lifecycle",
+      "category": "Database",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0140",
-      "title": "Payroll Readiness Dashboard metric - Employees ready for payroll",
-      "moduleId": "module-payroll-readiness-dashboard",
-      "category": "Metric",
+      "id": "REQ-INT-0109",
+      "title": "Database coverage requirement: Assetassignment",
+      "moduleId": "module-employee-lifecycle",
+      "category": "Database",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0141",
-      "title": "Payroll Readiness Dashboard metric - Open payroll exceptions",
-      "moduleId": "module-payroll-readiness-dashboard",
-      "category": "Metric",
+      "id": "REQ-INT-0110",
+      "title": "Database coverage requirement: Accessprovisioning",
+      "moduleId": "module-employee-lifecycle",
+      "category": "Database",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0142",
-      "title": "Payroll Readiness Dashboard metric - Net pay variance",
-      "moduleId": "module-payroll-readiness-dashboard",
-      "category": "Metric",
+      "id": "REQ-INT-0111",
+      "title": "Database coverage requirement: Leavebalance",
+      "moduleId": "module-5e6wbvk",
+      "category": "Database",
       "approvalStatus": "BASELINED"
     },
     {
-      "id": "REQ-0143",
-      "title": "Payroll Readiness Dashboard metric - Bank verification gaps",
-      "moduleId": "module-payroll-readiness-dashboard",
-      "category": "Metric",
+      "id": "REQ-INT-0112",
+      "title": "Database coverage requirement: Leavepolicy",
+      "moduleId": "module-5e6wbvk",
+      "category": "Database",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0113",
+      "title": "Database coverage requirement: Attendanceimpact",
+      "moduleId": "module-5e6wbvk",
+      "category": "Database",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0114",
+      "title": "Database coverage requirement: Payrollrun",
+      "moduleId": "module-k31f0iq",
+      "category": "Database",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0115",
+      "title": "Database coverage requirement: Salarycomponent",
+      "moduleId": "module-k31f0iq",
+      "category": "Database",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0116",
+      "title": "Database coverage requirement: Payslip",
+      "moduleId": "module-k31f0iq",
+      "category": "Database",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0117",
+      "title": "Database coverage requirement: Payrollexception",
+      "moduleId": "module-k31f0iq",
+      "category": "Database",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0118",
+      "title": "Database coverage requirement: Bankexport",
+      "moduleId": "module-k31f0iq",
+      "category": "Database",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0119",
+      "title": "Database coverage requirement: Attendancelog",
+      "moduleId": "module-5pki94n",
+      "category": "Database",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0120",
+      "title": "Database coverage requirement: Shiftpolicy",
+      "moduleId": "module-5pki94n",
+      "category": "Database",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0121",
+      "title": "Database coverage requirement: Punchevent",
+      "moduleId": "module-5pki94n",
+      "category": "Database",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0122",
+      "title": "Database coverage requirement: Regularizationrequest",
+      "moduleId": "module-5pki94n",
+      "category": "Database",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0123",
+      "title": "Database coverage requirement: Overtimeclaim",
+      "moduleId": "module-5pki94n",
+      "category": "Database",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0124",
+      "title": "Database coverage requirement: Attendanceexception",
+      "moduleId": "module-5pki94n",
+      "category": "Database",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0125",
+      "title": "Database coverage requirement: Payrollinput",
+      "moduleId": "module-5pki94n",
+      "category": "Database",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0126",
+      "title": "Database coverage requirement: Payrollreadinessstatus",
+      "moduleId": "module-5pki94n",
+      "category": "Database",
+      "approvalStatus": "BASELINED"
+    },
+    {
+      "id": "REQ-INT-0127",
+      "title": "Database coverage requirement: ManagerTeamWorkspaceworkitem",
+      "moduleId": "module-manager-team-workspace",
+      "category": "Database",
       "approvalStatus": "BASELINED"
     }
   ]
